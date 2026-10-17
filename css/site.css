@@ -1643,25 +1643,28 @@ button {
 
 .mast {
   position: relative;
-  display: flex;
-  align-items: flex-end;
-  min-height: 100svh;
-  padding: 120px var(--margin) clamp(56px, 6vw, 88px);
+  display: grid;
+  place-items: center;
+  min-height: min(82svh, 760px);
+  padding: 96px var(--margin) 72px;
   background: var(--accent);
   color: var(--on-accent);
+  text-align: center;
 }
 
 .mast-title {
-  font-size: clamp(4.5rem, 19vw, 20rem);
-  font-weight: 820;
-  line-height: 0.84;
-  letter-spacing: -0.045em;
+  font-size: var(--t-heading);
+  font-weight: 560;
+  line-height: 1.15;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin-right: -0.32em;
 }
 
 .mast-line {
   display: block;
   overflow: hidden;
-  padding-bottom: 0.06em;
+  padding-block: 0.08em;
 }
 
 .mast-line > span {
@@ -1670,15 +1673,19 @@ button {
 
 .mast-down {
   position: absolute;
-  right: 0;
-  bottom: clamp(20px, 3vw, 36px);
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
   display: inline-flex;
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  font-weight: 700;
+  font-size: var(--t-small);
+  font-weight: 650;
+  letter-spacing: 0.04em;
   color: var(--on-accent-soft);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .mast-down svg {
@@ -1713,12 +1720,23 @@ button {
 /* --------------------------------------------------------------------------
    Companies: a typographic index, one row each.
    -------------------------------------------------------------------------- */
-.co-head {
+.co-wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--gap);
-  align-items: end;
-  margin-bottom: clamp(32px, 4vw, 56px);
+  grid-template-columns: 4fr 7fr;
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+
+.co-head {
+  position: sticky;
+  top: 40px;
+}
+
+.co-head .lead {
+  margin-top: 16px;
+  max-width: 34ch;
+  font-size: var(--t-body);
+  color: var(--muted);
 }
 
 .rows {
@@ -1729,36 +1747,37 @@ button {
 
 .row {
   display: grid;
-  grid-template-columns: 1.4fr 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  gap: var(--gap);
-  min-height: clamp(96px, 11vw, 148px);
-  padding: 0 clamp(20px, 3vw, 40px);
-  border-radius: 20px;
+  gap: 2px 16px;
+  padding: 22px clamp(18px, 2vw, 28px);
+  border-radius: 14px;
   background: var(--tone);
   color: var(--ink);
   text-decoration: none;
-  transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), padding 0.4s var(--ease-out);
+  transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), transform 0.35s var(--ease-out);
 }
 
 .row-name {
-  font-size: var(--t-heading);
-  font-weight: 760;
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+  font-size: var(--t-lead);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .row-what {
-  font-size: var(--t-lead);
+  grid-column: 1;
+  font-size: var(--t-small);
   color: var(--muted);
   transition: color 0.3s ease;
 }
 
 .row-go {
+  grid-column: 2;
+  grid-row: 1 / 3;
   display: grid;
   place-items: center;
-  width: 52px;
-  height: 52px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--accent);
   color: var(--on-accent);
@@ -1766,13 +1785,13 @@ button {
 }
 
 .row-go svg {
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
 }
 
 .row:hover,
 .row:focus-visible {
-  padding-left: clamp(28px, 4vw, 56px);
+  transform: translateX(6px);
   background: var(--accent);
   color: var(--on-accent);
 }
@@ -1795,19 +1814,13 @@ button {
 }
 
 @media (max-width: 860px) {
-  .co-head {
+  .co-wrap {
     grid-template-columns: 1fr;
   }
 
-  .row {
-    grid-template-columns: 1fr auto;
-    row-gap: 4px;
-    padding-block: 20px;
+  .co-head {
+    position: static;
   }
-
-  .row-name { grid-column: 1; }
-  .row-what { grid-column: 1; }
-  .row-go { grid-column: 2; grid-row: 1 / 3; width: 44px; height: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
