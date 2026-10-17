@@ -1,0 +1,1424 @@
+{
+ "url": "index.html",
+ "at": "2026-10-17T06:55:19.936Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.95,
+    0.82,
+    0.55,
+    0.62,
+    0.65,
+    0.73,
+    0.75
+   ],
+   "motion": {
+    "elements": 29,
+    "css": 6,
+    "transitions": 23,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6281,
+     "screens": 7,
+     "words": 476,
+     "img": 17,
+     "video": 1,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 16,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "prefab-cottages.webp",
+      "outdoor-furniture.webp",
+      "barefoot-resort.webp",
+      "crafted-comfort-bnb.webp",
+      "nuts-and-berries.webp",
+      "outdoor-furniture.webp",
+      "barefoot-resort.webp",
+      "crafted-comfort-bnb.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Crafted Comfort",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
+     "size": 95,
+     "vw": 6.6,
+     "font": "Archivo",
+     "weight": 820,
+     "tracking": -0.035,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 303,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Crafted Comfort",
+     "words": 2,
+     "lines": 2,
+     "size": 95,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "Crafted Comfort",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
+      "size": 95,
+      "vw": 6.6,
+      "font": "Archivo",
+      "weight": 820,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 303,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1001,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Loom Crafts outdoor furniture",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.41,
+      "top": 1830,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it before you order",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 2569,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What are you considering?",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3379,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it on the cottage verandas",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 3435,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Partner to Loom Crafts",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 4014,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan your visit",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 5087,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      15,
+      17,
+      18,
+      22,
+      43,
+      55,
+      95
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.9
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 95,
+      "vw": 6.6,
+      "font": "Archivo",
+      "text": "CraftedComfort"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f1f3ee",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.17,
+      "l": 0.94
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1c1715",
+       "top": 0,
+       "hsl": {
+        "h": 17,
+        "s": 0.14,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#d5e2d8",
+       "top": 900,
+       "hsl": {
+        "h": 134,
+        "s": 0.18,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#e3e7e0",
+       "top": 1604,
+       "hsl": {
+        "h": 94,
+        "s": 0.13,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#1f4d3a",
+       "top": 3958,
+       "hsl": {
+        "h": 155,
+        "s": 0.43,
+        "l": 0.21
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5a524e",
+       "share": 0.2
+      },
+      {
+       "color": "#1c1715",
+       "share": 0.19
+      },
+      {
+       "color": "#d3e4da",
+       "share": 0.17
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.15
+      },
+      {
+       "color": "#f1f3ee",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f4d3a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See our companies",
+      "Contact us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 16,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.96,
+    0.9,
+    0.73,
+    0.66,
+    0.58,
+    0.71,
+    0.9,
+    0.82,
+    0.93
+   ],
+   "motion": {
+    "elements": 32,
+    "css": 7,
+    "transitions": 25,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8781,
+     "screens": 8.6,
+     "words": 476,
+     "img": 17,
+     "video": 1,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 16,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "prefab-cottages.webp",
+      "outdoor-furniture.webp",
+      "barefoot-resort.webp",
+      "crafted-comfort-bnb.webp",
+      "nuts-and-berries.webp",
+      "outdoor-furniture.webp",
+      "barefoot-resort.webp",
+      "crafted-comfort-bnb.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Crafted Comfort",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
+     "size": 52,
+     "vw": 6.8,
+     "font": "Archivo",
+     "weight": 820,
+     "tracking": -0.035,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 411,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Crafted Comfort",
+     "words": 2,
+     "lines": 2,
+     "size": 52,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "Crafted Comfort",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
+      "size": 52,
+      "vw": 6.8,
+      "font": "Archivo",
+      "weight": 820,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 411,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1088,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Loom Crafts outdoor furniture",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2753,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it before you order",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3275,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What are you considering?",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 5036,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it on the cottage verandas",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 5295,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Partner to Loom Crafts",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 5644,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan your visit",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 6818,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      15,
+      17,
+      18,
+      19,
+      32,
+      34,
+      52
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.9
+     },
+     "measureChars": 46,
+     "max": {
+      "size": 52,
+      "vw": 6.8,
+      "font": "Archivo",
+      "text": "CraftedComfort"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f1f3ee",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.17,
+      "l": 0.94
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1c1715",
+       "top": 0,
+       "hsl": {
+        "h": 17,
+        "s": 0.14,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#d5e2d8",
+       "top": 1024,
+       "hsl": {
+        "h": 134,
+        "s": 0.18,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#e3e7e0",
+       "top": 1869,
+       "hsl": {
+        "h": 94,
+        "s": 0.13,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#1f4d3a",
+       "top": 5644,
+       "hsl": {
+        "h": 155,
+        "s": 0.43,
+        "l": 0.21
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5a524e",
+       "share": 0.2
+      },
+      {
+       "color": "#1c1715",
+       "share": 0.19
+      },
+      {
+       "color": "#d3e4da",
+       "share": 0.17
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.15
+      },
+      {
+       "color": "#f1f3ee",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f4d3a"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 3,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See our companies",
+      "Contact us"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 16,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 88,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "filled": [
+    0.98,
+    0.83,
+    0.79,
+    0.7,
+    0.68,
+    0.57,
+    0.86,
+    0.86,
+    0.88,
+    0.96
+   ],
+   "motion": {
+    "elements": 32,
+    "css": 7,
+    "transitions": 25,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8030,
+     "screens": 9.5,
+     "words": 460,
+     "img": 17,
+     "video": 1,
+     "canvas": 0,
+     "svg": 5,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 16,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "prefab-cottages.webp",
+      "outdoor-furniture.webp",
+      "barefoot-resort.webp",
+      "crafted-comfort-bnb.webp",
+      "nuts-and-berries.webp",
+      "outdoor-furniture.webp",
+      "barefoot-resort.webp",
+      "crafted-comfort-bnb.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": []
+    },
+    "hero": {
+     "text": "Crafted Comfort",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
+     "size": 52,
+     "vw": 13.3,
+     "font": "Archivo",
+     "weight": 820,
+     "tracking": -0.035,
+     "leading": 0.92,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 240,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Crafted Comfort",
+     "words": 2,
+     "lines": 2,
+     "size": 52,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "Crafted Comfort",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
+      "size": 52,
+      "vw": 13.3,
+      "font": "Archivo",
+      "weight": 820,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 240,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 908,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Loom Crafts outdoor furniture",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2457,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it before you order",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3013,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What are you considering?",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4236,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it on the cottage verandas",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 4644,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Partner to Loom Crafts",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 5045,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan your visit",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 6010,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      15,
+      17,
+      18,
+      19,
+      32,
+      34,
+      52
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.9
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 52,
+      "vw": 13.3,
+      "font": "Archivo",
+      "text": "CraftedComfort"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f1f3ee",
+     "bodyBgHsl": {
+      "h": 84,
+      "s": 0.17,
+      "l": 0.94
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#1c1715",
+       "top": 0,
+       "hsl": {
+        "h": 17,
+        "s": 0.14,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#d5e2d8",
+       "top": 844,
+       "hsl": {
+        "h": 134,
+        "s": 0.18,
+        "l": 0.86
+       }
+      },
+      {
+       "color": "#e3e7e0",
+       "top": 1899,
+       "hsl": {
+        "h": 94,
+        "s": 0.13,
+        "l": 0.89
+       }
+      },
+      {
+       "color": "#1f4d3a",
+       "top": 4616,
+       "hsl": {
+        "h": 155,
+        "s": 0.43,
+        "l": 0.21
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5a524e",
+       "share": 0.21
+      },
+      {
+       "color": "#1c1715",
+       "share": 0.2
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.15
+      },
+      {
+       "color": "#d3e4da",
+       "share": 0.14
+      },
+      {
+       "color": "#f1f3ee",
+       "share": 0.1
+      }
+     ],
+     "button": {
+      "bg": "#14100f",
+      "hsl": {
+       "h": 12,
+       "s": 0.14,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 14,
+     "inHero": 8,
+     "radius": 0,
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "See our companies",
+      "Contact us",
+      "Loom Crafts",
+      "Barefoot in the Garden"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 10,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 80,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/desktop-page-01.jpg",
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/desktop-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/tablet-page-01.jpg",
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/tablet-page-02.jpg"
+   ]
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-page-01.jpg",
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-page-02.jpg"
+   ]
+  }
+ ]
+}

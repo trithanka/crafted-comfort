@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T03:48:10.239240+00:00",
+  "title": "Design System: Crafted Comfort",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Handloom white",
+        "tonalRamp": [
+          "#4b4b4b",
+          "#7d7d7c",
+          "#afafae",
+          "#dcdcdb",
+          "#fbfbfa",
+          "#fcfcfc",
+          "#fefefd",
+          "#fefefe"
+        ]
+      },
+      "tone": {
+        "role": "neutral",
+        "displayName": "Tone",
+        "tonalRamp": [
+          "#474746",
+          "#777675",
+          "#a7a6a4",
+          "#d1d1ce",
+          "#f1f1ee",
+          "#f6f5f3",
+          "#fafaf9",
+          "#fdfdfd"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "#080706",
+          "#0e0c0a",
+          "#14100f",
+          "#191412",
+          "#494544",
+          "#827f7e",
+          "#bbb9b9",
+          "#e8e8e8"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "#1b1917",
+          "#2d2927",
+          "#3f3937",
+          "#4f4845",
+          "#7b7571",
+          "#a4a09e",
+          "#cecbca",
+          "#eeeeed"
+        ]
+      },
+      "ink-raised": {
+        "role": "neutral",
+        "displayName": "Raised ink",
+        "tonalRamp": [
+          "#0e0c0b",
+          "#171412",
+          "#201b1a",
+          "#282221",
+          "#585251",
+          "#8c8887",
+          "#c0bebe",
+          "#eae9e9"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Deep green",
+        "tonalRamp": [
+          "#091711",
+          "#10261d",
+          "#163629",
+          "#1b4433",
+          "#4c7161",
+          "#849d93",
+          "#bccac4",
+          "#e9edeb"
+        ]
+      },
+      "accent-deep": {
+        "role": "primary",
+        "displayName": "Deeper green",
+        "tonalRamp": [
+          "#07110d",
+          "#0b1d16",
+          "#0f291e",
+          "#133326",
+          "#456155",
+          "#7f938a",
+          "#b9c4bf",
+          "#e8ebea"
+        ]
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "White on green",
+        "tonalRamp": [
+          "#4d4d4d",
+          "#808080",
+          "#b2b2b2",
+          "#e0e0e0",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff",
+          "#ffffff"
+        ]
+      },
+      "on-accent-soft": {
+        "role": "neutral",
+        "displayName": "Soft green text",
+        "tonalRamp": [
+          "#3f4441",
+          "#6a726d",
+          "#94a099",
+          "#bac9c0",
+          "#dce9e1",
+          "#e7f0eb",
+          "#f2f7f4",
+          "#fbfcfb"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "One page title per page."
+      },
+      "heading": {
+        "displayName": "Heading",
+        "purpose": "Section and group titles."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Sentence under a heading; item names in bold."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, max 62ch."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Captions, labels, notes, credits."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Reveals, shutter and lozenge entrance."
+      },
+      {
+        "name": "reveal",
+        "value": "700ms ease-out, 80ms stagger, rise 24px",
+        "purpose": "Each part of a section enters once."
+      },
+      {
+        "name": "shutter",
+        "value": "clip-path 1.1s, image scale 1.12 to 1 over 1.4s",
+        "purpose": "Signature move on the main product photograph."
+      },
+      {
+        "name": "drift",
+        "value": "24s alternate scale 1 to 1.08",
+        "purpose": "The one moving picture in red panels."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "480px"
+      },
+      {
+        "name": "stack",
+        "value": "860px"
+      },
+      {
+        "name": "footer",
+        "value": "960px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action; red, stepped corners.",
+      "html": "<button class=\"ds-btn\">Plan a trial visit</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#1f4d3a;color:#fff}.ds-btn:hover{background:#163a2b}.ds-btn:active{transform:translateY(1px) scale(.98)}.ds-btn:focus-visible{outline:3px solid #fff;outline-offset:-8px}"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Secondary action on white.",
+      "html": "<button class=\"ds-btn-ink\">Ask for the catalogue</button>",
+      "css": ".ds-btn-ink{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#1c1715;color:#fafaf9}.ds-btn-ink:hover{background:#2e2725}.ds-btn-ink:focus-visible{outline:3px solid #fff;outline-offset:-8px}"
+    },
+    {
+      "name": "White Button",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "The action on a red field.",
+      "html": "<div style=\"background:#1f4d3a;padding:24px\"><button class=\"ds-btn-white\">Request a consultation</button></div>",
+      "css": ".ds-btn-white{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#fff;color:#1f4d3a}.ds-btn-white:hover{background:#d3e4da}.ds-btn-white:focus-visible{outline:3px solid #1f4d3a;outline-offset:-8px}"
+    },
+    {
+      "name": "Planner Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio option in the trial-visit planner.",
+      "html": "<label class=\"ds-chip\"><input type=\"radio\" name=\"p\" checked><span>Sofa set</span></label> <label class=\"ds-chip\"><input type=\"radio\" name=\"p\"><span>Swing</span></label>",
+      "css": ".ds-chip{position:relative;display:inline-block}.ds-chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}.ds-chip span{display:inline-flex;align-items:center;min-height:48px;padding:10px 20px;background:#eeedea;color:#1c1715;font:650 17px Archivo, Arial, sans-serif;}.ds-chip input:checked+span{background:#1c1715;color:#fafaf9}.ds-chip input:focus-visible+span{outline:3px solid #1f4d3a;outline-offset:-7px}"
+    },
+    {
+      "name": "Coupon Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Form field on the ink coupon, label above.",
+      "html": "<div class=\"ds-field\"><label for=\"x\">Your name</label><input id=\"x\"></div>",
+      "css": ".ds-field{background:#1c1715;padding:24px;font-family:Archivo, Arial, sans-serif}.ds-field label{display:block;margin-bottom:6px;font-size:14px;font-weight:650;color:#e6dfdb}.ds-field input{width:100%;min-height:52px;padding:12px 16px;border:2px solid transparent;background:#2e2725;color:#fafaf9;font-size:16px}.ds-field input:focus{outline:none;border-color:#fafaf9}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Logo then three plain links.",
+      "html": "<nav class=\"ds-nav\"><strong>Crafted Comfort</strong><a href=\"#\">Furniture</a><a href=\"#\">Our places</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;gap:32px;align-items:center;font:650 17px Archivo, Arial, sans-serif;color:#1c1715}.ds-nav a{color:inherit;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}.ds-nav a:hover{text-decoration:underline;text-decoration-color:#1f4d3a;text-underline-offset:4px;text-decoration-thickness:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Company Directory",
+    "overview": "The home page does two jobs for the client: say in a few lines who Crafted Comfort is, then show every company it runs. Everything else supports those two. The look is plain and confident: white ground, near-black type set large, one deep green for actions and fields, real photographs of each business.",
+    "keyCharacteristics": [
+      "One typeface, Archivo, in five sizes.",
+      "Three colours: white ground, near-black ink, deep green.",
+      "Square corners, no shadows, no gradients, no decorative motifs.",
+      "Every company gets the same anatomy: photo, name, what it is, one sentence, a link."
+    ],
+    "rules": [
+      {
+        "name": "The Three Colour Rule",
+        "body": "Ground, ink, green. Nothing else.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Line Rule",
+        "body": "Every heading fits on two lines at every width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Five Size Rule",
+        "body": "No sixth size.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** keep the home hero short and put all companies directly under it.",
+      "**Do** use real photographs of each business, credited when they come from open collections.",
+      "**Do** keep forms honest: they say when a request could not be sent and give the phone number."
+    ],
+    "donts": [
+      "**Don't** add gradients, glow, glass, shadows or decorative patterns.",
+      "**Don't** put a small label above a heading.",
+      "**Don't** show reviews, ratings or customer numbers; none exist."
+    ]
+  }
+}
