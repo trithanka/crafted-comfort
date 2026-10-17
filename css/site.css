@@ -1645,10 +1645,10 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: min(92svh, 860px);
-  padding-block: 110px 64px;
-  background: var(--accent);
-  color: var(--on-accent);
+  min-height: min(84svh, 780px);
+  padding-block: 48px 72px;
+  background: var(--ground);
+  color: var(--ink);
 }
 
 .mast-inner {
@@ -1681,7 +1681,7 @@ button {
   margin-top: 28px;
   font-size: var(--t-lead);
   line-height: 1.5;
-  color: var(--on-accent-soft);
+  color: var(--muted);
 }
 
 /* One portrait photograph in an arch: present, but never the loudest thing. */
@@ -1703,7 +1703,7 @@ button {
 
 @media (max-width: 860px) {
   .mast {
-    padding-block: 104px 56px;
+    padding-block: 32px 56px;
   }
 
   .mast-inner {

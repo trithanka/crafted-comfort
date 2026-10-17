@@ -1,26 +1,27 @@
 {
- "url": "bnb.html",
- "at": "2026-10-17T14:34:36.483Z",
+ "url": "index.html",
+ "at": "2026-10-17T14:39:38.327Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 7,
+   "screens": 8,
    "filled": [
-    0.45,
-    0.33,
-    0.68,
-    0.32,
-    0.8,
-    0.77,
+    0.27,
+    0.37,
+    0.43,
+    0.57,
+    0.66,
+    0.73,
+    0.75,
     0.75
    ],
    "motion": {
-    "elements": 22,
-    "css": 0,
-    "transitions": 22,
+    "elements": 27,
+    "css": 7,
+    "transitions": 20,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -31,26 +32,28 @@
      "h": 900
     },
     "page": {
-     "height": 6253,
-     "screens": 6.9,
-     "words": 370,
-     "img": 6,
+     "height": 6403,
+     "screens": 7.1,
+     "words": 469,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 1,
-     "sections": 5,
+     "svg": 5,
+     "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 4,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "crafted-comfort-bnb.webp",
+      "prefab-cottages.webp",
       "outdoor-furniture.webp",
-      "view-of-guwahati-city-from-atop-nilachal.webp",
-      "brahmaputra-river-homeward-bound.webp"
+      "barefoot-dining.webp",
+      "barefoot-resort.webp",
+      "prefab-cottages.webp",
+      "crafted-comfort-bnb.webp"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -58,164 +61,59 @@
      "emoji": []
     },
     "hero": {
-     "text": "Crafted Comfort BnB",
-     "words": 3,
-     "chars": 19,
-     "lines": 1,
+     "text": "Crafted Comfort",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
      "size": 95,
      "vw": 6.6,
      "font": "Archivo",
-     "weight": 820,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.98,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "center",
-     "widthRatio": 0.92,
-     "top": 146,
+     "position": "left",
+     "widthRatio": 0.54,
+     "top": 247,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Crafted Comfort BnB",
-     "words": 3,
-     "lines": 1,
+     "text": "Crafted Comfort",
+     "words": 2,
+     "lines": 2,
      "size": 95,
      "font": "Archivo"
     },
     "headings": [
      {
-      "text": "Crafted Comfort BnB",
-      "words": 3,
-      "chars": 19,
-      "lines": 1,
+      "text": "Crafted Comfort",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
       "size": 95,
       "vw": 6.6,
       "font": "Archivo",
-      "weight": 820,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.98,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 146,
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 247,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "The Skyline Suite",
-      "words": 3,
-      "chars": 17,
-      "lines": 1,
-      "size": 54.7,
-      "vw": 3.8,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.44,
-      "top": 1378,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "What the suite has",
-      "words": 4,
-      "chars": 18,
-      "lines": 1,
-      "size": 54.7,
-      "vw": 3.8,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 2318,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Rooms and other stays",
-      "words": 4,
-      "chars": 21,
-      "lines": 1,
-      "size": 54.7,
-      "vw": 3.8,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 3051,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "In the suite",
-      "words": 3,
-      "chars": 12,
-      "lines": 1,
-      "size": 49,
-      "vw": 3.4,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.18,
-      "top": 3178,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Also available",
+      "text": "Our companies",
       "words": 2,
-      "chars": 14,
-      "lines": 1,
-      "size": 49,
-      "vw": 3.4,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.22,
-      "top": 3423,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Where you will be",
-      "words": 4,
-      "chars": 17,
+      "chars": 13,
       "lines": 1,
       "size": 54.7,
       "vw": 3.8,
@@ -227,16 +125,121 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 3972,
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 1017,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Check your dates",
+      "text": "Loom Crafts outdoor furniture",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.41,
+      "top": 1915,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it before you order",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 2654,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What are you considering?",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 3464,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it on the cottage verandas",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 3520,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Partner to Loom Crafts",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 4100,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan your visit",
       "words": 3,
-      "chars": 16,
+      "chars": 15,
       "lines": 1,
       "size": 43.2,
       "vw": 3,
@@ -250,18 +253,18 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.33,
-      "top": 5081,
+      "top": 5173,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
      "count": 8,
-     "maxLines": 1,
+     "maxLines": 2,
      "over2Lines": 0,
-     "statements": 0,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 3,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -280,26 +283,25 @@
       18,
       22,
       43,
-      49,
       55,
       95
      ],
-     "sizeCount": 9,
+     "sizeCount": 8,
      "notLoaded": [],
      "body": {
       "font": "Archivo",
-      "size": 21.6,
+      "size": 17,
       "leading": 1.45,
       "weight": 400,
       "tracking": 0,
-      "contrast": 15
+      "contrast": 6.9
      },
-     "measureChars": 39,
+     "measureChars": 46,
      "max": {
       "size": 95,
       "vw": 6.6,
       "font": "Archivo",
-      "text": "Crafted Comfort BnB"
+      "text": "Crafted"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -308,8 +310,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
-     "centerShare": 0.01,
+     "upperShare": 0,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -324,8 +326,17 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#f8eeea",
+       "top": 88,
+       "hsl": {
+        "h": 17,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#f0dfd7",
-       "top": 2145,
+       "top": 1690,
        "hsl": {
         "h": 19,
         "s": 0.45,
@@ -333,8 +344,17 @@
        }
       },
       {
+       "color": "#9a3f1f",
+       "top": 4044,
+       "hsl": {
+        "h": 16,
+        "s": 0.66,
+        "l": 0.36
+       }
+      },
+      {
        "color": "#2a1710",
-       "top": 5025,
+       "top": 5117,
        "hsl": {
         "h": 16,
         "s": 0.45,
@@ -344,40 +364,40 @@
      ],
      "textColors": [
       {
-       "color": "#2a1710",
-       "share": 0.42
+       "color": "#6a4a3f",
+       "share": 0.28
       },
       {
-       "color": "#6a4a3f",
+       "color": "#2a1710",
+       "share": 0.22
+      },
+      {
+       "color": "#eed8cc",
        "share": 0.14
       },
       {
        "color": "#f8eeea",
-       "share": 0.13
-      },
-      {
-       "color": "#c9bfbb",
-       "share": 0.12
+       "share": 0.1
       },
       {
        "color": "#ecd9ce",
-       "share": 0.11
+       "share": 0.1
       }
      ],
      "button": {
-      "bg": "#9a3f1f",
+      "bg": "#f0dfd7",
       "hsl": {
-       "h": 16,
-       "s": 0.66,
-       "l": 0.36
+       "h": 19,
+       "s": 0.45,
+       "l": 0.89
       },
       "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
+     "count": 9,
+     "inHero": 3,
      "radius": 0,
      "height": 52,
      "withShadow": 0,
@@ -386,7 +406,8 @@
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Check your dates"
+      "Our companies",
+      "Contact us"
      ]
     },
     "surfaces": {
@@ -402,18 +423,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
-     "squareMedia": 4,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 14,
+     "squareMedia": 5,
+     "roundedMedia": 1,
+     "mediaRadius": 999,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.31
+      "ratio": 0.15
      }
     ],
     "nav": {
@@ -433,20 +454,22 @@
    "width": 768,
    "height": 1024,
    "load": "load",
-   "screens": 7,
+   "screens": 9,
    "filled": [
+    0.26,
+    0.8,
+    0.64,
     0.62,
-    0.53,
-    0.49,
-    0.54,
-    0.81,
-    0.89,
-    0.89
+    0.59,
+    0.84,
+    0.83,
+    0.82,
+    0.85
    ],
    "motion": {
-    "elements": 26,
-    "css": 0,
-    "transitions": 26,
+    "elements": 27,
+    "css": 7,
+    "transitions": 20,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -457,26 +480,28 @@
      "h": 1024
     },
     "page": {
-     "height": 6404,
-     "screens": 6.3,
-     "words": 370,
-     "img": 6,
+     "height": 8726,
+     "screens": 8.5,
+     "words": 469,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 1,
-     "sections": 5,
+     "svg": 5,
+     "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 4,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "crafted-comfort-bnb.webp",
+      "prefab-cottages.webp",
       "outdoor-furniture.webp",
-      "view-of-guwahati-city-from-atop-nilachal.webp",
-      "brahmaputra-river-homeward-bound.webp"
+      "barefoot-dining.webp",
+      "barefoot-resort.webp",
+      "prefab-cottages.webp",
+      "crafted-comfort-bnb.webp"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -484,164 +509,59 @@
      "emoji": []
     },
     "hero": {
-     "text": "Crafted Comfort BnB",
-     "words": 3,
-     "chars": 19,
-     "lines": 1,
+     "text": "Crafted Comfort",
+     "words": 2,
+     "chars": 15,
+     "lines": 2,
      "size": 52,
      "vw": 6.8,
      "font": "Archivo",
-     "weight": 820,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.98,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 119,
+     "top": 120,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Crafted Comfort BnB",
-     "words": 3,
-     "lines": 1,
+     "text": "Crafted Comfort",
+     "words": 2,
+     "lines": 2,
      "size": 52,
      "font": "Archivo"
     },
     "headings": [
      {
-      "text": "Crafted Comfort BnB",
-      "words": 3,
-      "chars": 19,
-      "lines": 1,
+      "text": "Crafted Comfort",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
       "size": 52,
       "vw": 6.8,
       "font": "Archivo",
-      "weight": 820,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.98,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 119,
+      "top": 120,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "The Skyline Suite",
-      "words": 3,
-      "chars": 17,
-      "lines": 1,
-      "size": 34,
-      "vw": 4.4,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 1131,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "What the suite has",
-      "words": 4,
-      "chars": 18,
-      "lines": 1,
-      "size": 34,
-      "vw": 4.4,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 2262,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "Rooms and other stays",
-      "words": 4,
-      "chars": 21,
-      "lines": 1,
-      "size": 34,
-      "vw": 4.4,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "center",
-      "widthRatio": 0.92,
-      "top": 2788,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "In the suite",
-      "words": 3,
-      "chars": 12,
-      "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.22,
-      "top": 2863,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Also available",
+      "text": "Our companies",
       "words": 2,
-      "chars": 14,
-      "lines": 1,
-      "size": 32,
-      "vw": 4.2,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.28,
-      "top": 3183,
-      "tag": "h3",
-      "kind": "heading"
-     },
-     {
-      "text": "Where you will be",
-      "words": 4,
-      "chars": 17,
+      "chars": 13,
       "lines": 1,
       "size": 34,
       "vw": 4.4,
@@ -655,14 +575,119 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3708,
+      "top": 1026,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Check your dates",
+      "text": "Loom Crafts outdoor furniture",
+      "words": 4,
+      "chars": 29,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2661,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it before you order",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3184,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What are you considering?",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 4944,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it on the cottage verandas",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 5204,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Partner to Loom Crafts",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 5552,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Plan your visit",
       "words": 3,
-      "chars": 16,
+      "chars": 15,
       "lines": 1,
       "size": 32,
       "vw": 4.2,
@@ -676,18 +701,18 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 4372,
+      "top": 6726,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
      "count": 8,
-     "maxLines": 1,
+     "maxLines": 2,
      "over2Lines": 0,
-     "statements": 0,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 3,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -713,18 +738,18 @@
      "notLoaded": [],
      "body": {
       "font": "Archivo",
-      "size": 19,
+      "size": 17,
       "leading": 1.45,
       "weight": 400,
       "tracking": 0,
-      "contrast": 15
+      "contrast": 6.9
      },
-     "measureChars": 39,
+     "measureChars": 46,
      "max": {
       "size": 52,
       "vw": 6.8,
       "font": "Archivo",
-      "text": "Crafted Comfort BnB"
+      "text": "Crafted"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -733,8 +758,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
-     "centerShare": 0.01,
+     "upperShare": 0,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -749,8 +774,17 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#f8eeea",
+       "top": 88,
+       "hsl": {
+        "h": 17,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
        "color": "#f0dfd7",
-       "top": 2166,
+       "top": 1777,
        "hsl": {
         "h": 19,
         "s": 0.45,
@@ -758,8 +792,17 @@
        }
       },
       {
+       "color": "#9a3f1f",
+       "top": 5552,
+       "hsl": {
+        "h": 16,
+        "s": 0.66,
+        "l": 0.36
+       }
+      },
+      {
        "color": "#2a1710",
-       "top": 4340,
+       "top": 6694,
        "hsl": {
         "h": 16,
         "s": 0.45,
@@ -769,40 +812,40 @@
      ],
      "textColors": [
       {
-       "color": "#2a1710",
-       "share": 0.42
+       "color": "#6a4a3f",
+       "share": 0.28
       },
       {
-       "color": "#6a4a3f",
+       "color": "#2a1710",
+       "share": 0.22
+      },
+      {
+       "color": "#eed8cc",
        "share": 0.14
       },
       {
        "color": "#f8eeea",
-       "share": 0.13
-      },
-      {
-       "color": "#c9bfbb",
-       "share": 0.12
+       "share": 0.1
       },
       {
        "color": "#ecd9ce",
-       "share": 0.11
+       "share": 0.1
       }
      ],
      "button": {
-      "bg": "#9a3f1f",
+      "bg": "#f0dfd7",
       "hsl": {
-       "h": 16,
-       "s": 0.66,
-       "l": 0.36
+       "h": 19,
+       "s": 0.45,
+       "l": 0.89
       },
       "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
+     "count": 9,
+     "inHero": 3,
      "radius": 0,
      "height": 52,
      "withShadow": 0,
@@ -811,7 +854,8 @@
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Check your dates"
+      "Our companies",
+      "Contact us"
      ]
     },
     "surfaces": {
@@ -827,18 +871,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
-     "squareMedia": 4,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 14,
+     "squareMedia": 5,
+     "roundedMedia": 1,
+     "mediaRadius": 999,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.48
+      "ratio": 0.16
      }
     ],
     "nav": {
@@ -858,21 +902,23 @@
    "width": 390,
    "height": 844,
    "load": "load",
-   "screens": 8,
+   "screens": 10,
    "filled": [
-    0.57,
-    0.46,
-    0.93,
-    0.3,
-    0.87,
-    0.88,
-    0.82,
-    0.94
+    0.52,
+    0.48,
+    0.64,
+    0.54,
+    0.59,
+    0.65,
+    0.79,
+    0.92,
+    0.92,
+    0.96
    ],
    "motion": {
-    "elements": 26,
-    "css": 0,
-    "transitions": 26,
+    "elements": 27,
+    "css": 7,
+    "transitions": 20,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -883,26 +929,28 @@
      "h": 844
     },
     "page": {
-     "height": 6710,
-     "screens": 8,
-     "words": 370,
-     "img": 6,
+     "height": 7928,
+     "screens": 9.4,
+     "words": 469,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 1,
-     "sections": 5,
+     "svg": 5,
+     "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 4,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
-      "crafted-comfort-bnb.webp",
+      "prefab-cottages.webp",
       "outdoor-furniture.webp",
-      "view-of-guwahati-city-from-atop-nilachal.webp",
-      "brahmaputra-river-homeward-bound.webp"
+      "barefoot-dining.webp",
+      "barefoot-resort.webp",
+      "prefab-cottages.webp",
+      "crafted-comfort-bnb.webp"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -910,59 +958,59 @@
      "emoji": []
     },
     "hero": {
-     "text": "Crafted Comfort BnB",
-     "words": 3,
-     "chars": 19,
+     "text": "Crafted Comfort",
+     "words": 2,
+     "chars": 15,
      "lines": 2,
      "size": 52,
      "vw": 13.3,
      "font": "Archivo",
-     "weight": 820,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.98,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "center",
      "widthRatio": 0.92,
-     "top": 104,
+     "top": 112,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "Crafted Comfort BnB",
-     "words": 3,
+     "text": "Crafted Comfort",
+     "words": 2,
      "lines": 2,
      "size": 52,
      "font": "Archivo"
     },
     "headings": [
      {
-      "text": "Crafted Comfort BnB",
-      "words": 3,
-      "chars": 19,
+      "text": "Crafted Comfort",
+      "words": 2,
+      "chars": 15,
       "lines": 2,
       "size": 52,
       "vw": 13.3,
       "font": "Archivo",
-      "weight": 820,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.98,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 104,
+      "top": 112,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "The Skyline Suite",
-      "words": 3,
-      "chars": 17,
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
       "lines": 1,
       "size": 34,
       "vw": 8.7,
@@ -976,14 +1024,35 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 932,
+      "top": 1004,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "What the suite has",
+      "text": "Loom Crafts outdoor furniture",
       "words": 4,
-      "chars": 18,
+      "chars": 29,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2299,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Try it before you order",
+      "words": 5,
+      "chars": 23,
       "lines": 1,
       "size": 34,
       "vw": 8.7,
@@ -997,14 +1066,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 1823,
+      "top": 2854,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Rooms and other stays",
+      "text": "What are you considering?",
       "words": 4,
-      "chars": 21,
+      "chars": 25,
       "lines": 2,
       "size": 34,
       "vw": 8.7,
@@ -1018,57 +1087,36 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2641,
-      "tag": "h2",
-      "kind": "heading"
-     },
-     {
-      "text": "In the suite",
-      "words": 3,
-      "chars": 12,
-      "lines": 1,
-      "size": 32,
-      "vw": 8.2,
-      "font": "Archivo",
-      "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
-      "upper": false,
-      "italic": false,
-      "mono": false,
-      "align": "left",
-      "position": "left",
-      "widthRatio": 0.42,
-      "top": 2750,
+      "top": 4078,
       "tag": "h3",
       "kind": "heading"
      },
      {
-      "text": "Also available",
-      "words": 2,
-      "chars": 14,
-      "lines": 1,
-      "size": 32,
-      "vw": 8.2,
+      "text": "Try it on the cottage verandas",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
       "font": "Archivo",
       "weight": 760,
-      "tracking": -0.025,
-      "leading": 1.02,
+      "tracking": -0.02,
+      "leading": 1.05,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "left",
-      "widthRatio": 0.54,
-      "top": 3070,
-      "tag": "h3",
-      "kind": "heading"
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 4485,
+      "tag": "p",
+      "kind": "statement"
      },
      {
-      "text": "Where you will be",
+      "text": "Partner to Loom Crafts",
       "words": 4,
-      "chars": 17,
-      "lines": 1,
+      "chars": 22,
+      "lines": 2,
       "size": 34,
       "vw": 8.7,
       "font": "Archivo",
@@ -1080,15 +1128,15 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.92,
-      "top": 3595,
+      "widthRatio": 0.95,
+      "top": 4887,
       "tag": "h2",
       "kind": "heading"
      },
      {
-      "text": "Check your dates",
+      "text": "Plan your visit",
       "words": 3,
-      "chars": 16,
+      "chars": 15,
       "lines": 1,
       "size": 32,
       "vw": 8.2,
@@ -1102,7 +1150,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 4554,
+      "top": 5852,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1111,9 +1159,9 @@
      "count": 8,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 0,
+     "statements": 1,
      "centered": 0,
-     "medianWords": 3,
+     "medianWords": 4,
      "mixedFontHeadings": 0
     },
     "type": {
@@ -1139,18 +1187,18 @@
      "notLoaded": [],
      "body": {
       "font": "Archivo",
-      "size": 19,
+      "size": 17,
       "leading": 1.45,
       "weight": 400,
       "tracking": 0,
-      "contrast": 15
+      "contrast": 6.9
      },
-     "measureChars": 39,
+     "measureChars": 42,
      "max": {
       "size": 52,
       "vw": 13.3,
       "font": "Archivo",
-      "text": "Crafted Comfort BnB"
+      "text": "Crafted"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1159,8 +1207,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
-     "centerShare": 0.01,
+     "upperShare": 0,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1175,8 +1223,26 @@
      "dark": false,
      "sectionBgs": [
       {
+       "color": "#f8eeea",
+       "top": 80,
+       "hsl": {
+        "h": 17,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#7a2f14",
+       "top": 452,
+       "hsl": {
+        "h": 16,
+        "s": 0.72,
+        "l": 0.28
+       }
+      },
+      {
        "color": "#f0dfd7",
-       "top": 1727,
+       "top": 1741,
        "hsl": {
         "h": 19,
         "s": 0.45,
@@ -1184,8 +1250,17 @@
        }
       },
       {
+       "color": "#9a3f1f",
+       "top": 4457,
+       "hsl": {
+        "h": 16,
+        "s": 0.66,
+        "l": 0.36
+       }
+      },
+      {
        "color": "#2a1710",
-       "top": 4522,
+       "top": 5820,
        "hsl": {
         "h": 16,
         "s": 0.45,
@@ -1195,40 +1270,40 @@
      ],
      "textColors": [
       {
-       "color": "#2a1710",
-       "share": 0.42
+       "color": "#6a4a3f",
+       "share": 0.28
       },
       {
-       "color": "#6a4a3f",
+       "color": "#2a1710",
+       "share": 0.22
+      },
+      {
+       "color": "#eed8cc",
        "share": 0.14
       },
       {
        "color": "#f8eeea",
-       "share": 0.13
-      },
-      {
-       "color": "#c9bfbb",
-       "share": 0.12
+       "share": 0.1
       },
       {
        "color": "#ecd9ce",
-       "share": 0.11
+       "share": 0.1
       }
      ],
      "button": {
-      "bg": "#9a3f1f",
+      "bg": "#f0dfd7",
       "hsl": {
-       "h": 16,
-       "s": 0.66,
-       "l": 0.36
+       "h": 19,
+       "s": 0.45,
+       "l": 0.89
       },
       "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 5,
-     "inHero": 2,
+     "count": 9,
+     "inHero": 3,
      "radius": 0,
      "height": 52,
      "withShadow": 0,
@@ -1237,7 +1312,8 @@
      "upper": 0,
      "heroLabels": [
       "Skip to content",
-      "Check your dates"
+      "Our companies",
+      "Contact us"
      ]
     },
     "surfaces": {
@@ -1253,18 +1329,18 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 0,
-     "boxRadius": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 14,
      "squareMedia": 4,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 999,
      "textShadow": 0,
      "cardRows": []
     },
     "heroMedia": [
      {
       "type": "img",
-      "ratio": 0.29
+      "ratio": 0.38
      }
     ],
     "nav": {
@@ -1282,6 +1358,17 @@
   }
  ],
  "findings": [
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (6.9:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
   {
    "level": "WARN",
    "id": "no-footage",
@@ -1314,7 +1401,8 @@
    "width": 390,
    "fold": "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-fold.jpg",
    "pages": [
-    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-page-01.jpg"
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-page-01.jpg",
+    "/Users/trithanka/dev/work/crafted-comfort/.taste-skill/inspect/mobile-page-02.jpg"
    ]
   }
  ]
