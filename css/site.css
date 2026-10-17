@@ -1643,6 +1643,7 @@ button {
 
 .mast {
   position: relative;
+  overflow-x: clip;
   display: flex;
   align-items: center;
   min-height: min(84svh, 780px);
@@ -1684,10 +1685,50 @@ button {
   color: var(--muted);
 }
 
+.mast-media {
+  position: relative;
+  justify-self: end;
+  width: min(100%, 420px);
+}
+
+.mast-round {
+  position: absolute;
+  left: -68px;
+  bottom: 36px;
+  width: 168px;
+  height: 168px;
+  overflow: hidden;
+  border: 8px solid var(--ground);
+  border-radius: 50%;
+}
+
+.mast-round img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mast-badge {
+  position: absolute;
+  right: -12px;
+  top: 28%;
+  display: grid;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: var(--t-small);
+  line-height: 1.35;
+}
+
+.mast-badge strong {
+  font-size: var(--t-body);
+  font-weight: 760;
+}
+
 /* One portrait photograph in an arch: present, but never the loudest thing. */
 .mast-arch {
-  justify-self: end;
-  width: min(100%, 400px);
+  width: 100%;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 999px 999px 18px 18px;
@@ -1710,9 +1751,22 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .mast-arch {
+  .mast-media {
     justify-self: start;
-    width: min(100%, 320px);
+    width: min(100% - 56px, 320px);
+    margin-left: 40px;
+  }
+
+  .mast-round {
+    left: -40px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .mast-badge {
+    right: -24px;
+    top: 18%;
+    max-width: 190px;
   }
 }
 
@@ -1754,6 +1808,46 @@ button {
   }
 }
 
+/* Facts band under the masthead. */
+.trust {
+  padding-block: clamp(28px, 3.5vw, 48px);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.trust-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+  list-style: none;
+}
+
+.trust-list li {
+  display: grid;
+  gap: 2px;
+  font-size: var(--t-small);
+  color: var(--on-accent-soft);
+}
+
+.trust-list span {
+  display: block;
+}
+
+.trust-list strong {
+  display: block;
+  font-size: var(--t-lead);
+  font-weight: 760;
+  line-height: 1.2;
+  color: var(--on-accent);
+}
+
+@media (max-width: 860px) {
+  .trust-list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Companies: a typographic index, one row each.
    -------------------------------------------------------------------------- */
@@ -1784,15 +1878,23 @@ button {
 
 .row {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 76px 1fr auto;
   align-items: center;
-  gap: 2px 16px;
-  padding: 22px clamp(18px, 2vw, 28px);
+  gap: 0 20px;
+  padding: 14px clamp(14px, 2vw, 20px);
   border-radius: 14px;
   background: var(--tone);
   color: var(--ink);
   text-decoration: none;
   transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), transform 0.35s var(--ease-out);
+}
+
+.row-img {
+  grid-row: 1 / 3;
+  width: 76px;
+  height: 76px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .row-name {
@@ -1802,14 +1904,14 @@ button {
 }
 
 .row-what {
-  grid-column: 1;
+  grid-column: 2;
   font-size: var(--t-small);
   color: var(--muted);
   transition: color 0.3s ease;
 }
 
 .row-go {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1 / 3;
   display: grid;
   place-items: center;
