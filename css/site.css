@@ -2026,3 +2026,45 @@ button {
     transition: none;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Hero cursor: a ring that trails the pointer and a light tilt on the content.
+   -------------------------------------------------------------------------- */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 44px;
+  height: 44px;
+  margin: -22px 0 0 -22px;
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, width 0.3s var(--ease-out), height 0.3s var(--ease-out), margin 0.3s var(--ease-out), background-color 0.3s ease;
+}
+
+.cursor-ring.is-on {
+  opacity: 1;
+}
+
+.cursor-ring.is-hot {
+  width: 76px;
+  height: 76px;
+  margin: -38px 0 0 -38px;
+  background: rgba(154, 63, 31, 0.14);
+}
+
+.mast-media,
+.mast-copy {
+  transition: transform 0.5s var(--ease-out);
+}
+
+.mast-media {
+  transform: translate3d(calc(var(--mx, 0) * -14px), calc(var(--my, 0) * -10px), 0);
+}
+
+.mast-copy {
+  transform: translate3d(calc(var(--mx, 0) * 6px), calc(var(--my, 0) * 4px), 0);
+}

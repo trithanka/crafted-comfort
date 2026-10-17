@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLoops();
   initYear();
   initScrollFx();
+  initHeroCursor();
 });
 
 /* --------------------------------------------------------------------------
@@ -247,4 +248,39 @@ function initScrollFx() {
     if (!ticking) { ticking = true; requestAnimationFrame(update); }
   }, { passive: true });
   update();
+}
+
+// Hero cursor: a ring trails the pointer (and grows over links and the photo); the hero content tilts a few pixels with it.
+function initHeroCursor() {
+  const hero = document.querySelector('.mast');
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!hero || !fine || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const ring = document.createElement('div');
+  ring.className = 'cursor-ring';
+  ring.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(ring);
+  let x = 0, y = 0, rx = 0, ry = 0, raf = 0;
+
+  const loop = () => {
+    rx += (x - rx) * 0.16;
+    ry += (y - ry) * 0.16;
+    ring.style.transform = `translate3d(${rx}px, ${ry}px, 0)`;
+    raf = Math.abs(x - rx) + Math.abs(y - ry) > 0.1 ? requestAnimationFrame(loop) : 0;
+  };
+
+  hero.addEventListener('pointermove', e => {
+    x = e.clientX;
+    y = e.clientY;
+    const r = hero.getBoundingClientRect();
+    hero.style.setProperty('--mx', ((x - r.left) / r.width - 0.5).toFixed(3));
+    hero.style.setProperty('--my', ((y - r.top) / r.height - 0.5).toFixed(3));
+    ring.classList.add('is-on');
+    ring.classList.toggle('is-hot', !!e.target.closest('a, button, .mast-arch, .mast-round'));
+    if (!raf) raf = requestAnimationFrame(loop);
+  });
+  hero.addEventListener('pointerleave', () => {
+    ring.classList.remove('is-on', 'is-hot');
+    hero.style.setProperty('--mx', 0);
+    hero.style.setProperty('--my', 0);
+  });
 }
