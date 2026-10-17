@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initYear();
   initScrollFx();
   initHeroTilt();
+  initMagnets();
+  initCountUp();
 });
 
 /* --------------------------------------------------------------------------
@@ -270,4 +272,42 @@ function initHeroTilt() {
     media.style.setProperty('--tx', 0);
     media.style.setProperty('--ty', 0);
   });
+}
+
+// Hero buttons lean toward the pointer while it is near them.
+function initMagnets() {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.querySelectorAll('.mast .btn').forEach(btn => {
+    btn.addEventListener('pointermove', e => {
+      const r = btn.getBoundingClientRect();
+      btn.style.setProperty('--bx', ((e.clientX - r.left - r.width / 2) * 0.22).toFixed(1) + 'px');
+      btn.style.setProperty('--by', ((e.clientY - r.top - r.height / 2) * 0.35).toFixed(1) + 'px');
+    });
+    btn.addEventListener('pointerleave', () => {
+      btn.style.setProperty('--bx', '0px');
+      btn.style.setProperty('--by', '0px');
+    });
+  });
+}
+
+// Numbers count up once when they scroll into view.
+function initCountUp() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      io.unobserve(e.target);
+      const end = +e.target.dataset.count;
+      const t0 = performance.now();
+      const tick = now => {
+        const k = Math.min((now - t0) / 1200, 1);
+        e.target.textContent = Math.round(end * (1 - Math.pow(1 - k, 3)));
+        if (k < 1) requestAnimationFrame(tick);
+      };
+      e.target.textContent = 0;
+      requestAnimationFrame(tick);
+    });
+  });
+  document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
 }
