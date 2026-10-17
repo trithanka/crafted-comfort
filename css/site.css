@@ -1868,7 +1868,7 @@ button {
 
 /* Facts band under the masthead. */
 .trust {
-  padding-block: clamp(28px, 3.5vw, 48px);
+  padding-block: clamp(16px, 2vw, 24px);
   background: var(--accent);
   color: var(--on-accent);
 }
@@ -1887,8 +1887,8 @@ button {
   flex-shrink: 0;
   justify-content: space-around;
   min-width: 100vw;
-  gap: clamp(48px, 6vw, 96px);
-  padding-right: clamp(48px, 6vw, 96px);
+  gap: clamp(32px, 4vw, 56px);
+  padding-right: clamp(32px, 4vw, 56px);
   list-style: none;
 }
 
@@ -1914,7 +1914,7 @@ button {
 
 @media (prefers-reduced-motion: no-preference) {
   .marquee {
-    animation: marquee 38s linear infinite;
+    animation: marquee 28s linear infinite;
   }
 
   .trust:hover .marquee {
