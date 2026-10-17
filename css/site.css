@@ -2026,3 +2026,31 @@ button {
     transition: none;
   }
 }
+
+/* Hero media: hover lifts the arch, zooms the photo, and pops the small round and badge. */
+@media (prefers-reduced-motion: no-preference) {
+  .mast-arch,
+  .mast-arch img,
+  .mast-round,
+  .mast-badge {
+    transition: scale 0.6s var(--ease-out), rotate 0.6s var(--ease-out), box-shadow 0.4s ease;
+  }
+
+  .mast-media:hover .mast-arch {
+    scale: 1.02;
+  }
+
+  .mast-media:hover .mast-arch img {
+    scale: 1.1;
+  }
+
+  .mast-media:hover .mast-round {
+    scale: 1.14;
+    rotate: -8deg;
+  }
+
+  .mast-media:hover .mast-badge {
+    scale: 1.07;
+    rotate: 2deg;
+  }
+}
