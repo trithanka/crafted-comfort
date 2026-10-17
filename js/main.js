@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveals();
   initLoops();
   initYear();
+  initScrollFx();
 });
 
 /* --------------------------------------------------------------------------
@@ -223,4 +224,27 @@ function initYear() {
   document.querySelectorAll('[data-year]').forEach(el => {
     el.textContent = new Date().getFullYear();
   });
+}
+
+// Reading-progress bar, and a slow parallax on the hero photograph. Skipped when motion is reduced.
+function initScrollFx() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const bar = document.createElement('div');
+  bar.className = 'progress';
+  bar.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(bar);
+  const arch = document.querySelector('.mast-arch');
+  let ticking = false;
+
+  const update = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${max > 0 ? Math.min(scrollY / max, 1) : 0})`;
+    if (arch && scrollY < innerHeight) arch.style.translate = `0 ${scrollY * 0.08}px`;
+    ticking = false;
+  };
+
+  addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
 }

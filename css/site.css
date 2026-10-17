@@ -1790,6 +1790,64 @@ button {
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero details float gently once they have arrived. */
+  .mast-round {
+    animation: rise 0.8s var(--ease-out) 0.7s both, bob 6s ease-in-out 1.6s infinite;
+  }
+
+  .mast-badge {
+    animation: rise 0.8s var(--ease-out) 0.85s both, bob 7s ease-in-out 1.8s infinite reverse;
+  }
+
+  .mast-arch img {
+    animation: settle 1.8s var(--ease-out) 0.3s both, drift 22s ease-in-out 2.2s infinite alternate;
+  }
+
+  /* Thumbnails and trust items respond to hover. */
+  .row-img {
+    transition: transform 0.45s var(--ease-out);
+  }
+
+  .row:hover .row-img,
+  .row:focus-visible .row-img {
+    transform: scale(1.08) rotate(-2deg);
+  }
+
+  .trust-list li {
+    transition: transform 0.3s var(--ease-out);
+  }
+
+  .trust-list li:hover {
+    transform: translateY(-3px);
+  }
+
+  .btn:not(.btn-tone):hover {
+    letter-spacing: 0.01em;
+  }
+}
+
+/* Reading progress along the top edge. */
+.progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: 3px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+}
+
+@keyframes bob {
+  0%, 100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -10px;
+  }
+}
+
 @keyframes arch-in {
   from {
     clip-path: inset(100% 0 0 0);
