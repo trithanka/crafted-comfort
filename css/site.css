@@ -1643,59 +1643,77 @@ button {
 
 .mast {
   position: relative;
-  display: grid;
-  place-items: center;
-  min-height: min(82svh, 760px);
-  padding: 96px var(--margin) 72px;
+  display: flex;
+  align-items: center;
+  min-height: min(92svh, 860px);
+  padding-block: 110px 64px;
   background: var(--accent);
   color: var(--on-accent);
-  text-align: center;
+}
+
+.mast-inner {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: clamp(32px, 6vw, 96px);
+  align-items: center;
+  width: 100%;
 }
 
 .mast-title {
   font-size: var(--t-display);
-  font-weight: 520;
-  line-height: 1.08;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  margin-right: -0.16em;
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
 }
 
 .mast-line {
   display: block;
   overflow: hidden;
-  padding-block: 0.08em;
+  padding-block: 0.06em;
 }
 
 .mast-line > span {
   display: block;
 }
 
-.mast-down {
-  position: absolute;
-  left: 50%;
-  bottom: 28px;
-  transform: translateX(-50%);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 44px;
-  font-size: var(--t-small);
-  font-weight: 650;
-  letter-spacing: 0.04em;
+.mast-sub {
+  max-width: 38ch;
+  margin-top: 28px;
+  font-size: var(--t-lead);
+  line-height: 1.5;
   color: var(--on-accent-soft);
-  text-decoration: none;
-  white-space: nowrap;
 }
 
-.mast-down svg {
-  width: 18px;
-  height: 18px;
-  transition: transform 0.25s var(--ease-out);
+/* One portrait photograph in an arch: present, but never the loudest thing. */
+.mast-arch {
+  justify-self: end;
+  width: min(100%, 400px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 999px 999px 18px 18px;
+  background: var(--accent-deep);
 }
 
-.mast-down:hover svg {
-  transform: translateY(4px);
+.mast-arch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% center;
+}
+
+@media (max-width: 860px) {
+  .mast {
+    padding-block: 104px 56px;
+  }
+
+  .mast-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .mast-arch {
+    justify-self: start;
+    width: min(100%, 320px);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -1705,6 +1723,25 @@ button {
 
   .mast-line:nth-child(2) > span {
     animation-delay: 0.12s;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rise-arch {
+    animation: arch-in 1.2s var(--ease-out) 0.3s both;
+  }
+
+  .rise-arch img {
+    animation: settle 1.8s var(--ease-out) 0.3s both;
+  }
+}
+
+@keyframes arch-in {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0);
   }
 }
 

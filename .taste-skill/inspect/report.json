@@ -1,26 +1,27 @@
 {
  "url": "index.html",
- "at": "2026-10-17T07:40:04.280Z",
+ "at": "2026-10-17T07:44:49.325Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 7,
+   "screens": 8,
    "filled": [
-    0.75,
-    0.42,
-    0.52,
-    0.66,
-    0.65,
-    0.79,
+    0.88,
+    0.41,
+    0.49,
+    0.61,
+    0.62,
+    0.73,
+    0.76,
     0.75
    ],
    "motion": {
-    "elements": 22,
-    "css": 3,
-    "transitions": 19,
+    "elements": 27,
+    "css": 7,
+    "transitions": 20,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -31,22 +32,23 @@
      "h": 900
     },
     "page": {
-     "height": 6297,
-     "screens": 7,
-     "words": 448,
-     "img": 7,
+     "height": 6387,
+     "screens": 7.1,
+     "words": 469,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 6,
+     "svg": 5,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 5,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "prefab-cottages.webp",
       "outdoor-furniture.webp",
       "barefoot-dining.webp",
       "barefoot-resort.webp",
@@ -59,28 +61,28 @@
      "emoji": []
     },
     "hero": {
-     "text": "CRAFTED COMFORT",
+     "text": "Crafted Comfort",
      "words": 2,
      "chars": 15,
      "lines": 2,
      "size": 95,
      "vw": 6.6,
      "font": "Archivo",
-     "weight": 520,
-     "tracking": 0.16,
-     "leading": 1.08,
-     "upper": true,
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
      "italic": false,
      "mono": false,
-     "align": "center",
-     "position": "center",
-     "widthRatio": 0.41,
-     "top": 263,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.54,
+     "top": 230,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "CRAFTED COMFORT",
+     "text": "Crafted Comfort",
      "words": 2,
      "lines": 2,
      "size": 95,
@@ -88,23 +90,23 @@
     },
     "headings": [
      {
-      "text": "CRAFTED COMFORT",
+      "text": "Crafted Comfort",
       "words": 2,
       "chars": 15,
       "lines": 2,
       "size": 95,
       "vw": 6.6,
       "font": "Archivo",
-      "weight": 520,
-      "tracking": 0.16,
-      "leading": 1.08,
-      "upper": true,
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
       "italic": false,
       "mono": false,
-      "align": "center",
-      "position": "center",
-      "widthRatio": 0.41,
-      "top": 263,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 230,
       "tag": "h1",
       "kind": "heading"
      },
@@ -125,7 +127,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.31,
-      "top": 911,
+      "top": 1001,
       "tag": "h2",
       "kind": "heading"
      },
@@ -146,7 +148,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.41,
-      "top": 1809,
+      "top": 1899,
       "tag": "h2",
       "kind": "heading"
      },
@@ -167,7 +169,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.54,
-      "top": 2548,
+      "top": 2638,
       "tag": "h2",
       "kind": "heading"
      },
@@ -188,7 +190,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 3358,
+      "top": 3448,
       "tag": "h3",
       "kind": "heading"
      },
@@ -209,7 +211,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.43,
-      "top": 3414,
+      "top": 3504,
       "tag": "p",
       "kind": "statement"
      },
@@ -230,7 +232,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 3994,
+      "top": 4084,
       "tag": "h2",
       "kind": "heading"
      },
@@ -251,7 +253,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.33,
-      "top": 5067,
+      "top": 5157,
       "tag": "h2",
       "kind": "heading"
      }
@@ -261,7 +263,7 @@
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 1,
+     "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
     },
@@ -308,8 +310,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
-     "centerShare": 0.02,
+     "upperShare": 0,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -334,7 +336,7 @@
       },
       {
        "color": "#e3e7e0",
-       "top": 1584,
+       "top": 1674,
        "hsl": {
         "h": 94,
         "s": 0.13,
@@ -343,7 +345,7 @@
       },
       {
        "color": "#1c1715",
-       "top": 5011,
+       "top": 5101,
        "hsl": {
         "h": 17,
         "s": 0.14,
@@ -354,19 +356,19 @@
      "textColors": [
       {
        "color": "#5a524e",
-       "share": 0.25
+       "share": 0.24
       },
       {
        "color": "#1c1715",
-       "share": 0.21
+       "share": 0.2
       },
       {
        "color": "#d3e4da",
-       "share": 0.15
+       "share": 0.18
       },
       {
        "color": "#f1f3ee",
-       "share": 0.11
+       "share": 0.1
       },
       {
        "color": "#d9d1cd",
@@ -374,27 +376,29 @@
       }
      ],
      "button": {
-      "bg": "#1c1715",
+      "bg": "#ffffff",
       "hsl": {
-       "h": 17,
-       "s": 0.14,
-       "l": 0.1
+       "h": 0,
+       "s": 0,
+       "l": 1
       },
-      "fg": "#ffffff"
+      "fg": "#1f4d3a"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 1,
+     "count": 9,
+     "inHero": 3,
      "radius": 0,
-     "height": 72,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Our companies",
+      "Contact us"
      ]
     },
     "surfaces": {
@@ -410,15 +414,20 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 5,
+     "roundedBoxes": 6,
      "boxRadius": 14,
      "squareMedia": 5,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 999,
      "textShadow": 0,
      "cardRows": []
     },
-    "heroMedia": [],
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.15
+     }
+    ],
     "nav": {
      "links": 4,
      "fixed": false,
@@ -438,19 +447,19 @@
    "load": "load",
    "screens": 9,
    "filled": [
-    0.74,
-    0.89,
-    0.65,
+    0.83,
     0.68,
-    0.52,
-    0.86,
-    0.82,
-    0.9,
+    0.62,
+    0.56,
+    0.56,
+    0.91,
+    0.83,
+    0.89,
     0.85
    ],
    "motion": {
-    "elements": 23,
-    "css": 3,
+    "elements": 27,
+    "css": 7,
     "transitions": 20,
     "scripted": 0,
     "videos": 0,
@@ -462,22 +471,23 @@
      "h": 1024
     },
     "page": {
-     "height": 8556,
-     "screens": 8.4,
-     "words": 448,
-     "img": 7,
+     "height": 8710,
+     "screens": 8.5,
+     "words": 469,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 6,
+     "svg": 5,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 5,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "prefab-cottages.webp",
       "outdoor-furniture.webp",
       "barefoot-dining.webp",
       "barefoot-resort.webp",
@@ -490,28 +500,28 @@
      "emoji": []
     },
     "hero": {
-     "text": "CRAFTED COMFORT",
+     "text": "Crafted Comfort",
      "words": 2,
      "chars": 15,
      "lines": 2,
      "size": 52,
      "vw": 6.8,
      "font": "Archivo",
-     "weight": 520,
-     "tracking": 0.16,
-     "leading": 1.08,
-     "upper": true,
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
      "italic": false,
      "mono": false,
-     "align": "center",
+     "align": "left",
      "position": "center",
-     "widthRatio": 0.42,
-     "top": 328,
+     "widthRatio": 0.92,
+     "top": 104,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "CRAFTED COMFORT",
+     "text": "Crafted Comfort",
      "words": 2,
      "lines": 2,
      "size": 52,
@@ -519,23 +529,23 @@
     },
     "headings": [
      {
-      "text": "CRAFTED COMFORT",
+      "text": "Crafted Comfort",
       "words": 2,
       "chars": 15,
       "lines": 2,
       "size": 52,
       "vw": 6.8,
       "font": "Archivo",
-      "weight": 520,
-      "tracking": 0.16,
-      "leading": 1.08,
-      "upper": true,
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
       "italic": false,
       "mono": false,
-      "align": "center",
+      "align": "left",
       "position": "center",
-      "widthRatio": 0.42,
-      "top": 328,
+      "widthRatio": 0.92,
+      "top": 104,
       "tag": "h1",
       "kind": "heading"
      },
@@ -556,7 +566,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 856,
+      "top": 1010,
       "tag": "h2",
       "kind": "heading"
      },
@@ -577,7 +587,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2491,
+      "top": 2645,
       "tag": "h2",
       "kind": "heading"
      },
@@ -598,7 +608,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3014,
+      "top": 3168,
       "tag": "h2",
       "kind": "heading"
      },
@@ -619,7 +629,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.56,
-      "top": 4774,
+      "top": 4928,
       "tag": "h3",
       "kind": "heading"
      },
@@ -640,7 +650,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 5034,
+      "top": 5188,
       "tag": "p",
       "kind": "statement"
      },
@@ -661,7 +671,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.97,
-      "top": 5382,
+      "top": 5536,
       "tag": "h2",
       "kind": "heading"
      },
@@ -682,7 +692,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6556,
+      "top": 6710,
       "tag": "h2",
       "kind": "heading"
      }
@@ -692,7 +702,7 @@
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 1,
+     "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
     },
@@ -739,8 +749,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
-     "centerShare": 0.02,
+     "upperShare": 0,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -765,7 +775,7 @@
       },
       {
        "color": "#e3e7e0",
-       "top": 1607,
+       "top": 1761,
        "hsl": {
         "h": 94,
         "s": 0.13,
@@ -774,7 +784,7 @@
       },
       {
        "color": "#1c1715",
-       "top": 6524,
+       "top": 6678,
        "hsl": {
         "h": 17,
         "s": 0.14,
@@ -785,19 +795,19 @@
      "textColors": [
       {
        "color": "#5a524e",
-       "share": 0.25
+       "share": 0.24
       },
       {
        "color": "#1c1715",
-       "share": 0.21
+       "share": 0.2
       },
       {
        "color": "#d3e4da",
-       "share": 0.15
+       "share": 0.18
       },
       {
        "color": "#f1f3ee",
-       "share": 0.11
+       "share": 0.1
       },
       {
        "color": "#d9d1cd",
@@ -805,27 +815,29 @@
       }
      ],
      "button": {
-      "bg": "#1c1715",
+      "bg": "#ffffff",
       "hsl": {
-       "h": 17,
-       "s": 0.14,
-       "l": 0.1
+       "h": 0,
+       "s": 0,
+       "l": 1
       },
-      "fg": "#ffffff"
+      "fg": "#1f4d3a"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 1,
+     "count": 9,
+     "inHero": 3,
      "radius": 0,
-     "height": 60,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Our companies",
+      "Contact us"
      ]
     },
     "surfaces": {
@@ -841,15 +853,20 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 5,
+     "roundedBoxes": 6,
      "boxRadius": 14,
      "squareMedia": 5,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 999,
      "textShadow": 0,
      "cardRows": []
     },
-    "heroMedia": [],
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.16
+     }
+    ],
     "nav": {
      "links": 4,
      "fixed": false,
@@ -869,20 +886,20 @@
    "load": "load",
    "screens": 10,
    "filled": [
-    0.83,
-    0.74,
-    0.51,
-    0.56,
-    0.42,
-    0.79,
-    0.79,
-    0.79,
-    0.96,
+    0.98,
+    0.66,
+    0.69,
+    0.6,
+    0.65,
+    0.65,
+    0.73,
+    0.92,
+    0.88,
     0.96
    ],
    "motion": {
-    "elements": 23,
-    "css": 3,
+    "elements": 27,
+    "css": 7,
     "transitions": 20,
     "scripted": 0,
     "videos": 0,
@@ -894,22 +911,23 @@
      "h": 844
     },
     "page": {
-     "height": 7712,
-     "screens": 9.1,
-     "words": 448,
-     "img": 7,
+     "height": 7920,
+     "screens": 9.4,
+     "words": 469,
+     "img": 8,
      "video": 0,
      "canvas": 0,
-     "svg": 6,
+     "svg": 5,
      "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 5,
+     "realPictures": 6,
      "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
+      "prefab-cottages.webp",
       "outdoor-furniture.webp",
       "barefoot-dining.webp",
       "barefoot-resort.webp",
@@ -922,28 +940,28 @@
      "emoji": []
     },
     "hero": {
-     "text": "CRAFTED COMFORT",
+     "text": "Crafted Comfort",
      "words": 2,
      "chars": 15,
      "lines": 2,
      "size": 52,
      "vw": 13.3,
      "font": "Archivo",
-     "weight": 520,
-     "tracking": 0.16,
-     "leading": 1.08,
-     "upper": true,
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.98,
+     "upper": false,
      "italic": false,
      "mono": false,
-     "align": "center",
+     "align": "left",
      "position": "center",
-     "widthRatio": 0.82,
-     "top": 294,
+     "widthRatio": 0.92,
+     "top": 104,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
-     "text": "CRAFTED COMFORT",
+     "text": "Crafted Comfort",
      "words": 2,
      "lines": 2,
      "size": 52,
@@ -951,23 +969,23 @@
     },
     "headings": [
      {
-      "text": "CRAFTED COMFORT",
+      "text": "Crafted Comfort",
       "words": 2,
       "chars": 15,
       "lines": 2,
       "size": 52,
       "vw": 13.3,
       "font": "Archivo",
-      "weight": 520,
-      "tracking": 0.16,
-      "leading": 1.08,
-      "upper": true,
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.98,
+      "upper": false,
       "italic": false,
       "mono": false,
-      "align": "center",
+      "align": "left",
       "position": "center",
-      "widthRatio": 0.82,
-      "top": 294,
+      "widthRatio": 0.92,
+      "top": 104,
       "tag": "h1",
       "kind": "heading"
      },
@@ -988,7 +1006,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 788,
+      "top": 996,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1009,7 +1027,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2083,
+      "top": 2291,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1030,7 +1048,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2638,
+      "top": 2846,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1051,7 +1069,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3862,
+      "top": 4070,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1072,7 +1090,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 4270,
+      "top": 4477,
       "tag": "p",
       "kind": "statement"
      },
@@ -1093,7 +1111,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.95,
-      "top": 4671,
+      "top": 4879,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1114,7 +1132,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 5636,
+      "top": 5844,
       "tag": "h2",
       "kind": "heading"
      }
@@ -1124,7 +1142,7 @@
      "maxLines": 2,
      "over2Lines": 0,
      "statements": 1,
-     "centered": 1,
+     "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
     },
@@ -1171,8 +1189,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.01,
-     "centerShare": 0.02,
+     "upperShare": 0,
+     "centerShare": 0,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1196,8 +1214,17 @@
        }
       },
       {
+       "color": "#163a2b",
+       "top": 444,
+       "hsl": {
+        "h": 155,
+        "s": 0.45,
+        "l": 0.16
+       }
+      },
+      {
        "color": "#e3e7e0",
-       "top": 1525,
+       "top": 1733,
        "hsl": {
         "h": 94,
         "s": 0.13,
@@ -1206,7 +1233,7 @@
       },
       {
        "color": "#1c1715",
-       "top": 5604,
+       "top": 5812,
        "hsl": {
         "h": 17,
         "s": 0.14,
@@ -1217,19 +1244,19 @@
      "textColors": [
       {
        "color": "#5a524e",
-       "share": 0.25
+       "share": 0.24
       },
       {
        "color": "#1c1715",
-       "share": 0.21
+       "share": 0.2
       },
       {
        "color": "#d3e4da",
-       "share": 0.15
+       "share": 0.18
       },
       {
        "color": "#f1f3ee",
-       "share": 0.11
+       "share": 0.1
       },
       {
        "color": "#d9d1cd",
@@ -1237,27 +1264,29 @@
       }
      ],
      "button": {
-      "bg": "#1c1715",
+      "bg": "#ffffff",
       "hsl": {
-       "h": 17,
-       "s": 0.14,
-       "l": 0.1
+       "h": 0,
+       "s": 0,
+       "l": 1
       },
-      "fg": "#ffffff"
+      "fg": "#1f4d3a"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 7,
-     "inHero": 1,
+     "count": 9,
+     "inHero": 3,
      "radius": 0,
-     "height": 60,
+     "height": 52,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content"
+      "Skip to content",
+      "Our companies",
+      "Contact us"
      ]
     },
     "surfaces": {
@@ -1273,15 +1302,20 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 5,
+     "roundedBoxes": 6,
      "boxRadius": 14,
      "squareMedia": 4,
-     "roundedMedia": 0,
-     "mediaRadius": 0,
+     "roundedMedia": 1,
+     "mediaRadius": 999,
      "textShadow": 0,
      "cardRows": []
     },
-    "heroMedia": [],
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.39
+     }
+    ],
     "nav": {
      "links": 4,
      "fixed": false,
