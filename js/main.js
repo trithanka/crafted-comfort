@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveals();
   initLoops();
   initYear();
-  initHero();
+  initTileVideo();
 });
 
 /* --------------------------------------------------------------------------
@@ -226,56 +226,12 @@ function initYear() {
   });
 }
 
-// Home hero: the background follows the company in focus, and steps through them on its own.
-function initHero() {
-  const root = document.querySelector('[data-hero]');
-  if (!root) return;
-  const bgs = root.querySelectorAll('[data-hero-bg]');
-  const items = root.querySelectorAll('[data-hero-item]');
-  const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const STEP = 5000;
-  let current = 0;
-  let timer;
-
-  const show = n => {
-    current = n;
-    bgs.forEach(el => {
-      const on = +el.dataset.heroBg === n;
-      el.classList.toggle('is-on', on);
-      if (el.tagName === 'VIDEO') on ? el.play().catch(() => {}) : el.pause();
-    });
-    items.forEach(a => {
-      const on = +a.dataset.heroItem === n;
-      a.classList.remove('is-on');
-      if (on) {
-        void a.offsetWidth; // restart the timer bar
-        a.classList.add('is-on');
-      }
-    });
-  };
-
-  const next = () => show(current >= items.length ? 1 : current + 1);
-  const play = () => {
-    if (still) return;
-    clearInterval(timer);
-    timer = setInterval(next, STEP);
-    root.classList.remove('is-paused');
-  };
-  const pause = () => {
-    clearInterval(timer);
-    root.classList.add('is-paused');
-  };
-
-  items.forEach(a => {
-    const n = +a.dataset.heroItem;
-    a.addEventListener('mouseenter', () => { show(n); pause(); });
-    a.addEventListener('focus', () => { show(n); pause(); });
-  });
-  root.querySelector('.hero-x-list').addEventListener('mouseleave', play);
-  root.querySelector('.hero-x-list').addEventListener('focusout', e => {
-    if (!e.currentTarget.contains(e.relatedTarget)) play();
-  });
-
-  root.style.setProperty('--hero-step', STEP / 1000 + 's');
-  if (!still) setTimeout(() => { show(1); play(); }, 2500);
+// Green Fog tile: play the tea-garden clip while the tile is on screen, unless motion is reduced.
+function initTileVideo() {
+  const v = document.querySelector('[data-tile-video]');
+  if (!v || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  new IntersectionObserver(([e]) => {
+    if (e.isIntersecting) v.play().catch(() => {});
+    else v.pause();
+  }, { rootMargin: '100px 0px' }).observe(v);
 }

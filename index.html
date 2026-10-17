@@ -17,9 +17,9 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header site-header--left site-header--over on-accent wrap">
+  <header class="site-header site-header--left wrap">
     <a class="wordmark" href="index.html" aria-label="Crafted Comfort home">
-      <img src="img/logo-white.png" alt="Crafted Comfort" width="160" height="122">
+      <img src="img/logo-ink.png" alt="Crafted Comfort" width="160" height="122">
     </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
@@ -31,95 +31,39 @@
   </header>
 
   <main id="main">
-  <section class="hero-x on-accent" aria-labelledby="hero-title" data-hero>
-    <div class="hero-x-bg" aria-hidden="true">
-        <img class="is-on" src="img/prefab-cottages.webp" alt="" width="1376" height="768" fetchpriority="high" decoding="async" data-hero-bg="0">
-        <img class="" src="img/outdoor-furniture.webp" alt="" width="1376" height="768" loading="lazy" decoding="async" data-hero-bg="1">
-        <img class="" src="img/barefoot-resort.webp" alt="" width="1376" height="768" loading="lazy" decoding="async" data-hero-bg="2">
-        <img class="" src="img/crafted-comfort-bnb.webp" alt="" width="1376" height="768" loading="lazy" decoding="async" data-hero-bg="3">
-        <img class="" src="img/nuts-and-berries.webp" alt="" width="1376" height="768" loading="lazy" decoding="async" data-hero-bg="4">
-        <video src="video/tea-garden.mp4" poster="img/tea-garden-poster.webp" muted loop playsinline preload="none" data-hero-bg="5"></video>
-    </div>
-    <div class="hero-x-body wrap">
-      <div class="hero-x-copy">
-        <h1 class="hero-x-title rise" id="hero-title">Crafted<br>Comfort</h1>
-        <p class="lead rise" style="--i:1">Northeast India partner of Loom Crafts, and home to a resort, serviced stays, a bakery and a tea lounge, all in Guwahati.</p>
-        <div class="hero-actions rise" style="--i:2">
-          <a class="btn btn-white" href="#companies">See our companies</a>
-          <a class="btn btn-line" href="#contact">Contact us</a>
+  <section id="companies" class="bento wrap" aria-labelledby="hero-title">
+    <div class="bento-grid">
+      <div class="tile tile-intro on-accent rise">
+        <h1 class="display" id="hero-title">Crafted Comfort</h1>
+        <p class="lead">Northeast India partner of Loom Crafts, and home to a resort, serviced stays, a bakery and a tea lounge, all from Guwahati.</p>
+        <div class="hero-actions">
+          <a class="btn btn-white" href="#contact">Contact us</a>
+          <a class="btn btn-line" href="#furniture">See the furniture</a>
         </div>
       </div>
-      <ol class="hero-x-list rise" style="--i:3" aria-label="Our companies">
-        <li><a class="hero-co" href="loom-crafts.html" data-hero-item="1"><span class="hero-co-name">Loom Crafts</span><span class="hero-co-what">Outdoor furniture and prefab cottages</span><span class="hero-co-bar" aria-hidden="true"></span></a></li>
-        <li><a class="hero-co" href="barefoot.html" data-hero-item="2"><span class="hero-co-name">Barefoot in the Garden</span><span class="hero-co-what">Resort, dining and kitchen</span><span class="hero-co-bar" aria-hidden="true"></span></a></li>
-        <li><a class="hero-co" href="bnb.html" data-hero-item="3"><span class="hero-co-name">Crafted Comfort BnB</span><span class="hero-co-what">Serviced stays</span><span class="hero-co-bar" aria-hidden="true"></span></a></li>
-        <li><a class="hero-co" href="nuts-and-berries.html" data-hero-item="4"><span class="hero-co-name">Nuts and Berries</span><span class="hero-co-what">Bakery and café</span><span class="hero-co-bar" aria-hidden="true"></span></a></li>
-        <li><a class="hero-co" href="green-fog.html" data-hero-item="5"><span class="hero-co-name">Green Fog</span><span class="hero-co-what">Tea lounge</span><span class="hero-co-bar" aria-hidden="true"></span></a></li>
-      </ol>
+      <a class="tile tile-loom reveal" style="--i:1" href="loom-crafts.html">
+        <img src="img/outdoor-furniture.webp" alt="Loom Crafts sofa set and lounge chairs on a terrace" width="1376" height="768" loading="lazy" decoding="async">
+        <span class="tile-label"><span class="tile-name">Loom Crafts</span><span class="tile-what">Outdoor furniture and prefab cottages</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="tile tile-barefoot reveal" style="--i:2" href="barefoot.html">
+        <img src="img/barefoot-resort.webp" alt="A cottage at Barefoot in the Garden, Sonapur" width="1376" height="768" loading="lazy" decoding="async">
+        <span class="tile-label"><span class="tile-name">Barefoot in the Garden</span><span class="tile-what">Resort, dining and kitchen</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="tile tile-bnb reveal" style="--i:3" href="bnb.html">
+        <img src="img/crafted-comfort-bnb.webp" alt="A Crafted Comfort BnB suite with a hill view" width="1376" height="768" loading="lazy" decoding="async">
+        <span class="tile-label"><span class="tile-name">Crafted Comfort BnB</span><span class="tile-what">Serviced stays</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="tile tile-nuts reveal" style="--i:4" href="nuts-and-berries.html">
+        <img src="img/nuts-and-berries.webp" alt="The counter at Nuts and Berries" width="1376" height="768" loading="lazy" decoding="async">
+        <span class="tile-label"><span class="tile-name">Nuts and Berries</span><span class="tile-what">Bakery and café</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
+      <a class="tile tile-fog reveal" style="--i:5" href="green-fog.html">
+        <video src="video/tea-garden.mp4" poster="img/tea-garden-poster.webp" muted loop playsinline preload="none" data-tile-video aria-hidden="true"></video>
+        <span class="tile-label"><span class="tile-name">Green Fog</span><span class="tile-what">Tea lounge</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+      </a>
     </div>
   </section>
 
-  <!-- All companies -->
-  <section id="companies" class="section companies-section wrap" aria-labelledby="companies-title">
-    <div class="section-head reveal">
-      <h2 class="heading" id="companies-title">Our companies</h2>
-      <p class="lead muted">Five businesses, one team in Guwahati.</p>
-    </div>
-    <ul class="companies">
-      <li class="company reveal" style="--i:0">
-        <a class="company-link" href="loom-crafts.html">
-          <div class="company-media"><img src="img/outdoor-furniture.webp" alt="Loom Crafts sofa set and lounge chairs on a terrace" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="company-text">
-            <h3 class="name">Loom Crafts</h3>
-            <p class="company-what">Outdoor furniture and prefab cottages</p>
-            <span class="company-cta">Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </li>
-      <li class="company reveal" style="--i:1">
-        <a class="company-link" href="barefoot.html">
-          <div class="company-media"><img src="img/barefoot-resort.webp" alt="A cottage at Barefoot in the Garden, Sonapur" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="company-text">
-            <h3 class="name">Barefoot in the Garden</h3>
-            <p class="company-what">Resort, dining and kitchen</p>
-            <span class="company-cta">Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </li>
-      <li class="company reveal" style="--i:2">
-        <a class="company-link" href="bnb.html">
-          <div class="company-media"><img src="img/crafted-comfort-bnb.webp" alt="A Crafted Comfort BnB suite with a hill view" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="company-text">
-            <h3 class="name">Crafted Comfort BnB</h3>
-            <p class="company-what">Serviced stays</p>
-            <span class="company-cta">Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </li>
-      <li class="company reveal" style="--i:3">
-        <a class="company-link" href="nuts-and-berries.html">
-          <div class="company-media"><img src="img/nuts-and-berries.webp" alt="The counter at Nuts and Berries" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="company-text">
-            <h3 class="name">Nuts and Berries</h3>
-            <p class="company-what">Bakery and café</p>
-            <span class="company-cta">Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </li>
-      <li class="company reveal" style="--i:4">
-        <a class="company-link" href="green-fog.html">
-          <div class="company-media"><img src="img/green-fog.webp" alt="The Green Fog tea lounge" width="1376" height="768" loading="lazy" decoding="async"></div>
-          <div class="company-text">
-            <h3 class="name">Green Fog</h3>
-            <p class="company-what">Tea lounge</p>
-            <span class="company-cta">Visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- What we sell -->
   <section id="furniture" class="plate" aria-label="What we sell" data-tabs>
     <div class="plate-media">
       <div class="frame">

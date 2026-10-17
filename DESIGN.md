@@ -125,7 +125,7 @@ Archivo (variable, self-hosted in `fonts/`). Display 820 at `clamp(3.25rem, 6.6v
 
 ## Layout
 
-One pair of side margins, `clamp(16px, 4vw, 56px)`. Sections separated by `clamp(96px, 12vw, 200px)` or a change of ground. Home order: full-screen dark hero (photograph under a flat 50% ink veil, the name at display size in white, one about sentence, two buttons, and the five companies in a strip along its foot; the background follows the company in focus and steps through them every five seconds, with a timer bar; Green Fog shows the tea-garden clip), all companies, product lines, try-before-you-buy with the planner, partner panel, contact. Below 860px every split stacks.
+One pair of side margins, `clamp(16px, 4vw, 56px)`. Sections separated by `clamp(96px, 12vw, 200px)` or a change of ground. Home order: one bento grid (a green intro tile with the name, one sentence and two buttons, then a tile for each of the five companies with a name plate on its photograph; Green Fog plays the tea-garden clip),  product lines, try-before-you-buy with the planner, partner panel, contact. Below 860px every split stacks.
 
 ## Elevation & Depth
 

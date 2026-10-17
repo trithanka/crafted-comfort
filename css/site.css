@@ -1613,83 +1613,11 @@ button {
 /* --------------------------------------------------------------------------
    Home hero: a short about, with one picture
    -------------------------------------------------------------------------- */
-/* Header laid over the dark hero on the home page. */
-.site-header--over {
-  position: absolute;
-  inset: 0 0 auto;
-  color: var(--on-accent);
-}
-
-/* Immersive hero: full-screen photograph that changes with the company in focus. */
-.hero-x {
-  position: relative;
-  display: flex;
-  min-height: max(680px, 100svh);
-  overflow: hidden;
-  background: var(--ink);
-  color: var(--on-accent);
-}
-
-.hero-x-bg,
-.hero-x-bg img,
-.hero-x-bg video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-x-bg img,
-.hero-x-bg video {
-  object-fit: cover;
-  opacity: 0;
-  transform: scale(1.06);
-  transition: opacity 0.9s ease, transform 6s linear;
-}
-
-.hero-x-bg .is-on {
-  opacity: 1;
-  transform: scale(1);
-}
-
-/* Flat ink veil so white type holds on any photograph. */
-.hero-x-bg::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 17, 15, 0.5);
-}
-
-.hero-x-body {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: end;
-  gap: clamp(40px, 5vw, 72px);
-  width: 100%;
-  padding-top: 140px;
-  padding-bottom: clamp(24px, 3vw, 40px);
-}
-
-.hero-x-copy .lead {
-  max-width: 40ch;
-  margin-top: 24px;
-  color: var(--on-accent);
-}
-
-.hero-x-title {
-  font-size: var(--t-display);
-  font-weight: 820;
-  line-height: 0.92;
-  letter-spacing: -0.035em;
-  color: var(--on-accent);
-}
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .btn-line {
@@ -1704,206 +1632,167 @@ button {
   color: var(--ink);
 }
 
-/* The five companies along the foot of the hero. */
-.hero-x-list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2px;
-  list-style: none;
-}
-
-.hero-co {
-  position: relative;
-  display: grid;
-  align-content: start;
-  gap: 4px;
-  height: 100%;
-  padding: 18px 18px 22px;
-  background: rgba(20, 17, 15, 0.55);
-  color: var(--on-accent);
-  text-decoration: none;
-  transition: background-color 0.25s ease;
-}
-
-.hero-co:hover,
-.hero-co:focus-visible,
-.hero-co.is-on {
-  background: var(--accent);
-}
-
-.hero-co-name {
-  font-size: var(--t-body);
-  font-weight: 760;
-  line-height: 1.2;
-}
-
-.hero-co-what {
-  font-size: var(--t-small);
-  color: var(--on-accent-soft);
-}
-
-/* Timer bar: fills while a company is on show. */
-.hero-co-bar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 3px;
-  background: var(--on-accent);
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.hero-co.is-on .hero-co-bar {
-  animation: hero-bar var(--hero-step, 5s) linear forwards;
-}
-
-[data-hero].is-paused .hero-co.is-on .hero-co-bar {
-  animation-play-state: paused;
-}
-
-@keyframes hero-bar {
-  to {
-    transform: scaleX(1);
-  }
-}
-
-@media (max-width: 960px) {
-  .hero-x-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-x-list li:last-child {
-    grid-column: span 2;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-x-body {
-    padding-top: 112px;
-  }
-
-  .hero-co {
-    padding: 14px;
-  }
-
-  .hero-co-what {
-    display: none;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-x-bg img,
-  .hero-x-bg video {
-    transform: none;
-    transition: opacity 0.3s linear;
-  }
-
-  .hero-co-bar {
-    display: none;
-  }
-}
-
 /* --------------------------------------------------------------------------
-   Companies
+   Bento: the intro and all five companies as one grid of tiles.
    -------------------------------------------------------------------------- */
-.companies-section {
-  padding-top: clamp(64px, 7vw, 112px);
-  padding-bottom: clamp(64px, 7vw, 112px);
-  background: var(--accent-tint);
+.bento {
+  padding-block: 8px clamp(56px, 7vw, 112px);
 }
 
-.companies {
+.bento-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: clamp(220px, 21vw, 300px);
+  gap: 14px;
 }
 
-.company-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: var(--ground);
-  color: inherit;
-  text-decoration: none;
-  transition: background-color 0.18s var(--ease-out);
-}
-
-.company-link:hover {
-  background: #fff;
-}
-
-.company-media {
+.tile {
+  position: relative;
+  display: block;
   overflow: hidden;
-  aspect-ratio: 4 / 3;
+  border-radius: 22px;
+  background: var(--tone);
+  color: var(--ink);
+  text-decoration: none;
 }
 
-.company-media img {
+.tile img,
+.tile video {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s var(--ease-out);
+  transition: transform 0.7s var(--ease-out);
 }
 
-.company-link:hover .company-media img {
-  transform: scale(1.04);
+.tile:hover img,
+.tile:hover video,
+.tile:focus-visible img,
+.tile:focus-visible video {
+  transform: scale(1.06);
 }
 
-.company-text {
+.tile-intro {
+  grid-column: 1 / 6;
+  grid-row: 1 / 3;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 14px 16px 16px;
+  justify-content: space-between;
+  padding: clamp(28px, 3vw, 44px);
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
-.company-text .name {
+.tile-intro .display {
+  font-size: clamp(3rem, 5.2vw, 5.5rem);
+  color: var(--on-accent);
+}
+
+.tile-intro .lead {
+  max-width: 34ch;
+  color: var(--on-accent-soft);
+}
+
+.tile-intro .hero-actions {
+  margin-top: 0;
+}
+
+.tile-loom { grid-column: 6 / 10; grid-row: 1 / 3; }
+.tile-barefoot { grid-column: 10 / 13; grid-row: 1; }
+.tile-bnb { grid-column: 10 / 13; grid-row: 2; }
+.tile-nuts { grid-column: 1 / 5; grid-row: 3; }
+.tile-fog { grid-column: 5 / 13; grid-row: 3; }
+
+/* Name plate sits on the photograph. */
+.tile-label {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2px 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--ground);
+  transition: background-color 0.2s ease;
+}
+
+.tile:hover .tile-label,
+.tile:focus-visible .tile-label {
+  background: #fff;
+}
+
+.tile-name {
   font-size: var(--t-body);
   font-weight: 760;
   line-height: 1.2;
 }
 
-.company-what {
-  margin-top: 4px;
+.tile-what {
+  grid-column: 1;
   color: var(--muted);
   font-size: var(--t-small);
 }
 
-.company-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  padding-top: 12px;
-  font-size: var(--t-small);
-  font-weight: 700;
-  color: var(--accent);
+.tile-go {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  transition: transform 0.25s var(--ease-out);
 }
 
-.company-cta svg {
+.tile-go svg {
   width: 16px;
   height: 16px;
-  transition: transform 0.18s var(--ease-out);
 }
 
-.company-link:hover .company-cta svg {
-  transform: translateX(4px);
+.tile:hover .tile-go,
+.tile:focus-visible .tile-go {
+  transform: translateX(4px) rotate(-45deg);
+}
+
+.tile:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
 }
 
 @media (max-width: 960px) {
-  .companies {
-    grid-template-columns: repeat(3, 1fr);
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
   }
+
+  .tile:not(.tile-intro) { min-height: 260px; }
+
+  .tile-intro { grid-column: 1 / 3; grid-row: auto; min-height: 420px; gap: 32px; }
+  .tile-loom { grid-column: 1 / 3; grid-row: auto; }
+  .tile-barefoot,
+  .tile-bnb,
+  .tile-nuts { grid-column: auto; grid-row: auto; }
+  .tile-fog { grid-column: 1 / 3; grid-row: auto; }
 }
 
-@media (max-width: 640px) {
-  .companies {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 560px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
   }
+
+  .tile { grid-column: 1 !important; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .company-media img,
-  .company-cta svg {
+  .tile img,
+  .tile video,
+  .tile-go {
     transition: none;
   }
 }
