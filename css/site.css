@@ -24,11 +24,11 @@
    Tokens
    -------------------------------------------------------------------------- */
 :root {
-  --ground: #f8eeea;
-  --tone: #f0dfd7;
-  --accent-tint: #ead2c6;
+  --ground: #f0dcd0;
+  --tone: #e6c9ba;
+  --accent-tint: #dfbba9;
   --ink: #2a1710;
-  --muted: #6a4a3f;
+  --muted: #62423a;
   --accent: #9a3f1f;
   --accent-deep: #7a2f14;
   --on-accent: #ffffff;
@@ -272,7 +272,7 @@ button {
 }
 
 .btn-tone:hover {
-  background: #e8d2c7;
+  background: #dcb9a8;
 }
 
 
@@ -636,7 +636,7 @@ button {
 }
 
 .chip:hover span.chip-face {
-  background: #e8d2c7;
+  background: #dcb9a8;
 }
 
 .chip input:checked + span.chip-face {
@@ -1592,7 +1592,7 @@ button {
 }
 
 .loop-toggle:hover {
-  background: #e8d2c7;
+  background: #dcb9a8;
 }
 
 /* --------------------------------------------------------------------------
