@@ -2047,11 +2047,3 @@ button {
   --z: 90px;
   translate: 0 0 var(--z);
 }
-
-/* Magnetic hero buttons: they lean toward the pointer. */
-@media (prefers-reduced-motion: no-preference) {
-  .mast .btn {
-    translate: var(--bx, 0px) var(--by, 0px);
-    transition: translate 0.25s ease-out, background-color 0.18s ease, transform 0.18s var(--ease-out);
-  }
-}

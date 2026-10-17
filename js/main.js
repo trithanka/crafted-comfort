@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initYear();
   initScrollFx();
   initHeroTilt();
-  initMagnets();
   initCountUp();
 });
 
@@ -271,23 +270,6 @@ function initHeroTilt() {
     media.classList.add('is-resting');
     media.style.setProperty('--tx', 0);
     media.style.setProperty('--ty', 0);
-  });
-}
-
-// Hero buttons lean toward the pointer while it is near them.
-function initMagnets() {
-  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  document.querySelectorAll('.mast .btn').forEach(btn => {
-    btn.addEventListener('pointermove', e => {
-      const r = btn.getBoundingClientRect();
-      btn.style.setProperty('--bx', ((e.clientX - r.left - r.width / 2) * 0.22).toFixed(1) + 'px');
-      btn.style.setProperty('--by', ((e.clientY - r.top - r.height / 2) * 0.35).toFixed(1) + 'px');
-    });
-    btn.addEventListener('pointerleave', () => {
-      btn.style.setProperty('--bx', '0px');
-      btn.style.setProperty('--by', '0px');
-    });
   });
 }
 
