@@ -1,16 +1,16 @@
 ---
 name: Crafted Comfort
-description: Soft sage ground, near-black ink, deep green accent. One typeface, square corners, flat surfaces.
+description: Soft stone ground, near-black ink, terracotta accent. One typeface, square corners, flat surfaces.
 colors:
-  ground: "#f1f3ee"
-  tone: "#e3e7e0"
-  accent-tint: "#d5e2d8"
+  ground: "#f3f2f1"
+  tone: "#e7e5e3"
+  accent-tint: "#efdcd0"
   ink: "#1c1715"
   muted: "#5a524e"
-  accent: "#1f4d3a"
-  accent-deep: "#163a2b"
+  accent: "#9a3f1f"
+  accent-deep: "#7a2f14"
   on-accent: "#ffffff"
-  on-accent-soft: "#d3e4da"
+  on-accent-soft: "#eed8cc"
   ink-raised: "#2e2725"
 typography:
   display:
@@ -93,25 +93,25 @@ components:
 
 **Creative North Star: "The Company Directory"**
 
-The home page does two jobs for the client: say in a few lines who Crafted Comfort is, then show every company it runs. Everything else supports those two. The look is plain and confident: soft sage ground, near-black type set large, one deep green for actions and fields, real photographs of each business.
+The home page does two jobs for the client: say in a few lines who Crafted Comfort is, then show every company it runs. Everything else supports those two. The look is plain and confident: soft stone ground, near-black type set large, one terracotta for actions and fields, real photographs of each business.
 
 **Key Characteristics:**
 - One typeface, Archivo, in five sizes.
-- Three colours: sage ground, near-black ink, deep green (with a light green tint band).
+- Three colours: sage ground, near-black ink, terracotta (with a light green tint band).
 - Square corners, no shadows, no gradients, no decorative motifs.
 - Every company gets the same small card: photo, name, what it is, a link.
 
 ## Colors
 
 ### Primary
-- **Deep green** (`#1f4d3a`): buttons, links, the product-lines field, the about panel and the planner result. White on it is 10:1.
-- **Deeper green** (`#163a2b`): hover and pressed state.
+- **Terracotta** (`#9a3f1f`): buttons, links, the product-lines field, the about panel and the planner result. White on it is 10:1.
+- **Deeper terracotta** (`#7a2f14`): hover and pressed state.
 
 ### Tint
-- **Green tint** (`#d5e2d8`): the full-width band behind the companies cards.
+- **Clay tint** (`#efdcd0`): the full-width band behind the companies cards.
 
 ### Neutral
-- **Ground** (`#f1f3ee`, soft sage-grey so the page never reads as bare white), **Tone** (`#e3e7e0`) for alternate sections and secondary buttons, **Ink** (`#1c1715`) for text, the contact form and the footer, **Muted** (`#5a524e`) for secondary text, **Raised ink** (`#2e2725`) for fields on the ink form, **Soft green text** (`#d3e4da`) for secondary text on green.
+- **Ground** (`#f3f2f1`, soft stone so the page never reads as bare white), **Tone** (`#e7e5e3`) for alternate sections and secondary buttons, **Ink** (`#1c1715`) for text, the contact form and the footer, **Muted** (`#5a524e`) for secondary text, **Raised ink** (`#2e2725`) for fields on the ink form, **Soft green text** (`#eed8cc`) for secondary text on green.
 
 ### Named Rules
 **The Three Colour Rule.** Ground, ink, green. Nothing else.

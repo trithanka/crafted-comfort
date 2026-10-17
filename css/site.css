@@ -24,15 +24,15 @@
    Tokens
    -------------------------------------------------------------------------- */
 :root {
-  --ground: #f1f3ee;
-  --tone: #e3e7e0;
-  --accent-tint: #d5e2d8;
+  --ground: #f3f2f1;
+  --tone: #e7e5e3;
+  --accent-tint: #efdcd0;
   --ink: #1c1715;
   --muted: #5a524e;
-  --accent: #1f4d3a;
-  --accent-deep: #163a2b;
+  --accent: #9a3f1f;
+  --accent-deep: #7a2f14;
   --on-accent: #ffffff;
-  --on-accent-soft: #d3e4da;
+  --on-accent-soft: #eed8cc;
   --ink-raised: #2e2725;
 
   --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
@@ -272,7 +272,7 @@ button {
 }
 
 .btn-tone:hover {
-  background: #e3e1dc;
+  background: #dcd8d5;
 }
 
 
@@ -636,7 +636,7 @@ button {
 }
 
 .chip:hover span.chip-face {
-  background: #e3e1dc;
+  background: #dcd8d5;
 }
 
 .chip input:checked + span.chip-face {
@@ -1592,7 +1592,7 @@ button {
 }
 
 .loop-toggle:hover {
-  background: #e3e1dc;
+  background: #dcd8d5;
 }
 
 /* --------------------------------------------------------------------------

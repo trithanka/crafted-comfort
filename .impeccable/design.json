@@ -198,7 +198,7 @@
       "refersTo": "button-primary",
       "description": "The main action; red, stepped corners.",
       "html": "<button class=\"ds-btn\">Plan a trial visit</button>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#1f4d3a;color:#fff}.ds-btn:hover{background:#163a2b}.ds-btn:active{transform:translateY(1px) scale(.98)}.ds-btn:focus-visible{outline:3px solid #fff;outline-offset:-8px}"
+      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#9a3f1f;color:#fff}.ds-btn:hover{background:#7a2f14}.ds-btn:active{transform:translateY(1px) scale(.98)}.ds-btn:focus-visible{outline:3px solid #fff;outline-offset:-8px}"
     },
     {
       "name": "Ink Button",
@@ -213,8 +213,8 @@
       "kind": "button",
       "refersTo": "button-white",
       "description": "The action on a red field.",
-      "html": "<div style=\"background:#1f4d3a;padding:24px\"><button class=\"ds-btn-white\">Request a consultation</button></div>",
-      "css": ".ds-btn-white{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#fff;color:#1f4d3a}.ds-btn-white:hover{background:#d3e4da}.ds-btn-white:focus-visible{outline:3px solid #1f4d3a;outline-offset:-8px}"
+      "html": "<div style=\"background:#9a3f1f;padding:24px\"><button class=\"ds-btn-white\">Request a consultation</button></div>",
+      "css": ".ds-btn-white{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#fff;color:#9a3f1f}.ds-btn-white:hover{background:#eed8cc}.ds-btn-white:focus-visible{outline:3px solid #9a3f1f;outline-offset:-8px}"
     },
     {
       "name": "Planner Chip",
@@ -222,7 +222,7 @@
       "refersTo": "chip",
       "description": "Radio option in the trial-visit planner.",
       "html": "<label class=\"ds-chip\"><input type=\"radio\" name=\"p\" checked><span>Sofa set</span></label> <label class=\"ds-chip\"><input type=\"radio\" name=\"p\"><span>Swing</span></label>",
-      "css": ".ds-chip{position:relative;display:inline-block}.ds-chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}.ds-chip span{display:inline-flex;align-items:center;min-height:48px;padding:10px 20px;background:#eeedea;color:#1c1715;font:650 17px Archivo, Arial, sans-serif;}.ds-chip input:checked+span{background:#1c1715;color:#fafaf9}.ds-chip input:focus-visible+span{outline:3px solid #1f4d3a;outline-offset:-7px}"
+      "css": ".ds-chip{position:relative;display:inline-block}.ds-chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}.ds-chip span{display:inline-flex;align-items:center;min-height:48px;padding:10px 20px;background:#eeedea;color:#1c1715;font:650 17px Archivo, Arial, sans-serif;}.ds-chip input:checked+span{background:#1c1715;color:#fafaf9}.ds-chip input:focus-visible+span{outline:3px solid #9a3f1f;outline-offset:-7px}"
     },
     {
       "name": "Coupon Field",
@@ -237,7 +237,7 @@
       "kind": "nav",
       "description": "Logo then three plain links.",
       "html": "<nav class=\"ds-nav\"><strong>Crafted Comfort</strong><a href=\"#\">Furniture</a><a href=\"#\">Our places</a><a href=\"#\">Contact</a></nav>",
-      "css": ".ds-nav{display:flex;gap:32px;align-items:center;font:650 17px Archivo, Arial, sans-serif;color:#1c1715}.ds-nav a{color:inherit;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}.ds-nav a:hover{text-decoration:underline;text-decoration-color:#1f4d3a;text-underline-offset:4px;text-decoration-thickness:2px}"
+      "css": ".ds-nav{display:flex;gap:32px;align-items:center;font:650 17px Archivo, Arial, sans-serif;color:#1c1715}.ds-nav a{color:inherit;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}.ds-nav a:hover{text-decoration:underline;text-decoration-color:#9a3f1f;text-underline-offset:4px;text-decoration-thickness:2px}"
     }
   ],
   "narrative": {
