@@ -1691,7 +1691,7 @@ button {
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 999px 999px 18px 18px;
-  background: var(--accent-deep);
+  background: var(--tone);
 }
 
 .mast-arch img {
