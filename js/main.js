@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initYear();
   initScrollFx();
   initHeroTilt();
+  initTitleLetters();
 });
 
 /* --------------------------------------------------------------------------
@@ -270,4 +271,24 @@ function initHeroTilt() {
     media.style.setProperty('--tx', 0);
     media.style.setProperty('--ty', 0);
   });
+}
+
+// Hero title: wrap each letter so it can react to the pointer. The accessible name stays on the heading.
+function initTitleLetters() {
+  const title = document.querySelector('.mast-title');
+  if (!title) return;
+  title.setAttribute('aria-label', title.textContent.trim().replace(/\s+/g, ' '));
+  title.querySelectorAll('.mast-line > span').forEach(word => {
+    const text = word.textContent;
+    word.textContent = '';
+    word.setAttribute('aria-hidden', 'true');
+    [...text].forEach(c => {
+      const ch = document.createElement('span');
+      ch.className = 'ch';
+      ch.textContent = c;
+      word.appendChild(ch);
+    });
+  });
+  // Let the entrance finish before letting letters rise out of their clipped line.
+  setTimeout(() => title.classList.add('is-set'), 1600);
 }

@@ -2085,3 +2085,34 @@ button {
   --z: 90px;
   translate: 0 0 var(--z);
 }
+
+/* Hero title: letters lift and turn terracotta under the pointer, with a ripple on their neighbours. */
+.mast-title .ch {
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) and (hover: hover) {
+  .mast-title .ch {
+    transition: transform 0.5s var(--ease-out), color 0.4s ease;
+  }
+
+  .mast-title.is-set .mast-line {
+    overflow: visible;
+  }
+
+  .mast-title.is-set .ch:hover {
+    transform: translateY(-0.14em);
+    color: var(--accent);
+    transition-duration: 0.18s;
+  }
+
+  .mast-title.is-set .ch:hover + .ch,
+  .mast-title.is-set .ch:has(+ .ch:hover) {
+    transform: translateY(-0.06em);
+  }
+
+  .mast-title.is-set .ch:hover + .ch + .ch,
+  .mast-title.is-set .ch:has(+ .ch + .ch:hover) {
+    transform: translateY(-0.02em);
+  }
+}
