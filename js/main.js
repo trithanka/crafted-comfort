@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLoops();
   initYear();
   initScrollFx();
+  initHeroTilt();
 });
 
 /* --------------------------------------------------------------------------
@@ -247,4 +248,26 @@ function initScrollFx() {
     if (!ticking) { ticking = true; requestAnimationFrame(update); }
   }, { passive: true });
   update();
+}
+
+// Hero photographs tilt in 3D toward the pointer. Mouse only, and not when motion is reduced.
+function initHeroTilt() {
+  const media = document.querySelector('.mast-media');
+  if (!media || !window.matchMedia('(hover: hover) and (pointer: fine)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const MAX = 12; // degrees
+
+  media.addEventListener('pointermove', e => {
+    const r = media.getBoundingClientRect();
+    const px = (e.clientX - r.left) / r.width - 0.5;
+    const py = (e.clientY - r.top) / r.height - 0.5;
+    media.classList.remove('is-resting');
+    media.style.setProperty('--tx', (px * MAX).toFixed(2));
+    media.style.setProperty('--ty', (-py * MAX).toFixed(2));
+  });
+  media.addEventListener('pointerleave', () => {
+    media.classList.add('is-resting');
+    media.style.setProperty('--tx', 0);
+    media.style.setProperty('--ty', 0);
+  });
 }
