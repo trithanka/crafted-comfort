@@ -1873,16 +1873,29 @@ button {
   color: var(--on-accent);
 }
 
+.trust {
+  overflow: hidden;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+}
+
 .trust-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--gap);
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-around;
+  min-width: 100vw;
+  gap: clamp(48px, 6vw, 96px);
+  padding-right: clamp(48px, 6vw, 96px);
   list-style: none;
 }
 
 .trust-list li {
   display: grid;
   gap: 2px;
+  min-width: max-content;
   font-size: var(--t-small);
   color: var(--on-accent-soft);
 }
@@ -1899,10 +1912,35 @@ button {
   color: var(--on-accent);
 }
 
-@media (max-width: 860px) {
+@media (prefers-reduced-motion: no-preference) {
+  .marquee {
+    animation: marquee 38s linear infinite;
+  }
+
+  .trust:hover .marquee {
+    animation-play-state: paused;
+  }
+}
+
+/* With motion reduced, show one static, wrapping copy. */
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    width: auto;
+    padding-inline: var(--margin);
+  }
+
   .trust-list {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .trust-list + .trust-list {
+    display: none;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
   }
 }
 

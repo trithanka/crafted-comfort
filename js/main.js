@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initYear();
   initScrollFx();
   initHeroTilt();
-  initCountUp();
 });
 
 /* --------------------------------------------------------------------------
@@ -271,25 +270,4 @@ function initHeroTilt() {
     media.style.setProperty('--tx', 0);
     media.style.setProperty('--ty', 0);
   });
-}
-
-// Numbers count up once when they scroll into view.
-function initCountUp() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      io.unobserve(e.target);
-      const end = +e.target.dataset.count;
-      const t0 = performance.now();
-      const tick = now => {
-        const k = Math.min((now - t0) / 1200, 1);
-        e.target.textContent = Math.round(end * (1 - Math.pow(1 - k, 3)));
-        if (k < 1) requestAnimationFrame(tick);
-      };
-      e.target.textContent = 0;
-      requestAnimationFrame(tick);
-    });
-  });
-  document.querySelectorAll('[data-count]').forEach(el => io.observe(el));
 }
