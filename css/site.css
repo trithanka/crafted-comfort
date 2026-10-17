@@ -24,16 +24,16 @@
    Tokens
    -------------------------------------------------------------------------- */
 :root {
-  --ground: #f3f2f1;
-  --tone: #e7e5e3;
-  --accent-tint: #efdcd0;
-  --ink: #1c1715;
-  --muted: #5a524e;
+  --ground: #f8eeea;
+  --tone: #f0dfd7;
+  --accent-tint: #ead2c6;
+  --ink: #2a1710;
+  --muted: #6a4a3f;
   --accent: #9a3f1f;
   --accent-deep: #7a2f14;
   --on-accent: #ffffff;
   --on-accent-soft: #eed8cc;
-  --ink-raised: #2e2725;
+  --ink-raised: #3d2a22;
 
   --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
 
@@ -272,7 +272,7 @@ button {
 }
 
 .btn-tone:hover {
-  background: #dcd8d5;
+  background: #e8d2c7;
 }
 
 
@@ -636,7 +636,7 @@ button {
 }
 
 .chip:hover span.chip-face {
-  background: #dcd8d5;
+  background: #e8d2c7;
 }
 
 .chip input:checked + span.chip-face {
@@ -966,7 +966,7 @@ button {
 .coupon-left p {
   margin-top: 20px;
   max-width: 36ch;
-  color: #d9d1cd;
+  color: #ecd9ce;
 }
 
 .contact-lines {
@@ -1260,7 +1260,7 @@ button {
 .footer-brand p {
   margin-top: 20px;
   max-width: 34ch;
-  color: #d9d1cd;
+  color: #ecd9ce;
 }
 
 .footer-col {
@@ -1592,7 +1592,7 @@ button {
 }
 
 .loop-toggle:hover {
-  background: #dcd8d5;
+  background: #e8d2c7;
 }
 
 /* --------------------------------------------------------------------------

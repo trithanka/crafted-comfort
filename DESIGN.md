@@ -1,17 +1,17 @@
 ---
 name: Crafted Comfort
-description: Soft stone ground, near-black ink, terracotta accent. One typeface, square corners, flat surfaces.
+description: Soft blush ground, near-black ink, terracotta accent. One typeface, square corners, flat surfaces.
 colors:
-  ground: "#f3f2f1"
-  tone: "#e7e5e3"
-  accent-tint: "#efdcd0"
-  ink: "#1c1715"
-  muted: "#5a524e"
+  ground: "#f8eeea"
+  tone: "#f0dfd7"
+  accent-tint: "#ead2c6"
+  ink: "#2a1710"
+  muted: "#6a4a3f"
   accent: "#9a3f1f"
   accent-deep: "#7a2f14"
   on-accent: "#ffffff"
   on-accent-soft: "#eed8cc"
-  ink-raised: "#2e2725"
+  ink-raised: "#3d2a22"
 typography:
   display:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
@@ -93,7 +93,7 @@ components:
 
 **Creative North Star: "The Company Directory"**
 
-The home page does two jobs for the client: say in a few lines who Crafted Comfort is, then show every company it runs. Everything else supports those two. The look is plain and confident: soft stone ground, near-black type set large, one terracotta for actions and fields, real photographs of each business.
+The home page does two jobs for the client: say in a few lines who Crafted Comfort is, then show every company it runs. Everything else supports those two. The look is plain and confident: blush ground (a tint of the terracotta itself), near-black type set large, one terracotta for actions and fields, real photographs of each business.
 
 **Key Characteristics:**
 - One typeface, Archivo, in five sizes.
@@ -108,10 +108,10 @@ The home page does two jobs for the client: say in a few lines who Crafted Comfo
 - **Deeper terracotta** (`#7a2f14`): hover and pressed state.
 
 ### Tint
-- **Clay tint** (`#efdcd0`): the full-width band behind the companies cards.
+- **Clay tint** (`#ead2c6`): the full-width band behind the companies cards.
 
 ### Neutral
-- **Ground** (`#f3f2f1`, soft stone so the page never reads as bare white), **Tone** (`#e7e5e3`) for alternate sections and secondary buttons, **Ink** (`#1c1715`) for text, the contact form and the footer, **Muted** (`#5a524e`) for secondary text, **Raised ink** (`#2e2725`) for fields on the ink form, **Soft green text** (`#eed8cc`) for secondary text on green.
+- **Ground** (`#f8eeea`, soft blush so the page never reads as bare white), **Tone** (`#f0dfd7`) for alternate sections and secondary buttons, **Ink** (`#2a1710`) for text, the contact form and the footer, **Muted** (`#6a4a3f`) for secondary text, **Raised ink** (`#3d2a22`) for fields on the ink form, **Soft green text** (`#eed8cc`) for secondary text on green.
 
 ### Named Rules
 **The Three Colour Rule.** Ground, ink, green. Nothing else.
