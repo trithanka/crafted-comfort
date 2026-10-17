@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveals();
   initLoops();
   initYear();
-  initTileVideo();
 });
 
 /* --------------------------------------------------------------------------
@@ -224,14 +223,4 @@ function initYear() {
   document.querySelectorAll('[data-year]').forEach(el => {
     el.textContent = new Date().getFullYear();
   });
-}
-
-// Green Fog tile: play the tea-garden clip while the tile is on screen, unless motion is reduced.
-function initTileVideo() {
-  const v = document.querySelector('[data-tile-video]');
-  if (!v || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  new IntersectionObserver(([e]) => {
-    if (e.isIntersecting) v.play().catch(() => {});
-    else v.pause();
-  }, { rootMargin: '100px 0px' }).observe(v);
 }

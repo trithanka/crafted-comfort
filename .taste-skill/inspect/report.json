@@ -1,28 +1,29 @@
 {
  "url": "index.html",
- "at": "2026-10-17T07:29:45.355Z",
+ "at": "2026-10-17T07:36:22.804Z",
  "allow": [],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 7,
+   "screens": 8,
    "filled": [
-    0.71,
-    0.55,
-    0.59,
-    0.43,
-    0.79,
-    0.74,
+    0.95,
+    0.53,
+    0.54,
+    0.56,
+    0.39,
+    0.92,
+    0.67,
     0.75
    ],
    "motion": {
-    "elements": 21,
-    "css": 2,
-    "transitions": 19,
+    "elements": 23,
+    "css": 3,
+    "transitions": 20,
     "scripted": 0,
-    "videos": 1,
+    "videos": 0,
     "playingVideos": 0
    },
    "metrics": {
@@ -31,30 +32,27 @@
      "h": 900
     },
     "page": {
-     "height": 5838,
-     "screens": 6.5,
-     "words": 449,
-     "img": 11,
-     "video": 1,
+     "height": 6880,
+     "screens": 7.6,
+     "words": 448,
+     "img": 7,
+     "video": 0,
      "canvas": 0,
-     "svg": 5,
-     "sections": 5,
+     "svg": 6,
+     "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 10,
-     "videoCount": 1,
+     "realPictures": 5,
+     "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
       "outdoor-furniture.webp",
-      "barefoot-resort.webp",
-      "crafted-comfort-bnb.webp",
-      "nuts-and-berries.webp",
-      "outdoor-furniture.webp",
       "barefoot-dining.webp",
       "barefoot-resort.webp",
-      "prefab-cottages.webp"
+      "prefab-cottages.webp",
+      "crafted-comfort-bnb.webp"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -66,19 +64,19 @@
      "words": 2,
      "chars": 15,
      "lines": 2,
-     "size": 74.9,
-     "vw": 5.2,
+     "size": 273.6,
+     "vw": 19,
      "font": "Archivo",
      "weight": 820,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "tracking": -0.045,
+     "leading": 0.84,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
      "position": "left",
-     "widthRatio": 0.32,
-     "top": 139,
+     "widthRatio": 0.73,
+     "top": 321,
      "tag": "h1",
      "kind": "heading"
     },
@@ -86,7 +84,7 @@
      "text": "Crafted Comfort",
      "words": 2,
      "lines": 2,
-     "size": 74.9,
+     "size": 273.6,
      "font": "Archivo"
     },
     "headings": [
@@ -95,21 +93,147 @@
       "words": 2,
       "chars": 15,
       "lines": 2,
-      "size": 74.9,
-      "vw": 5.2,
+      "size": 273.6,
+      "vw": 19,
       "font": "Archivo",
       "weight": 820,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "tracking": -0.045,
+      "leading": 0.84,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "left",
-      "widthRatio": 0.32,
-      "top": 139,
+      "widthRatio": 0.73,
+      "top": 321,
       "tag": "h1",
       "kind": "heading"
+     },
+     {
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 1111,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Loom Crafts",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1269,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Barefoot in the Garden",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1425,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Crafted Comfort BnB",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1581,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Nuts and Berries",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1737,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Green Fog",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 54.7,
+      "vw": 3.8,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 1893,
+      "tag": "span",
+      "kind": "statement"
      },
      {
       "text": "Loom Crafts outdoor furniture",
@@ -128,7 +252,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.41,
-      "top": 1351,
+      "top": 2393,
       "tag": "h2",
       "kind": "heading"
      },
@@ -149,7 +273,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.54,
-      "top": 2090,
+      "top": 3132,
       "tag": "h2",
       "kind": "heading"
      },
@@ -170,7 +294,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.36,
-      "top": 2900,
+      "top": 3942,
       "tag": "h3",
       "kind": "heading"
      },
@@ -191,7 +315,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.43,
-      "top": 2956,
+      "top": 3998,
       "tag": "p",
       "kind": "statement"
      },
@@ -212,7 +336,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.5,
-      "top": 3535,
+      "top": 4578,
       "tag": "h2",
       "kind": "heading"
      },
@@ -233,16 +357,16 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.33,
-      "top": 4608,
+      "top": 5651,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 13,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 6,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -264,7 +388,7 @@
       22,
       43,
       55,
-      75
+      274
      ],
      "sizeCount": 8,
      "notLoaded": [],
@@ -278,10 +402,10 @@
      },
      "measureChars": 46,
      "max": {
-      "size": 74.9,
-      "vw": 5.2,
+      "size": 273.6,
+      "vw": 19,
       "font": "Archivo",
-      "text": "Crafted Comfort"
+      "text": "Crafted"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -306,17 +430,8 @@
      "dark": false,
      "sectionBgs": [
       {
-       "color": "#e3e7e0",
-       "top": 1125,
-       "hsl": {
-        "h": 94,
-        "s": 0.13,
-        "l": 0.89
-       }
-      },
-      {
        "color": "#1f4d3a",
-       "top": 3479,
+       "top": 0,
        "hsl": {
         "h": 155,
         "s": 0.43,
@@ -324,8 +439,17 @@
        }
       },
       {
+       "color": "#e3e7e0",
+       "top": 2167,
+       "hsl": {
+        "h": 94,
+        "s": 0.13,
+        "l": 0.89
+       }
+      },
+      {
        "color": "#1c1715",
-       "top": 4552,
+       "top": 5595,
        "hsl": {
         "h": 17,
         "s": 0.14,
@@ -336,7 +460,7 @@
      "textColors": [
       {
        "color": "#1c1715",
-       "share": 0.21
+       "share": 0.26
       },
       {
        "color": "#5a524e",
@@ -344,7 +468,7 @@
       },
       {
        "color": "#d3e4da",
-       "share": 0.19
+       "share": 0.15
       },
       {
        "color": "#f1f3ee",
@@ -356,29 +480,27 @@
       }
      ],
      "button": {
-      "bg": "#ffffff",
+      "bg": "#1c1715",
       "hsl": {
-       "h": 0,
-       "s": 0,
-       "l": 1
+       "h": 17,
+       "s": 0.14,
+       "l": 0.1
       },
-      "fg": "#1f4d3a"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 9,
-     "inHero": 3,
+     "count": 7,
+     "inHero": 1,
      "radius": 0,
-     "height": 52,
+     "height": 72,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content",
-      "Contact us",
-      "See the furniture"
+      "Skip to content"
      ]
     },
     "surfaces": {
@@ -394,24 +516,15 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
-     "boxRadius": 22,
+     "roundedBoxes": 5,
+     "boxRadius": 20,
      "squareMedia": 5,
-     "roundedMedia": 5,
-     "mediaRadius": 22,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
      "textShadow": 0,
      "cardRows": []
     },
-    "heroMedia": [
-     {
-      "type": "img",
-      "ratio": 0.21
-     },
-     {
-      "type": "video",
-      "ratio": 0.12
-     }
-    ],
+    "heroMedia": [],
     "nav": {
      "links": 4,
      "fixed": false,
@@ -431,22 +544,22 @@
    "load": "load",
    "screens": 9,
    "filled": [
-    0.78,
-    0.75,
-    0.65,
-    0.7,
-    0.52,
-    0.85,
-    0.88,
+    0.96,
+    0.55,
+    0.83,
+    0.57,
+    0.68,
+    0.68,
+    0.84,
     0.87,
-    0.85
+    0.87
    ],
    "motion": {
-    "elements": 21,
-    "css": 2,
-    "transitions": 19,
+    "elements": 23,
+    "css": 3,
+    "transitions": 20,
     "scripted": 0,
-    "videos": 1,
+    "videos": 0,
     "playingVideos": 0
    },
    "metrics": {
@@ -455,30 +568,27 @@
      "h": 1024
     },
     "page": {
-     "height": 8617,
-     "screens": 8.4,
-     "words": 449,
-     "img": 11,
-     "video": 1,
+     "height": 8902,
+     "screens": 8.7,
+     "words": 448,
+     "img": 7,
+     "video": 0,
      "canvas": 0,
-     "svg": 5,
-     "sections": 5,
+     "svg": 6,
+     "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 10,
-     "videoCount": 1,
+     "realPictures": 5,
+     "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
       "outdoor-furniture.webp",
-      "barefoot-resort.webp",
-      "crafted-comfort-bnb.webp",
-      "nuts-and-berries.webp",
-      "outdoor-furniture.webp",
       "barefoot-dining.webp",
       "barefoot-resort.webp",
-      "prefab-cottages.webp"
+      "prefab-cottages.webp",
+      "crafted-comfort-bnb.webp"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -489,28 +599,28 @@
      "text": "Crafted Comfort",
      "words": 2,
      "chars": 15,
-     "lines": 1,
-     "size": 48,
-     "vw": 6.3,
+     "lines": 2,
+     "size": 145.9,
+     "vw": 19,
      "font": "Archivo",
      "weight": 820,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "tracking": -0.045,
+     "leading": 0.84,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "center",
-     "widthRatio": 0.85,
-     "top": 124,
+     "position": "left",
+     "widthRatio": 0.73,
+     "top": 705,
      "tag": "h1",
      "kind": "heading"
     },
     "h1": {
      "text": "Crafted Comfort",
      "words": 2,
-     "lines": 1,
-     "size": 48,
+     "lines": 2,
+     "size": 145.9,
      "font": "Archivo"
     },
     "headings": [
@@ -518,22 +628,148 @@
       "text": "Crafted Comfort",
       "words": 2,
       "chars": 15,
-      "lines": 1,
-      "size": 48,
-      "vw": 6.3,
+      "lines": 2,
+      "size": 145.9,
+      "vw": 19,
       "font": "Archivo",
       "weight": 820,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "tracking": -0.045,
+      "leading": 0.84,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.73,
+      "top": 705,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.85,
-      "top": 124,
-      "tag": "h1",
+      "widthRatio": 0.92,
+      "top": 1120,
+      "tag": "h2",
       "kind": "heading"
+     },
+     {
+      "text": "Loom Crafts",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1305,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Barefoot in the Garden",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1421,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Crafted Comfort BnB",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1538,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Nuts and Berries",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1654,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Green Fog",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 1770,
+      "tag": "span",
+      "kind": "statement"
      },
      {
       "text": "Loom Crafts outdoor furniture",
@@ -552,7 +788,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2552,
+      "top": 2838,
       "tag": "h2",
       "kind": "heading"
      },
@@ -573,7 +809,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3075,
+      "top": 3361,
       "tag": "h2",
       "kind": "heading"
      },
@@ -594,7 +830,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.56,
-      "top": 4835,
+      "top": 5121,
       "tag": "h3",
       "kind": "heading"
      },
@@ -615,7 +851,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 5095,
+      "top": 5381,
       "tag": "p",
       "kind": "statement"
      },
@@ -636,7 +872,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.97,
-      "top": 5443,
+      "top": 5729,
       "tag": "h2",
       "kind": "heading"
      },
@@ -657,16 +893,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.84,
-      "top": 6617,
+      "top": 6903,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 7,
-     "maxLines": 1,
+     "count": 13,
+     "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 6,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -688,7 +924,7 @@
       19,
       32,
       34,
-      48
+      146
      ],
      "sizeCount": 8,
      "notLoaded": [],
@@ -702,10 +938,10 @@
      },
      "measureChars": 46,
      "max": {
-      "size": 48,
-      "vw": 6.3,
+      "size": 145.9,
+      "vw": 19,
       "font": "Archivo",
-      "text": "Crafted Comfort"
+      "text": "Crafted"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -731,7 +967,7 @@
      "sectionBgs": [
       {
        "color": "#1f4d3a",
-       "top": 96,
+       "top": 0,
        "hsl": {
         "h": 155,
         "s": 0.43,
@@ -740,7 +976,7 @@
       },
       {
        "color": "#e3e7e0",
-       "top": 1668,
+       "top": 1954,
        "hsl": {
         "h": 94,
         "s": 0.13,
@@ -749,7 +985,7 @@
       },
       {
        "color": "#1c1715",
-       "top": 6585,
+       "top": 6871,
        "hsl": {
         "h": 17,
         "s": 0.14,
@@ -760,7 +996,7 @@
      "textColors": [
       {
        "color": "#1c1715",
-       "share": 0.21
+       "share": 0.26
       },
       {
        "color": "#5a524e",
@@ -768,7 +1004,7 @@
       },
       {
        "color": "#d3e4da",
-       "share": 0.19
+       "share": 0.15
       },
       {
        "color": "#f1f3ee",
@@ -780,29 +1016,27 @@
       }
      ],
      "button": {
-      "bg": "#ffffff",
+      "bg": "#1c1715",
       "hsl": {
-       "h": 0,
-       "s": 0,
-       "l": 1
+       "h": 17,
+       "s": 0.14,
+       "l": 0.1
       },
-      "fg": "#1f4d3a"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 9,
-     "inHero": 3,
+     "count": 7,
+     "inHero": 1,
      "radius": 0,
-     "height": 52,
+     "height": 60,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content",
-      "Contact us",
-      "See the furniture"
+      "Skip to content"
      ]
     },
     "surfaces": {
@@ -818,35 +1052,15 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
-     "boxRadius": 22,
+     "roundedBoxes": 5,
+     "boxRadius": 20,
      "squareMedia": 5,
-     "roundedMedia": 5,
-     "mediaRadius": 22,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
      "textShadow": 0,
-     "cardRows": [
-      {
-       "count": 3,
-       "iconTopped": false,
-       "rounded": true,
-       "top": 804
-      }
-     ]
+     "cardRows": []
     },
-    "heroMedia": [
-     {
-      "type": "img",
-      "ratio": 0.23
-     },
-     {
-      "type": "img",
-      "ratio": 0.1
-     },
-     {
-      "type": "img",
-      "ratio": 0.1
-     }
-    ],
+    "heroMedia": [],
     "nav": {
      "links": 4,
      "fixed": false,
@@ -866,23 +1080,23 @@
    "load": "load",
    "screens": 10,
    "filled": [
-    0.71,
-    0.69,
-    0.74,
-    0.57,
-    0.71,
-    0.49,
-    0.86,
+    0.98,
+    0.67,
+    0.65,
+    0.53,
+    0.64,
+    0.36,
+    0.92,
     0.79,
-    0.8,
+    0.81,
     0.96
    ],
    "motion": {
-    "elements": 21,
-    "css": 2,
-    "transitions": 19,
+    "elements": 23,
+    "css": 3,
+    "transitions": 20,
     "scripted": 0,
-    "videos": 1,
+    "videos": 0,
     "playingVideos": 0
    },
    "metrics": {
@@ -891,30 +1105,27 @@
      "h": 844
     },
     "page": {
-     "height": 8139,
+     "height": 8122,
      "screens": 9.6,
-     "words": 449,
-     "img": 11,
-     "video": 1,
+     "words": 448,
+     "img": 7,
+     "video": 0,
      "canvas": 0,
-     "svg": 5,
-     "sections": 5,
+     "svg": 6,
+     "sections": 6,
      "horizontalOverflow": 0,
      "overflowCulprits": [],
      "uiFragments": 0,
      "uiAbuse": false,
-     "realPictures": 10,
-     "videoCount": 1,
+     "realPictures": 5,
+     "videoCount": 0,
      "uiPictures": 0,
      "pictureSamples": [
       "outdoor-furniture.webp",
-      "barefoot-resort.webp",
-      "crafted-comfort-bnb.webp",
-      "nuts-and-berries.webp",
-      "outdoor-furniture.webp",
       "barefoot-dining.webp",
       "barefoot-resort.webp",
-      "prefab-cottages.webp"
+      "prefab-cottages.webp",
+      "crafted-comfort-bnb.webp"
      ],
      "blendText": 0,
      "sideScrollers": 0,
@@ -926,19 +1137,19 @@
      "words": 2,
      "chars": 15,
      "lines": 2,
-     "size": 48,
-     "vw": 12.3,
+     "size": 74.1,
+     "vw": 19,
      "font": "Archivo",
      "weight": 820,
-     "tracking": -0.035,
-     "leading": 0.95,
+     "tracking": -0.045,
+     "leading": 0.84,
      "upper": false,
      "italic": false,
      "mono": false,
      "align": "left",
-     "position": "center",
-     "widthRatio": 0.77,
-     "top": 116,
+     "position": "left",
+     "widthRatio": 0.73,
+     "top": 655,
      "tag": "h1",
      "kind": "heading"
     },
@@ -946,7 +1157,7 @@
      "text": "Crafted Comfort",
      "words": 2,
      "lines": 2,
-     "size": 48,
+     "size": 74.1,
      "font": "Archivo"
     },
     "headings": [
@@ -955,21 +1166,147 @@
       "words": 2,
       "chars": 15,
       "lines": 2,
-      "size": 48,
-      "vw": 12.3,
+      "size": 74.1,
+      "vw": 19,
       "font": "Archivo",
       "weight": 820,
-      "tracking": -0.035,
-      "leading": 0.95,
+      "tracking": -0.045,
+      "leading": 0.84,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.73,
+      "top": 655,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Our companies",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.77,
-      "top": 116,
-      "tag": "h1",
+      "widthRatio": 0.92,
+      "top": 940,
+      "tag": "h2",
       "kind": "heading"
+     },
+     {
+      "text": "Loom Crafts",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1153,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Barefoot in the Garden",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1298,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Crafted Comfort BnB",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1449,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Nuts and Berries",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1600,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Green Fog",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Archivo",
+      "weight": 760,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 1751,
+      "tag": "span",
+      "kind": "statement"
      },
      {
       "text": "Loom Crafts outdoor furniture",
@@ -988,7 +1325,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 2509,
+      "top": 2493,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1009,7 +1346,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 3065,
+      "top": 3048,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1030,7 +1367,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 4289,
+      "top": 4272,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1051,7 +1388,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.77,
-      "top": 4696,
+      "top": 4679,
       "tag": "p",
       "kind": "statement"
      },
@@ -1072,7 +1409,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.95,
-      "top": 5097,
+      "top": 5081,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1093,16 +1430,16 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.75,
-      "top": 6062,
+      "top": 6046,
       "tag": "h2",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 7,
+     "count": 13,
      "maxLines": 2,
      "over2Lines": 0,
-     "statements": 1,
+     "statements": 6,
      "centered": 0,
      "medianWords": 4,
      "mixedFontHeadings": 0
@@ -1124,7 +1461,7 @@
       19,
       32,
       34,
-      48
+      74
      ],
      "sizeCount": 8,
      "notLoaded": [],
@@ -1138,10 +1475,10 @@
      },
      "measureChars": 42,
      "max": {
-      "size": 48,
-      "vw": 12.3,
+      "size": 74.1,
+      "vw": 19,
       "font": "Archivo",
-      "text": "Crafted Comfort"
+      "text": "Crafted"
      },
      "monoShare": 0,
      "monoProseShare": 0,
@@ -1167,7 +1504,7 @@
      "sectionBgs": [
       {
        "color": "#1f4d3a",
-       "top": 88,
+       "top": 0,
        "hsl": {
         "h": 155,
         "s": 0.43,
@@ -1176,7 +1513,7 @@
       },
       {
        "color": "#e3e7e0",
-       "top": 1951,
+       "top": 1935,
        "hsl": {
         "h": 94,
         "s": 0.13,
@@ -1185,7 +1522,7 @@
       },
       {
        "color": "#1c1715",
-       "top": 6030,
+       "top": 6014,
        "hsl": {
         "h": 17,
         "s": 0.14,
@@ -1196,7 +1533,7 @@
      "textColors": [
       {
        "color": "#1c1715",
-       "share": 0.21
+       "share": 0.26
       },
       {
        "color": "#5a524e",
@@ -1204,7 +1541,7 @@
       },
       {
        "color": "#d3e4da",
-       "share": 0.19
+       "share": 0.15
       },
       {
        "color": "#f1f3ee",
@@ -1216,29 +1553,27 @@
       }
      ],
      "button": {
-      "bg": "#ffffff",
+      "bg": "#1c1715",
       "hsl": {
-       "h": 0,
-       "s": 0,
-       "l": 1
+       "h": 17,
+       "s": 0.14,
+       "l": 0.1
       },
-      "fg": "#1f4d3a"
+      "fg": "#ffffff"
      },
      "lowContrast": []
     },
     "buttons": {
-     "count": 9,
-     "inHero": 3,
+     "count": 7,
+     "inHero": 1,
      "radius": 0,
-     "height": 52,
+     "height": 60,
      "withShadow": 0,
      "withGradient": 0,
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Skip to content",
-      "Contact us",
-      "See the furniture"
+      "Skip to content"
      ]
     },
     "surfaces": {
@@ -1254,20 +1589,15 @@
      "outlinedBoxes": 0,
      "dashed": 0,
      "blurred": 0,
-     "roundedBoxes": 6,
-     "boxRadius": 22,
+     "roundedBoxes": 5,
+     "boxRadius": 20,
      "squareMedia": 4,
-     "roundedMedia": 5,
-     "mediaRadius": 22,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
      "textShadow": 0,
      "cardRows": []
     },
-    "heroMedia": [
-     {
-      "type": "img",
-      "ratio": 0.28
-     }
-    ],
+    "heroMedia": [],
     "nav": {
      "links": 4,
      "fixed": false,
@@ -1282,7 +1612,15 @@
    "consoleErrors": []
   }
  ],
- "findings": [],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
  "images": [
   {
    "viewport": "desktop",

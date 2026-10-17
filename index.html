@@ -17,9 +17,9 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header site-header--left wrap">
+  <header class="site-header site-header--left site-header--over on-accent wrap">
     <a class="wordmark" href="index.html" aria-label="Crafted Comfort home">
-      <img src="img/logo-ink.png" alt="Crafted Comfort" width="160" height="122">
+      <img src="img/logo-white.png" alt="Crafted Comfort" width="160" height="122">
     </a>
     <nav class="site-nav" aria-label="Main">
       <ul>
@@ -31,37 +31,23 @@
   </header>
 
   <main id="main">
-  <section id="companies" class="bento wrap" aria-labelledby="hero-title">
-    <div class="bento-grid">
-      <div class="tile tile-intro on-accent rise">
-        <h1 class="display" id="hero-title">Crafted Comfort</h1>
-        <p class="lead">Northeast India partner of Loom Crafts, and home to a resort, serviced stays, a bakery and a tea lounge, all from Guwahati.</p>
-        <div class="hero-actions">
-          <a class="btn btn-white" href="#contact">Contact us</a>
-          <a class="btn btn-line" href="#furniture">See the furniture</a>
-        </div>
-      </div>
-      <a class="tile tile-loom reveal" style="--i:1" href="loom-crafts.html">
-        <img src="img/outdoor-furniture.webp" alt="Loom Crafts sofa set and lounge chairs on a terrace" width="1376" height="768" loading="lazy" decoding="async">
-        <span class="tile-label"><span class="tile-name">Loom Crafts</span><span class="tile-what">Outdoor furniture and prefab cottages</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-      </a>
-      <a class="tile tile-barefoot reveal" style="--i:2" href="barefoot.html">
-        <img src="img/barefoot-resort.webp" alt="A cottage at Barefoot in the Garden, Sonapur" width="1376" height="768" loading="lazy" decoding="async">
-        <span class="tile-label"><span class="tile-name">Barefoot in the Garden</span><span class="tile-what">Resort, dining and kitchen</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-      </a>
-      <a class="tile tile-bnb reveal" style="--i:3" href="bnb.html">
-        <img src="img/crafted-comfort-bnb.webp" alt="A Crafted Comfort BnB suite with a hill view" width="1376" height="768" loading="lazy" decoding="async">
-        <span class="tile-label"><span class="tile-name">Crafted Comfort BnB</span><span class="tile-what">Serviced stays</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-      </a>
-      <a class="tile tile-nuts reveal" style="--i:4" href="nuts-and-berries.html">
-        <img src="img/nuts-and-berries.webp" alt="The counter at Nuts and Berries" width="1376" height="768" loading="lazy" decoding="async">
-        <span class="tile-label"><span class="tile-name">Nuts and Berries</span><span class="tile-what">Bakery and café</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-      </a>
-      <a class="tile tile-fog reveal" style="--i:5" href="green-fog.html">
-        <video src="video/tea-garden.mp4" poster="img/tea-garden-poster.webp" muted loop playsinline preload="none" data-tile-video aria-hidden="true"></video>
-        <span class="tile-label"><span class="tile-name">Green Fog</span><span class="tile-what">Tea lounge</span><span class="tile-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-      </a>
+  <section class="mast on-accent" aria-labelledby="hero-title">
+    <h1 id="hero-title" class="mast-title"><span class="mast-line"><span>Crafted</span></span><span class="mast-line"><span>Comfort</span></span></h1>
+    <a class="mast-down wrap" href="#companies">Our companies <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+  </section>
+
+  <section id="companies" class="section wrap" aria-labelledby="companies-title">
+    <div class="co-head reveal">
+      <h2 class="heading" id="companies-title">Our companies</h2>
+      <p class="lead">Northeast India partner of Loom Crafts, and home to a resort, serviced stays, a bakery and a tea lounge, all from Guwahati.</p>
     </div>
+    <ul class="rows">
+        <li class="reveal" style="--i:0"><a class="row" href="loom-crafts.html"><span class="row-name">Loom Crafts</span><span class="row-what">Outdoor furniture and prefab cottages</span><span class="row-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li class="reveal" style="--i:1"><a class="row" href="barefoot.html"><span class="row-name">Barefoot in the Garden</span><span class="row-what">Resort, dining and kitchen</span><span class="row-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li class="reveal" style="--i:2"><a class="row" href="bnb.html"><span class="row-name">Crafted Comfort BnB</span><span class="row-what">Serviced stays</span><span class="row-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li class="reveal" style="--i:3"><a class="row" href="nuts-and-berries.html"><span class="row-name">Nuts and Berries</span><span class="row-what">Bakery and café</span><span class="row-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li class="reveal" style="--i:4"><a class="row" href="green-fog.html"><span class="row-name">Green Fog</span><span class="row-what">Tea lounge</span><span class="row-go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+    </ul>
   </section>
 
   <section id="furniture" class="plate" aria-label="What we sell" data-tabs>
