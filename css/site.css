@@ -1148,6 +1148,50 @@ button {
   grid-column: 1 / -1;
 }
 
+.crumbs {
+  grid-column: 1 / -1;
+  margin-bottom: calc(-1 * clamp(16px, 2.5vw, 36px));
+  font-size: var(--t-small);
+  color: var(--muted);
+}
+
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.crumbs li + li::before {
+  content: "/";
+  margin-inline: 10px;
+  opacity: 0.6;
+}
+
+.crumbs a {
+  display: inline-block;
+  padding-block: 12px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: transparent;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.crumbs a:hover,
+.crumbs a:focus-visible {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.crumbs [aria-current] {
+  color: var(--ink);
+  font-weight: 650;
+}
+
 .page-hero .meta {
   margin-top: 18px;
   font-weight: 650;
