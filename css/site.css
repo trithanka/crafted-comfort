@@ -2170,11 +2170,19 @@ button {
   }
 }
 
-/* Social links: brand icon beside the handle. */
+/* Social links: the brand's own coloured icon, no handle. */
 .social {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-self: start;
+  width: max-content;
+  min-height: 44px;
+  transition: transform 0.2s;
+}
+
+.social:hover,
+.social:focus-visible {
+  transform: translateY(-2px);
 }
 
 .social svg {
