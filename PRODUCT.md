@@ -21,7 +21,8 @@ Clients can see, stay in and use the products before they buy: the furniture and
 
 ## Operating Context
 
-- Brands: Loom Crafts (outdoor furniture and prefab, as partner), Barefoot in the Garden (Sonapur cottage resort; Guwahati dining branch upcoming; cloud kitchen and smart vending), Crafted Comfort BnB (Kahilapara, two suites, and a Sonapur villa), Nuts and Berries (bakery and café), Green Fog (tea lounge).
+- Brands: Loom Crafts (outdoor furniture and prefab, as partner; est. 2005, Ghaziabad), Barefoot in the Garden (resort with cottages and pool at Rajakhat, Tetelia, Sonapur; café at Ghoramara Chariali (Bhetapara), Guwahati; cloud kitchen; Grab & Go vending at Indian Oil pump near Zudio, Mathgharia, Narengi Tiniali and at Apollo Hospital), Crafted Comfort B&B (two 1-bedroom apartments in Kahilipara; cottage stay in Sonapur by the day), Nuts and Berries (bakery and café), Green Fog (tea lounge).
+- Founded 24 April 2024. Tagline: "Spaces. Experiences. A better tomorrow."
 - Climate the products must survive: Northeast monsoon, high humidity, strong sun.
 - Original site product lines: swings, sun loungers, sofa seating, dining, day beds and cabanas, accessories, prefab homes, fireplaces ("Calm by Fire"). Services: project planning, exterior and interior design, free annual maintenance, lifetime warranty.
 
@@ -29,7 +30,7 @@ Clients can see, stay in and use the products before they buy: the furniture and
 
 - Static HTML/CSS/JS, no build step, no backend.
 - Enquiry delivery is undecided: forms post to `FORM_ENDPOINT` in `js/main.js` and show an error until it is set. Owner skipped the decision for now.
-- Contact on the original site: +91 6000487445, info@craftedcomfort.in, Bhetapara, Guwahati.
+- Contact (client brochure, Oct 2026): phone 7099279374 everywhere. Email: furniture.guwahati@loomcrafts.com (Loom Crafts), barefootinthegarden417@gmail.com and Instagram @barefootinthegarden (Barefoot), info@craftedcomfort.in kept for the other pages pending confirmation.
 
 ## Brand Commitments
 
@@ -39,7 +40,7 @@ Clients can see, stay in and use the products before they buy: the furniture and
 ## Evidence on Hand
 
 - Images in `img/` (owner chose to keep them; they appear to be generated, 1376x768).
-- Sample content kept at the owner's request and must be replaced before launch: BnB suite specs and amenities, Nuts and Berries menu items and prices, Green Fog tea names and time slots, Barefoot cottage names. No reviews, ratings, customer counts or testimonials exist; never show any.
+- Sample content kept at the owner's request and must be replaced before launch: Nuts and Berries menu items and prices, Green Fog tea names and time slots, Barefoot cottage names. No reviews, ratings, customer counts or testimonials exist; never show any.
 
 ## Product Principles
 
