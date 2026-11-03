@@ -1704,6 +1704,15 @@ button {
   width: 100%;
 }
 
+.mast-tagline {
+  margin-bottom: 20px;
+  font-size: var(--t-small);
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .mast-title {
   font-size: var(--t-display);
   font-weight: 500;
