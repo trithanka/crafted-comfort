@@ -1698,7 +1698,7 @@ button {
 
 .mast-inner {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 1fr 1fr;
   gap: clamp(32px, 6vw, 96px);
   align-items: center;
   width: 100%;
@@ -1740,16 +1740,16 @@ button {
 
 .mast-media {
   position: relative;
-  justify-self: end;
-  width: min(100%, 420px);
+  justify-self: center;
+  width: min(100%, 520px);
 }
 
 .mast-round {
   position: absolute;
-  left: -68px;
-  bottom: 36px;
-  width: 168px;
-  height: 168px;
+  left: -84px;
+  bottom: 40px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border: 8px solid var(--ground);
   border-radius: 50%;
@@ -1782,7 +1782,7 @@ button {
 /* One portrait photograph in an arch: present, but never the loudest thing. */
 .mast-arch {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 5 / 6;
   overflow: hidden;
   border-radius: 999px 999px 18px 18px;
   background: var(--tone);
