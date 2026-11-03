@@ -8,8 +8,8 @@
 // Until this is set, forms say they could not send and offer the phone number.
 const FORM_ENDPOINT = '';
 
-const PHONE_DISPLAY = '+91 60004 87445';
-const PHONE_LINK = 'tel:+916000487445';
+const PHONE_DISPLAY = '+91 70992 79374';
+const PHONE_LINK = 'tel:+917099279374';
 
 document.documentElement.classList.add('js');
 
