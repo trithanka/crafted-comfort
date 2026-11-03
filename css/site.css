@@ -2169,3 +2169,14 @@ button {
     transform: translateY(-0.02em);
   }
 }
+
+/* Social links: brand icon beside the handle. */
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social svg {
+  flex: none;
+}
