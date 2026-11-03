@@ -1960,3 +1960,14 @@ button {
     transition: none;
   }
 }
+
+/* Social links: brand icon beside the handle. */
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social svg {
+  flex: none;
+}
