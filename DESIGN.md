@@ -125,7 +125,7 @@ Archivo (variable, self-hosted in `fonts/`). Display 820 at `clamp(3.25rem, 6.6v
 
 ## Layout
 
-One pair of side margins, `clamp(16px, 4vw, 56px)`. Sections separated by `clamp(96px, 12vw, 200px)` or a change of ground. Home order: one bento grid (a green intro tile with the name, one sentence and two buttons, then a tile for each of the five companies with a name plate on its photograph; Green Fog plays the tea-garden clip),  product lines, try-before-you-buy with the planner, partner panel, contact. Below 860px every split stacks.
+One pair of side margins, `clamp(16px, 4vw, 56px)`. Sections separated by `clamp(96px, 12vw, 200px)` or a change of ground. Home order: one bento grid (a green intro tile with the name, one sentence and two buttons, then a tile for each of the four companies with a name plate on its photograph),  product lines, try-before-you-buy with the planner, partner panel, contact. Below 860px every split stacks.
 
 ## Elevation & Depth
 
@@ -141,7 +141,7 @@ Square corners everywhere. The only round shapes are the two notches on the cont
 Flat fill, square, 52px minimum height. Green primary; ink, tone and white (on green) alternates. Focus: 3px outline outside the button.
 
 ### Company entry
-Small card on the tone ground, all five in one row so they read at a glance: 4:3 photo, name, what it is, and a "Visit" link; the whole card is one link. Five columns on desktop, three on tablet, two on phones.
+Small card on the tone ground, all four in one row so they read at a glance: 4:3 photo, name, what it is, and a "Visit" link; the whole card is one link. Four columns on desktop, two on tablet, two on phones.
 
 ### Chips, inputs, navigation
 Planner chips are real radio buttons (tone, ink when chosen). Form fields sit on the ink ticket with labels above. Navigation is the logo and three links: Companies, Furniture, Contact.

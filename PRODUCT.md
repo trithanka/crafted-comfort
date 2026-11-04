@@ -9,7 +9,7 @@ web
 ## Users
 
 - Homeowners, resort and hotel developers, café owners and architects across the eight Northeast Indian states who are weighing a large purchase: Loom Crafts outdoor furniture or a modular prefab cottage.
-- Travellers and Guwahati locals looking for a stay (Barefoot in the Garden cottages, Crafted Comfort BnB suites), a meal, baked goods or tea.
+- Travellers and Guwahati locals looking for a stay (Barefoot in the Garden cottages, Crafted Comfort BnB suites), a meal or baked goods.
 
 ## Product Purpose
 
@@ -21,7 +21,7 @@ Clients can see, stay in and use the products before they buy: the furniture and
 
 ## Operating Context
 
-- Brands: Loom Crafts (outdoor furniture and prefab, as partner; est. 2005, Ghaziabad), Barefoot in the Garden (resort with cottages and pool at Rajakhat, Tetelia, Sonapur; café at Ghoramara Chariali (Bhetapara), Guwahati; cloud kitchen; Grab & Go vending at Indian Oil pump near Zudio, Mathgharia, Narengi Tiniali and at Apollo Hospital), Crafted Comfort B&B (two 1-bedroom apartments in Kahilipara; cottage stay in Sonapur by the day), Nuts and Berries (bakery and café), Green Fog (tea lounge).
+- Brands: Loom Crafts (outdoor furniture and prefab, as partner; est. 2005, Ghaziabad), Barefoot in the Garden (resort with cottages and pool at Rajakhat, Tetelia, Sonapur; café at Ghoramara Chariali (Bhetapara), Guwahati; cloud kitchen; Grab & Go vending at Indian Oil pump near Zudio, Mathgharia, Narengi Tiniali and at Apollo Hospital), Crafted Comfort B&B (two 1-bedroom apartments in Kahilipara; cottage stay in Sonapur by the day), Nuts and Berries (bakery and café).
 - Founded 24 April 2024. Tagline: "Spaces. Experiences. A better tomorrow."
 - Climate the products must survive: Northeast monsoon, high humidity, strong sun.
 - Original site product lines: swings, sun loungers, sofa seating, dining, day beds and cabanas, accessories, prefab homes, fireplaces ("Calm by Fire"). Services: project planning, exterior and interior design, free annual maintenance, lifetime warranty.
@@ -40,7 +40,7 @@ Clients can see, stay in and use the products before they buy: the furniture and
 ## Evidence on Hand
 
 - Images in `img/` (owner chose to keep them; they appear to be generated, 1376x768).
-- Sample content kept at the owner's request and must be replaced before launch: Nuts and Berries menu items and prices, Green Fog tea names and time slots, Barefoot cottage names. No reviews, ratings, customer counts or testimonials exist; never show any.
+- Sample content kept at the owner's request and must be replaced before launch: Nuts and Berries menu items and prices, Barefoot cottage names. No reviews, ratings, customer counts or testimonials exist; never show any.
 
 ## Product Principles
 
