@@ -125,7 +125,7 @@ Archivo (variable, self-hosted in `fonts/`). Display 820 at `clamp(3.25rem, 6.6v
 
 ## Layout
 
-One pair of side margins, `clamp(16px, 4vw, 56px)`. Sections separated by `clamp(96px, 12vw, 200px)` or a change of ground. Home order: full-screen dark hero (photograph under a flat 50% ink veil, the name at display size in white, one about sentence, two buttons, and the five companies in a strip along its foot; the background follows the company in focus and steps through them every five seconds, with a timer bar; Green Fog shows the tea-garden clip), all companies, product lines, try-before-you-buy with the planner, partner panel, contact. Below 860px every split stacks.
+One pair of side margins, `clamp(16px, 4vw, 56px)`. Sections separated by `clamp(96px, 12vw, 200px)` or a change of ground. Home order: full-screen dark hero (photograph under a flat 50% ink veil, the name at display size in white, one about sentence, two buttons, and the four companies in a strip along its foot; the background follows the company in focus and steps through them every five seconds, with a timer bar), all companies, product lines, try-before-you-buy with the planner, partner panel, contact. Below 860px every split stacks.
 
 ## Elevation & Depth
 
@@ -141,7 +141,7 @@ Square corners everywhere. The only round shapes are the two notches on the cont
 Flat fill, square, 52px minimum height. Green primary; ink, tone and white (on green) alternates. Focus: 3px outline outside the button.
 
 ### Company entry
-Small card on the tone ground, all five in one row so they read at a glance: 4:3 photo, name, what it is, and a "Visit" link; the whole card is one link. Five columns on desktop, three on tablet, two on phones.
+Small card on the tone ground, all four in one row so they read at a glance: 4:3 photo, name, what it is, and a "Visit" link; the whole card is one link. Four columns on desktop, two on tablet, two on phones.
 
 ### Chips, inputs, navigation
 Planner chips are real radio buttons (tone, ink when chosen). Form fields sit on the ink ticket with labels above. Navigation is the logo and three links: Companies, Furniture, Contact.

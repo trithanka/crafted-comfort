@@ -2,12 +2,12 @@
 version: 1
 slug: "index-html"
 primary_target: "index.html"
-related_targets: ["loom-crafts.html","barefoot.html","bnb.html","nuts-and-berries.html","green-fog.html"]
+related_targets: ["loom-crafts.html","barefoot.html","bnb.html","nuts-and-berries.html"]
 ---
 
 # Surface brief: Crafted Comfort site (hub + 5 brand pages)
 
-Scope: index.html, loom-crafts.html, barefoot.html, bnb.html, nuts-and-berries.html, green-fog.html. Visitor mode: Persuade.
+Scope: index.html, loom-crafts.html, barefoot.html, bnb.html, nuts-and-berries.html. Visitor mode: Persuade.
 
 Audience and job: Northeast homeowners, developers and café/resort owners deciding on Loom Crafts furniture or prefab cottages; travellers and Guwahati locals choosing a stay, meal or tea. Action: a consultation or trial-visit request on the hub; a stay, table or order request on brand pages.
 
