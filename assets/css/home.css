@@ -452,7 +452,6 @@
 
 .company-link {
   position: relative;
-  isolation: isolate;
   justify-content: flex-end;
   color: var(--on-accent);
 }
@@ -460,7 +459,6 @@
 .company-media {
   position: absolute;
   inset: 0;
-  z-index: -1;
   aspect-ratio: auto;
 }
 
@@ -472,6 +470,7 @@
 }
 
 .company-text {
+  position: relative;
   flex: none;
   padding: clamp(20px, 2.4vw, 32px);
 }
