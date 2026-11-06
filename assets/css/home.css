@@ -466,7 +466,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(16, 40, 30, 0) 35%, rgba(16, 40, 30, 0.82) 100%);
+  background: linear-gradient(180deg, rgba(16, 40, 30, 0) 20%, rgba(16, 40, 30, 0.6) 58%, rgba(16, 40, 30, 0.92) 100%);
 }
 
 .company-text {
