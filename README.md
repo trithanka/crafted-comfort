@@ -27,8 +27,8 @@ assets/
     page-hero.css        company page hero, breadcrumbs, two-up splits, price rows
     footer.css           site footer
     motion.css           scroll reveals, hero entrance, hover and press states
-    media.css            figures, captions, looping clips, bullets
-    home.css             home hero with the rotating company strip, company cards
+    media.css            figures, captions, photo credits, looping clips
+    home.css             bullets, home hero with the rotating company strip, company cards
     company.css          company page profile: key facts, service rows, menus
     company-motion.css   sticky header, reading progress, service-row reveals
   js/main.js             tabs, planner, enquiry forms, reveals, home hero, sticky header
