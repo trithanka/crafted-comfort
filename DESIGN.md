@@ -118,7 +118,7 @@ The home page does two jobs for the client: say in a few lines who Crafted Comfo
 
 ## Typography
 
-Archivo (variable, self-hosted in `fonts/`). Display 820 at `clamp(3.25rem, 6.6vw, 6.5rem)`; Heading 760 at `clamp(2.125rem, 3.8vw, 3.5rem)`; Lead at `clamp(1.1875rem, 1.5vw, 1.375rem)` (bold for item names); Body 17px; Small 14px.
+Archivo (variable, self-hosted in `assets/fonts/`). Display 820 at `clamp(3.25rem, 6.6vw, 6.5rem)`; Heading 760 at `clamp(2.125rem, 3.8vw, 3.5rem)`; Lead at `clamp(1.1875rem, 1.5vw, 1.375rem)` (bold for item names); Body 17px; Small 14px.
 
 **The Two Line Rule.** Every heading fits on two lines at every width.
 **The Five Size Rule.** No sixth size.

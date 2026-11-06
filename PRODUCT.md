@@ -29,17 +29,17 @@ Clients can see, stay in and use the products before they buy: the furniture and
 ## Capabilities and Constraints
 
 - Static HTML/CSS/JS, no build step, no backend.
-- Enquiry delivery is undecided: forms post to `FORM_ENDPOINT` in `js/main.js` and show an error until it is set. Owner skipped the decision for now.
+- Enquiry delivery is undecided: forms post to `FORM_ENDPOINT` in `assets/js/main.js` and show an error until it is set. Owner skipped the decision for now.
 - Contact (client brochure, Oct 2026): phone 7099279374 everywhere. Email: furniture.guwahati@loomcrafts.com (Loom Crafts), barefootinthegarden417@gmail.com and Instagram @barefootinthegarden (Barefoot), info@craftedcomfort.in kept for the other pages pending confirmation.
 
 ## Brand Commitments
 
-- Name "Crafted Comfort" and the house-outline logo (`img/logo.png`).
+- Name "Crafted Comfort" and the house-outline logo (`assets/img/brand/`; source files in `design-source/`).
 - Always described as the authorized Northeast India partner of Loom Crafts.
 
 ## Evidence on Hand
 
-- Images in `img/` (owner chose to keep them; they appear to be generated, 1376x768).
+- Photos in `assets/img/photos/` (owner chose to keep them; they appear to be generated, 1376x768).
 - Sample content kept at the owner's request and must be replaced before launch: Nuts and Berries menu items and prices, Barefoot cottage names. No reviews, ratings, customer counts or testimonials exist; never show any.
 
 ## Product Principles

@@ -1,0 +1,166 @@
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 14px 28px;
+  border: 0;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: var(--t-body);
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.18s ease, transform 0.18s var(--ease-out);
+}
+
+.btn:hover {
+  background: var(--accent-deep);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.btn-ink {
+  background: var(--ink);
+}
+
+.btn-ink:hover {
+  background: var(--ink-raised);
+}
+
+.btn-tone {
+  background: var(--tone);
+  color: var(--ink);
+}
+
+.btn-tone:hover {
+  background: #e3e1dc;
+}
+
+
+
+.btn-white {
+  background: var(--on-accent);
+  color: var(--accent);
+}
+
+.btn-white:hover {
+  background: var(--on-accent-soft);
+}
+
+.on-accent .btn:focus-visible {
+  outline-color: var(--on-accent);
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
+.text-link {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.text-link:hover {
+  color: var(--accent-deep);
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-block: 18px;
+}
+
+.site-header--left {
+  justify-content: flex-start;
+  gap: clamp(24px, 4vw, 64px);
+}
+
+.wordmark img {
+  width: auto;
+  height: 52px;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2.4vw, 36px);
+}
+
+.site-nav a {
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}
+
+.on-accent .site-nav a:hover,
+.on-accent .site-nav a[aria-current="page"] {
+  text-decoration-color: var(--on-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Section scaffolding
+   -------------------------------------------------------------------------- */
+.section {
+  padding-block: var(--section);
+}
+
+.section-head {
+  margin-bottom: clamp(40px, 5vw, 72px);
+}
+
+.section-head .lead {
+  margin-top: 20px;
+}
+
+.field-accent {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.field-ink {
+  background: var(--ink);
+  color: var(--ground);
+}
+
+.field-tone {
+  background: var(--tone);
+}
+
+.field-accent .muted,
+.field-accent .lead {
+  color: var(--on-accent-soft);
+}
+
+.field-ink .muted {
+  color: #c9bfbb;
+}

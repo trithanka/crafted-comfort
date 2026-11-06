@@ -1,0 +1,116 @@
+/* --------------------------------------------------------------------------
+   Motion on inner pages
+   -------------------------------------------------------------------------- */
+
+/* Header stays reachable: it sticks, tightens once the page moves, steps
+   out of the way while reading down and returns on the way back up. */
+.site-header:not(.site-header--over) {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--ground);
+  transition: transform 0.4s var(--ease-out), padding 0.3s var(--ease-out);
+}
+
+.site-header.is-scrolled {
+  padding-block: 8px;
+}
+
+.site-header .wordmark img {
+  transition: height 0.3s var(--ease-out);
+}
+
+.site-header.is-scrolled .wordmark img {
+  height: 40px;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+/* The header covers the top of an anchored section otherwise. */
+main:has(> .page-hero) [id] {
+  scroll-margin-top: 88px;
+}
+
+/* Service rows: the photo opens from the left edge as the row arrives,
+   then answers the pointer. */
+.offer-media img {
+  transition: transform 1.2s var(--ease-out);
+}
+
+.js .offer.reveal .offer-media {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.9s var(--ease-out) 0.1s;
+}
+
+.js .offer.reveal .offer-media img {
+  transform: scale(1.14);
+}
+
+.js .offer.reveal.is-in .offer-media {
+  clip-path: inset(0 0 0 0);
+}
+
+.js .offer.reveal.is-in .offer-media img {
+  transform: none;
+}
+
+.offer .btn svg {
+  transition: transform 0.25s var(--ease-out);
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .offer .offer-media img {
+    transition: transform 0.7s var(--ease-out);
+  }
+
+  .offer:hover .offer-media img,
+  .js .offer.reveal.is-in:hover .offer-media img {
+    transform: scale(1.05);
+  }
+
+  .btn:hover svg {
+    transform: translateX(4px);
+  }
+}
+
+/* Reading progress on company pages, driven by the scroll itself. */
+@keyframes read-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    body:has(main > .page-hero)::before {
+      content: "";
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 60;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: read-progress linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header,
+  .site-header .wordmark img {
+    transition: none;
+  }
+
+  .js .offer.reveal .offer-media {
+    clip-path: none;
+    transition: none;
+  }
+
+  .js .offer.reveal .offer-media img {
+    transform: none;
+  }
+}

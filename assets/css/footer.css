@@ -1,0 +1,87 @@
+/* --------------------------------------------------------------------------
+   Footer: the woven end of the cloth
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background: var(--ink);
+  color: var(--ground);
+}
+
+.footer-body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px var(--gap);
+  padding-block: 56px 32px;
+}
+
+.footer-brand {
+  grid-column: 1 / 5;
+}
+
+.footer-brand img {
+  height: 64px;
+  width: auto;
+}
+
+.footer-brand p {
+  margin-top: 20px;
+  max-width: 34ch;
+  color: #d9d1cd;
+}
+
+.footer-col {
+  grid-column: span 2;
+}
+
+.footer-col.contact {
+  grid-column: 9 / 13;
+}
+
+.footer-col h2 {
+  font-size: var(--t-body);
+  font-weight: 700;
+  color: #c9bfbb;
+  margin-bottom: 14px;
+}
+
+.footer-col li + li {
+  margin-top: 6px;
+}
+
+.footer-col a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  font-size: 0.9375rem;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.footer-base {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-block: 24px 40px;
+  color: #c9bfbb;
+}
+
+.footer-base .btn {
+  min-height: 44px;
+  padding: 10px 20px;
+  font-size: var(--t-small);
+}
+
+@media (max-width: 960px) {
+  .footer-brand,
+  .footer-col.contact {
+    grid-column: 1 / -1;
+  }
+
+  .footer-col {
+    grid-column: span 6;
+  }
+}

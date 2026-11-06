@@ -1,0 +1,261 @@
+/* --------------------------------------------------------------------------
+   Company pages: a profile, not a photo gallery.
+   Hero, then a strip of key facts, then one row per thing the company runs.
+   -------------------------------------------------------------------------- */
+main:has(> .page-hero) {
+  --section: clamp(48px, 5.5vw, 88px);
+}
+
+main:has(> .page-hero) .section-head {
+  margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+.page-hero {
+  padding-bottom: clamp(32px, 4vw, 56px);
+}
+
+.page-hero-media .frame {
+  aspect-ratio: 16 / 9;
+}
+
+/* Key facts: four checkable answers under the hero. */
+.keyfacts {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2px;
+  margin-top: clamp(8px, 2vw, 24px);
+}
+
+.keyfacts > div {
+  background: var(--tone);
+  padding: 20px 24px 22px;
+}
+
+.keyfacts dt {
+  font-size: var(--t-small);
+  color: var(--muted);
+}
+
+.keyfacts dd {
+  margin: 6px 0 0;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.keyfacts a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+/* Offer rows: photo, what it is, where and what to do next. */
+.offers {
+  display: grid;
+  gap: 12px;
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: minmax(220px, 30%) minmax(0, 1fr) minmax(200px, 22%);
+  background: var(--tone);
+  scroll-margin-top: 24px;
+}
+
+.offer-media {
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.offer-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-body {
+  padding: clamp(24px, 3vw, 36px);
+  max-width: 62ch;
+}
+
+.offer-body > p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.offer-list {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.offer-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.offer-list li > span:last-child {
+  flex: none;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.offer-side {
+  padding: clamp(24px, 3vw, 36px) clamp(24px, 3vw, 36px) clamp(24px, 3vw, 36px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.offer-side .small {
+  color: var(--muted);
+}
+
+.offer-side p:not(.small) {
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.offer-side .btn {
+  margin-top: auto;
+}
+
+.offer-side p + .small {
+  margin-top: 12px;
+}
+
+/* Text-only split: heading on the left, copy on the right. */
+.intro-split {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: clamp(24px, 5vw, 80px);
+  align-items: start;
+}
+
+.intro-split .heading + .lead {
+  margin-top: 16px;
+}
+
+.intro-split .lead + .btn {
+  margin-top: 28px;
+}
+
+.intro-split > .plate-facts {
+  margin-top: 0;
+}
+
+/* Menus and materials read as compact columns on company pages. */
+main:has(> .page-hero) .menu-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 48px);
+}
+
+main:has(> .page-hero) .menu-groups .menu {
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+}
+
+main:has(> .page-hero) .menu-group + .menu-group {
+  margin-top: 0;
+}
+
+main:has(> .page-hero) .menu-group-head {
+  margin-bottom: 20px;
+}
+
+main:has(> .page-hero) .menu-group-head .heading {
+  font-size: var(--t-lead);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.menu.menu-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: clamp(24px, 3vw, 40px);
+}
+
+main:has(> .page-hero) .facts {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px 40px;
+}
+
+@media (max-width: 1080px) {
+  .keyfacts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .offer {
+    grid-template-columns: minmax(200px, 34%) minmax(0, 1fr);
+  }
+
+  .offer-media {
+    grid-row: span 2;
+  }
+
+  .offer-side {
+    grid-column: 2;
+    padding: 0 clamp(24px, 3vw, 36px) clamp(24px, 3vw, 36px);
+  }
+
+  main:has(> .page-hero) .facts,
+  .menu.menu-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .intro-split,
+  main:has(> .page-hero) .menu-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .keyfacts > div {
+    padding: 16px;
+  }
+
+  .offer {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-media {
+    grid-row: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .offer-side {
+    grid-column: auto;
+    padding: 0 24px 24px;
+  }
+
+  .offer-side .btn {
+    margin-top: 16px;
+  }
+
+  main:has(> .page-hero) .facts,
+  .menu.menu-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .keyfacts {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Long email addresses wrap instead of pushing the ticket wider than a phone. */
+.coupon > * {
+  min-width: 0;
+}
+
+.contact-lines a {
+  overflow-wrap: anywhere;
+}

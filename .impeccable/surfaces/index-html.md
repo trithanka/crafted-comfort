@@ -13,7 +13,7 @@ Audience and job: Northeast homeowners, developers and café/resort owners decid
 
 Proof on hand: the Sonapur resort where the products are in daily use; Loom Crafts partnership; lifetime warranty and free annual maintenance (original site). No reviews or customer numbers exist.
 
-Constraints: static HTML/CSS/JS; enquiries post to FORM_ENDPOINT (unset); owner keeps the existing img/ photos and the sample menus, rooms and rates.
+Constraints: static HTML/CSS/JS; enquiries post to FORM_ENDPOINT (unset); owner keeps the existing assets/img/photos and the sample menus, rooms and rates.
 
 Client requirement (2026-10-17): the home hero is a short about Crafted Comfort, and all companies sit directly below it. No gamosa theme. Memorable moment kept: the trial-visit planner.
 

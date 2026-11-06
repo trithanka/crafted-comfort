@@ -1,0 +1,340 @@
+/* --------------------------------------------------------------------------
+   Bullets
+   -------------------------------------------------------------------------- */
+.dot {
+  display: inline-block;
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+}
+
+.menu-item.plain {
+  grid-template-columns: 1fr;
+}
+
+/* --------------------------------------------------------------------------
+   Home hero: a short about, with one picture
+   -------------------------------------------------------------------------- */
+/* Header laid over the dark hero on the home page. */
+.site-header--over {
+  position: absolute;
+  inset: 0 0 auto;
+  color: var(--on-accent);
+}
+
+/* Immersive hero: full-screen photograph that changes with the company in focus. */
+.hero-x {
+  position: relative;
+  display: flex;
+  min-height: max(680px, 100svh);
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--on-accent);
+}
+
+.hero-x-bg,
+.hero-x-bg img,
+.hero-x-bg video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-x-bg img,
+.hero-x-bg video {
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 0.9s ease, transform 6s linear;
+}
+
+.hero-x-bg .is-on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Flat ink veil so white type holds on any photograph. */
+.hero-x-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 17, 15, 0.5);
+}
+
+.hero-x-body {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: end;
+  gap: clamp(40px, 5vw, 72px);
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: clamp(24px, 3vw, 40px);
+}
+
+.hero-x-copy .lead {
+  max-width: 40ch;
+  margin-top: 24px;
+  color: var(--on-accent);
+}
+
+.hero-x-tagline {
+  margin-bottom: 20px;
+  font-size: var(--t-small);
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-accent-soft);
+}
+
+.hero-x-title {
+  font-size: var(--t-display);
+  font-weight: 820;
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  color: var(--on-accent);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.btn-line {
+  padding: 12px 26px;
+  border: 2px solid var(--on-accent);
+  background: transparent;
+  color: var(--on-accent);
+}
+
+.btn-line:hover {
+  background: var(--on-accent);
+  color: var(--ink);
+}
+
+/* The five companies along the foot of the hero. */
+.hero-x-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2px;
+  list-style: none;
+}
+
+.hero-co {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  height: 100%;
+  padding: 18px 18px 22px;
+  background: rgba(20, 17, 15, 0.55);
+  color: var(--on-accent);
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.hero-co:hover,
+.hero-co:focus-visible,
+.hero-co.is-on {
+  background: var(--accent);
+}
+
+.hero-co-name {
+  font-size: var(--t-body);
+  font-weight: 760;
+  line-height: 1.2;
+}
+
+.hero-co-what {
+  font-size: var(--t-small);
+  color: var(--on-accent-soft);
+}
+
+/* Timer bar: fills while a company is on show. */
+.hero-co-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--on-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.hero-co.is-on .hero-co-bar {
+  animation: hero-bar var(--hero-step, 5s) linear forwards;
+}
+
+[data-hero].is-paused .hero-co.is-on .hero-co-bar {
+  animation-play-state: paused;
+}
+
+@keyframes hero-bar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-x-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-x-list li:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-x-body {
+    padding-top: 112px;
+  }
+
+  .hero-co {
+    padding: 14px;
+  }
+
+  .hero-co-what {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-x-bg img,
+  .hero-x-bg video {
+    transform: none;
+    transition: opacity 0.3s linear;
+  }
+
+  .hero-co-bar {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Companies
+   -------------------------------------------------------------------------- */
+.companies-section {
+  padding-top: clamp(64px, 7vw, 112px);
+  padding-bottom: clamp(64px, 7vw, 112px);
+  background: var(--accent-tint);
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.company-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--ground);
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.18s var(--ease-out);
+}
+
+.company-link:hover {
+  background: #fff;
+}
+
+.company-media {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.company-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.company-link:hover .company-media img {
+  transform: scale(1.04);
+}
+
+.company-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 14px 16px 16px;
+}
+
+.company-text .name {
+  font-size: var(--t-body);
+  font-weight: 760;
+  line-height: 1.2;
+}
+
+.company-what {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: var(--t-small);
+}
+
+.company-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: var(--t-small);
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.company-cta svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.18s var(--ease-out);
+}
+
+.company-link:hover .company-cta svg {
+  transform: translateX(4px);
+}
+
+@media (max-width: 960px) {
+  .companies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .companies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .company-media img,
+  .company-cta svg {
+    transition: none;
+  }
+}
+
+/* Social links: the brand's own coloured icon, no handle. */
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  width: max-content;
+  min-height: 44px;
+  transition: transform 0.2s;
+}
+
+.social:hover,
+.social:focus-visible {
+  transform: translateY(-2px);
+}
+
+.social svg {
+  flex: none;
+}
