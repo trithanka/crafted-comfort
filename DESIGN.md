@@ -143,6 +143,9 @@ Flat fill, square, 52px minimum height. Green primary; ink, tone and white (on g
 ### Company entry
 Small card on the tone ground, all four in one row so they read at a glance: 4:3 photo, name, what it is, and a "Visit" link; the whole card is one link. Four columns on desktop, two on tablet, two on phones.
 
+### Company pages
+A profile, not a photo gallery. Hero (name, one sentence, one button, one 16:9 photo), then a strip of four key facts on tone cells (where, what, how to reach, phone), then one flat tone row per thing the company runs: a photo bleeding to the row's left edge, name and description, and a side column with the place and the action. No alternating full-width photo and text blocks, and no photo that only decorates. Sections on these pages use the tighter `clamp(48px, 5.5vw, 88px)` rhythm. Rows drop to photo plus text on tablet and stack on phones.
+
 ### Chips, inputs, navigation
 Planner chips are real radio buttons (tone, ink when chosen). Form fields sit on the ink ticket with labels above. Navigation is the logo and three links: Companies, Furniture, Contact.
 

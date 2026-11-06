@@ -11,7 +11,7 @@
   <meta property="og:image" content="img/nuts-and-berries.webp">
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="preload" href="fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/site.css?v=8">
+  <link rel="stylesheet" href="css/site.css?v=13">
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -50,16 +50,20 @@
       <div class="page-hero-media">
         <div class="frame"><div class="shutter"><img src="img/nuts-and-berries.webp" alt="Berry tarts, breads and nuts on the counter at Nuts and Berries" width="1376" height="768" fetchpriority="high"></div></div>
       </div>
+      <dl class="keyfacts">
+        <div><dt>Counter</dt><dd>Baked each morning, out by 7:30</dd></div>
+        <div><dt>Pickup or delivery</dt><dd>Across Guwahati, every two hours</dd></div>
+        <div><dt>Gift hampers</dt><dd>Weddings and offices, across the Northeast</dd></div>
+        <div><dt>Call</dt><dd><a href="tel:+917099279374">+91 70992 79374</a></dd></div>
+      </dl>
     </div>
 
     <section id="menu" class="section wrap" aria-labelledby="menu-title">
-      <div class="split section-head">
-        <div class="reveal">
+      <div class="section-head reveal">
           <h2 class="heading" id="menu-title">The counter</h2>
           <p class="lead muted">Baked each morning and set out by 7:30. Order ahead for pickup or delivery in Guwahati.</p>
-        </div>
-        <div class="split-media reveal" style="--i:1;aspect-ratio:3/2"><img src="img/nuts-and-berries-bakes.webp" alt="Almond croissants on a cake stand on the counter" width="720" height="480" loading="lazy" decoding="async"></div>
       </div>
+      <div class="menu-groups">
       <div class="menu-group">
         <div class="menu-group-head reveal">
           <h3 class="heading">Tarts and breads</h3>
@@ -128,34 +132,25 @@
           </li>
         </ul>
       </div>
-    </section>
-
-    <section class="panel on-accent" aria-labelledby="hamper-title">
-      <div class="panel-left">
-        <h2 class="heading reveal" id="hamper-title">Gift hampers</h2>
-        <div class="panel-photo drift"><img src="img/nuts-and-berries-jars.webp" alt="Jars of roasted nuts on a shelf above the counter" width="1376" height="768" loading="lazy" decoding="async"></div>
-      </div>
-      <div class="panel-right">
-        <div class="reveal">
-          <h3 class="name">For weddings and offices</h3>
-          <p>Wooden cases filled with roasted nuts, berry preserves and coffee, packed to your list and branded if you like.</p>
-        </div>
-        <div class="reveal" style="--i:1">
-          <h3 class="name">Delivered across the Northeast</h3>
-          <p>Tell us the number of hampers and the date. We will send a list of contents and a price to choose from.</p>
-        </div>
-        <a class="btn btn-white reveal" style="--i:2" href="#contact">Ask about hampers</a>
       </div>
     </section>
 
-    <section class="section wrap" aria-labelledby="deliver-title">
-      <div class="split">
-        <div class="split-media reveal"><img src="img/view-of-guwahati-city-from-atop-nilachal.webp" alt="Guwahati spread below green hills at dusk" width="1400" height="927" loading="lazy" decoding="async"></div>
-        <div class="reveal" style="--i:1">
-          <h2 class="heading" id="deliver-title">Pickup or delivery</h2>
-          <p class="lead">Collect from the counter, or have your order delivered across Guwahati. Deliveries leave every two hours through the day.</p>
-        </div>
-      </div>
+    <section class="section wrap" aria-labelledby="hamper-title" style="padding-top:0">
+      <ul class="offers">
+        <li class="offer reveal" id="hampers">
+          <div class="offer-media"><img src="img/nuts-and-berries-jars.webp" alt="Jars of roasted nuts on a shelf above the counter" width="1376" height="768" loading="lazy" decoding="async"></div>
+          <div class="offer-body">
+            <h2 class="name" id="hamper-title">Gift hampers for weddings and offices</h2>
+            <p>Wooden cases filled with roasted nuts, berry preserves and coffee, packed to your list and branded if you like.</p>
+            <p>Tell us the number of hampers and the date. We will send a list of contents and a price to choose from.</p>
+          </div>
+          <div class="offer-side">
+            <p class="small">Delivered</p>
+            <p>Across the Northeast</p>
+            <a class="btn" href="#contact">Ask about hampers</a>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section id="contact" class="section wrap" aria-labelledby="contact-title">
@@ -237,7 +232,6 @@
       </div>
       <div class="footer-base small">
         <p>&copy; <span data-year>2026</span> Crafted Comfort. Northeast India partner of Loom Crafts.</p>
-        <p class="credits">Photos via Wikimedia Commons: <a href="https://commons.wikimedia.org/w/index.php?curid=98933877">“View of Guwahati city from atop Nilachal hill”</a> by Gitartha.bordoloi, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
         <a class="btn btn-tone" href="#main">Back to top</a>
       </div>
     </div>
