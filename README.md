@@ -14,10 +14,12 @@ Then open http://localhost:8001.
 
 ```
 index.html               Home: about, all companies, furniture, trial visit, contact
-loom-crafts.html         Company pages (one per brand)
-barefoot.html
-bnb.html
-nuts-and-berries.html
+                         (stays in the root: hosts serve the site from it)
+pages/                   Company pages, one per brand
+  loom-crafts.html
+  barefoot.html
+  bnb.html
+  nuts-and-berries.html
 
 assets/
   css/                   Styles, loaded in this order by every page:
@@ -44,9 +46,9 @@ DESIGN.md                visual system: colours, type, layout, components
 
 ## Common edits
 
-- **Phone number:** search the HTML for `7099279374`; the JS copy is `PHONE_DISPLAY` / `PHONE_LINK` at the top of `assets/js/main.js`.
+- **Phone number:** search `index.html` and `pages/` for `7099279374`; the JS copy is `PHONE_DISPLAY` / `PHONE_LINK` at the top of `assets/js/main.js`.
 - **Enquiry forms:** set `FORM_ENDPOINT` in `assets/js/main.js`. Until it is set, forms say the request could not be sent and show the phone number.
 - **Colours and sizes:** the tokens at the top of `assets/css/base.css`.
-- **A new photo:** add a `.webp` to `assets/img/photos/` and reference it as `assets/img/photos/<name>.webp`.
+- **A new photo:** add a `.webp` to `assets/img/photos/` and reference it as `assets/img/photos/<name>.webp` from `index.html`, or `../assets/img/photos/<name>.webp` from a page in `pages/`.
 
 The order of the stylesheet links matters: later files override earlier ones. Add new styles to the file for that part of the site, keeping the order above.
