@@ -116,10 +116,10 @@
   color: var(--ink);
 }
 
-/* The five companies along the foot of the hero. */
+/* The four companies along the foot of the hero. */
 .hero-x-list {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2px;
   list-style: none;
 }
@@ -185,14 +185,36 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-x-list li:last-child {
-    grid-column: span 2;
-  }
 }
 
 @media (max-width: 640px) {
   .hero-x-body {
-    padding-top: 112px;
+    padding-top: 96px;
+  }
+
+  /* One swipeable row of companies so all four start on the first screen. */
+  .hero-x-list {
+    display: flex;
+    gap: 2px;
+    margin-inline: calc(var(--margin) * -1);
+    padding-inline: var(--margin);
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: var(--margin);
+    scrollbar-width: none;
+  }
+
+  .hero-x-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-x-list li {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .hero-x-list .hero-co-name {
+    white-space: nowrap;
   }
 
   .hero-co {
@@ -337,4 +359,47 @@
 
 .social svg {
   flex: none;
+}
+
+/* Pause control for the rotating hero: touch visitors cannot hover to stop it. */
+.hero-pause {
+  justify-self: end;
+  margin-bottom: calc(clamp(40px, 5vw, 72px) * -1 + 4px);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: none;
+  color: var(--on-accent);
+  font: inherit;
+  font-size: var(--t-small);
+  cursor: pointer;
+}
+
+.hero-pause svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.hero-pause .i-play,
+.hero-pause[aria-pressed="true"] .i-pause {
+  display: none;
+}
+
+.hero-pause[aria-pressed="true"] .i-play {
+  display: inline;
+}
+
+.hero-pause:hover span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-pause {
+    display: none;
+  }
 }

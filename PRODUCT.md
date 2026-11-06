@@ -30,7 +30,7 @@ Clients can see, stay in and use the products before they buy: the furniture and
 
 - Static HTML/CSS/JS, no build step, no backend.
 - Enquiry delivery is undecided: forms post to `FORM_ENDPOINT` in `assets/js/main.js` and show an error until it is set. Owner skipped the decision for now.
-- Contact (client brochure, Oct 2026): phone 7099279374 everywhere. Email: furniture.guwahati@loomcrafts.com (Loom Crafts), barefootinthegarden417@gmail.com and Instagram @barefootinthegarden (Barefoot), info@craftedcomfort.in kept for the other pages pending confirmation.
+- Contact (client brochure, Oct 2026): phone 7099279374 everywhere. Email: furniture.guwahati@loomcrafts.com (Loom Crafts), barefootinthegarden417@gmail.com and Instagram @barefootinthegarden (Barefoot), the home contact uses the Loom Crafts address since most home enquiries are furniture and prefab; info@craftedcomfort.in kept for the footer, B&B and Nuts and Berries pending confirmation. Nuts and Berries street address still needed from the client.
 
 ## Brand Commitments
 

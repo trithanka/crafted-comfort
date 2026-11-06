@@ -572,7 +572,7 @@
 .coupon-left p {
   margin-top: 20px;
   max-width: 36ch;
-  color: #d9d1cd;
+  color: var(--on-ink-soft);
 }
 
 .contact-lines {
@@ -581,6 +581,9 @@
 }
 
 .contact-lines a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -737,4 +740,11 @@
   .field-row {
     grid-template-columns: 1fr;
   }
+}
+
+/* What happens after sending, said where the decision is made. */
+.form-promise {
+  font-size: var(--t-small);
+  color: var(--on-ink-soft);
+  max-width: 52ch;
 }

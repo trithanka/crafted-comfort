@@ -12,6 +12,8 @@ colors:
   on-accent: "#ffffff"
   on-accent-soft: "#d3e4da"
   ink-raised: "#2e2725"
+  on-ink-soft: "#d9d1cd"
+  on-ink-muted: "#c9bfbb"
 typography:
   display:
     fontFamily: "Archivo, Helvetica Neue, Arial, sans-serif"
@@ -111,7 +113,7 @@ The home page does two jobs for the client: say in a few lines who Crafted Comfo
 - **Green tint** (`#d5e2d8`): the full-width band behind the companies cards.
 
 ### Neutral
-- **Ground** (`#f1f3ee`, soft sage-grey so the page never reads as bare white), **Tone** (`#e3e7e0`) for alternate sections and secondary buttons, **Ink** (`#1c1715`) for text, the contact form and the footer, **Muted** (`#5a524e`) for secondary text, **Raised ink** (`#2e2725`) for fields on the ink form, **Soft green text** (`#d3e4da`) for secondary text on green.
+- **Ground** (`#f1f3ee`, soft sage-grey so the page never reads as bare white), **Tone** (`#e3e7e0`) for alternate sections and secondary buttons, **Ink** (`#1c1715`) for text, the contact form and the footer, **Muted** (`#5a524e`) for secondary text, **Raised ink** (`#2e2725`) for fields on the ink form, **Soft text on ink** (`#d9d1cd`) and **Muted text on ink** (`#c9bfbb`) for secondary text on the form ticket and footer, **Soft green text** (`#d3e4da`) for secondary text on green.
 
 ### Named Rules
 **The Three Colour Rule.** Ground, ink, green. Nothing else.

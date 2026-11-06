@@ -64,6 +64,16 @@ function initTabs(root) {
   });
 
   select(tabs.find(t => t.getAttribute('aria-selected') === 'true') || tabs[0]);
+
+  // A link such as index.html#tab-cottages opens that tab.
+  const fromHash = () => {
+    const tab = tabs.find(t => '#' + t.id === location.hash);
+    if (!tab) return;
+    select(tab);
+    requestAnimationFrame(() => root.scrollIntoView({ block: 'start' }));
+  };
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
 }
 
 /* --------------------------------------------------------------------------
@@ -84,7 +94,12 @@ function initPlanner() {
     ask.dataset.piece = radio.value;
   };
 
-  radios.forEach(r => r.addEventListener('change', () => show(r)));
+  const narrow = window.matchMedia('(max-width: 860px)');
+  const still = window.matchMedia('(prefers-reduced-motion: reduce)');
+  radios.forEach(r => r.addEventListener('change', () => {
+    show(r);
+    if (narrow.matches) where.closest('.planner-result').scrollIntoView({ block: 'nearest', behavior: still.matches ? 'auto' : 'smooth' });
+  }));
   show(radios.find(r => r.checked) || radios[0]);
 
   ask.addEventListener('click', () => {
@@ -256,7 +271,7 @@ function initHero() {
 
   const next = () => show(current >= items.length ? 1 : current + 1);
   const play = () => {
-    if (still) return;
+    if (still || held) return;
     clearInterval(timer);
     timer = setInterval(next, STEP);
     root.classList.remove('is-paused');
@@ -265,6 +280,16 @@ function initHero() {
     clearInterval(timer);
     root.classList.add('is-paused');
   };
+
+  let held = false;
+  const toggle = root.querySelector('[data-hero-pause]');
+  if (toggle) toggle.addEventListener('click', () => {
+    held = !held;
+    toggle.setAttribute('aria-pressed', String(held));
+    toggle.querySelector('span').textContent = held ? 'Play slideshow' : 'Pause slideshow';
+    if (held) pause();
+    else { if (current === 0) show(1); play(); }
+  });
 
   items.forEach(a => {
     const n = +a.dataset.heroItem;

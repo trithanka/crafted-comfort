@@ -162,5 +162,5 @@
 }
 
 .field-ink .muted {
-  color: #c9bfbb;
+  color: var(--on-ink-muted);
 }
