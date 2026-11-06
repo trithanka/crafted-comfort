@@ -1,0 +1,1026 @@
+/* ==========================================================================
+   Crafted Comfort — Modern Company Detail Pages Design System
+   Elevating sub-pages from flat paper brochures into luxury digital showcases
+   ========================================================================== */
+
+:root {
+  --luxury-gold: #c8955a;
+  --luxury-gold-soft: #f4ede4;
+  --luxury-gold-glow: rgba(200, 149, 90, 0.25);
+  --card-bg: #ffffff;
+  --card-border: rgba(42, 23, 16, 0.08);
+  --card-border-hover: rgba(154, 63, 31, 0.3);
+  --card-shadow: 0 10px 30px -10px rgba(42, 23, 16, 0.07);
+  --card-shadow-hover: 0 20px 40px -12px rgba(42, 23, 16, 0.16);
+  --glass-bg: rgba(239, 232, 222, 0.85);
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-pill: 9999px;
+}
+
+/* --------------------------------------------------------------------------
+   Brand Page Hero (Elevated & Cinematic)
+   -------------------------------------------------------------------------- */
+.brand-hero {
+  position: relative;
+  padding-block: clamp(32px, 5vw, 64px) clamp(48px, 7vw, 96px);
+  background: radial-gradient(circle at 85% 20%, rgba(200, 149, 90, 0.12), transparent 50%),
+              radial-gradient(circle at 10% 80%, rgba(154, 63, 31, 0.06), transparent 40%),
+              var(--ground);
+  border-bottom: 1px solid var(--card-border);
+  overflow: hidden;
+}
+
+.brand-hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(36px, 5vw, 80px);
+  align-items: center;
+}
+
+.brand-hero-crumbs {
+  margin-bottom: 20px;
+  font-size: var(--t-small);
+  color: var(--muted);
+}
+
+.brand-hero-crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brand-hero-crumbs li + li::before {
+  content: "/";
+  margin-right: 8px;
+  opacity: 0.5;
+}
+
+.brand-hero-crumbs a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.brand-hero-crumbs a:hover {
+  color: var(--accent);
+}
+
+.brand-hero-crumbs [aria-current] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Floating Eyebrow Pill */
+.brand-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--luxury-gold-soft);
+  border: 1px solid rgba(200, 149, 90, 0.35);
+  color: var(--accent-deep);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.brand-eyebrow .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 0 var(--luxury-gold-glow);
+  animation: pulse-ring 2.5s infinite;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(154, 63, 31, 0.45); }
+  70% { box-shadow: 0 0 0 8px rgba(154, 63, 31, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(154, 63, 31, 0); }
+}
+
+.brand-hero-title {
+  font-size: var(--t-display);
+  font-weight: 650;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+
+.brand-hero-desc {
+  font-size: var(--t-lead);
+  line-height: 1.6;
+  color: var(--muted);
+  max-width: 48ch;
+  margin-bottom: 28px;
+}
+
+/* Feature tags in hero */
+.brand-hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.brand-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid var(--card-border);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+  backdrop-filter: blur(8px);
+}
+
+.brand-hero-tag svg {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Hero Action Buttons */
+.brand-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-luxury {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 30px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 650;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(154, 63, 31, 0.25);
+  transition: all 0.3s var(--ease-out);
+}
+
+.btn-luxury:hover {
+  background: var(--accent-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(154, 63, 31, 0.35);
+}
+
+.btn-luxury-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 26px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1.5px solid rgba(42, 23, 16, 0.18);
+  color: var(--ink);
+  font-weight: 650;
+  font-size: 1rem;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.btn-luxury-outline:hover {
+  background: var(--ink);
+  color: var(--ground);
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+
+/* Hero Visual Showcase */
+.brand-hero-visual {
+  position: relative;
+}
+
+.brand-visual-frame {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 16 / 11;
+  background: var(--tone);
+  box-shadow: 0 24px 60px -16px rgba(42, 23, 16, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.brand-visual-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s var(--ease-out);
+}
+
+.brand-visual-frame:hover img {
+  transform: scale(1.04);
+}
+
+/* Floating Status / Spec Badge */
+.brand-floating-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 22px;
+  border-radius: var(--radius-md);
+  background: var(--ink);
+  color: var(--ground);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  z-index: 2;
+  backdrop-filter: blur(12px);
+}
+
+.brand-floating-badge .badge-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  flex-shrink: 0;
+}
+
+.brand-floating-badge strong {
+  display: block;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.brand-floating-badge span {
+  display: block;
+  font-size: 0.8125rem;
+  color: #c9bfbb;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Quick-Jump Nav Bar
+   -------------------------------------------------------------------------- */
+.brand-quicknav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(239, 232, 222, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(42, 23, 16, 0.08);
+  padding-block: 12px;
+  margin-bottom: clamp(40px, 6vw, 72px);
+  transition: box-shadow 0.3s ease;
+}
+
+.brand-quicknav.is-sticky {
+  box-shadow: 0 8px 24px -6px rgba(42, 23, 16, 0.08);
+}
+
+.brand-quicknav-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.brand-quicknav-list::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-quicknav-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.875rem;
+  font-weight: 650;
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.brand-quicknav-item a:hover {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.brand-quicknav-item a.active {
+  background: var(--ink);
+  color: var(--ground);
+}
+
+/* --------------------------------------------------------------------------
+   Section Headers (Editorial & Clear)
+   -------------------------------------------------------------------------- */
+.brand-section-header {
+  margin-bottom: clamp(32px, 4.5vw, 56px);
+  max-width: 68ch;
+}
+
+.brand-section-header .section-kicker {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.brand-section-header .heading {
+  font-size: var(--t-heading);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+
+.brand-section-header .lead {
+  font-size: var(--t-lead);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   Modern Card Grids (Responsive & Elevated)
+   -------------------------------------------------------------------------- */
+.luxury-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(24px, 3.5vw, 40px);
+}
+
+.luxury-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.luxury-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(16px, 2.5vw, 28px);
+}
+
+/* --------------------------------------------------------------------------
+   Luxury Showcase Card
+   -------------------------------------------------------------------------- */
+.luxury-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), border-color 0.35s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--card-border-hover);
+}
+
+.luxury-card-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--tone);
+}
+
+.luxury-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out);
+}
+
+.luxury-card:hover .luxury-card-media img {
+  transform: scale(1.05);
+}
+
+/* Badges on card media */
+.card-media-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-media-price {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--ink);
+  color: var(--ground);
+  font-size: 0.875rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.luxury-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: clamp(20px, 3vw, 28px);
+}
+
+.luxury-card-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.luxury-card-desc {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* Feature tags / Amenities inside card */
+.card-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(42, 23, 16, 0.08);
+  margin-bottom: 20px;
+}
+
+.amenity-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--ground);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.amenity-chip svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+.card-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-card-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  flex: 1;
+  transition: all 0.25s ease;
+}
+
+.btn-card-primary:hover {
+  background: var(--accent-deep);
+  transform: translateY(-2px);
+}
+
+.btn-card-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--ground);
+  color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-card-secondary:hover {
+  background: var(--tone);
+}
+
+/* --------------------------------------------------------------------------
+   Modern Tabbed Product / Story Showcase
+   -------------------------------------------------------------------------- */
+.brand-tab-showcase {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  padding: clamp(24px, 4vw, 48px);
+  margin-block: clamp(32px, 5vw, 64px);
+}
+
+.brand-tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: clamp(24px, 4vw, 40px);
+}
+
+.tab-pill {
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid transparent;
+  background: var(--ground);
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-pill:hover {
+  color: var(--ink);
+  background: var(--tone);
+}
+
+.tab-pill[aria-selected="true"] {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(154, 63, 31, 0.25);
+}
+
+.tab-content-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+
+.tab-content-panel[hidden] {
+  display: none;
+}
+
+.tab-content-panel .panel-img {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.tab-content-panel .panel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tab-content-panel .panel-info h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.125rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.tab-content-panel .panel-info p {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.tab-specs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+  list-style: none;
+  padding: 0;
+}
+
+.tab-spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tab-spec-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Engineering Spec Matrix (For Loom Crafts Prefab & Quality)
+   -------------------------------------------------------------------------- */
+.spec-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2vw, 24px);
+  margin-block: clamp(32px, 5vw, 64px);
+}
+
+.spec-matrix-card {
+  padding: 24px 20px;
+  border-radius: var(--radius-md);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.spec-matrix-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.spec-matrix-val {
+  display: block;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 750;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.spec-matrix-title {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.spec-matrix-sub {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Experience Banner ("Try Before You Invest")
+   -------------------------------------------------------------------------- */
+.experience-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+  padding: clamp(36px, 5vw, 64px);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #2a1710 0%, #1e100a 100%);
+  color: var(--ground);
+  margin-block: clamp(48px, 8vw, 96px);
+  box-shadow: 0 24px 60px -16px rgba(42, 23, 16, 0.4);
+}
+
+.experience-banner .lead-gold {
+  color: #eed8cc;
+  font-size: var(--t-lead);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.experience-banner .heading {
+  color: #ffffff;
+  font-size: var(--t-heading);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.experience-banner-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.experience-banner-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   Modern Concierge Booking & Contact Card (Replaces flat coupon)
+   -------------------------------------------------------------------------- */
+.concierge-section {
+  padding-block: clamp(48px, 8vw, 96px);
+}
+
+.concierge-card {
+  display: grid;
+  grid-template-columns: 4.5fr 7.5fr;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 24px 64px -16px rgba(42, 23, 16, 0.18);
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+
+.concierge-sidebar {
+  padding: clamp(32px, 5vw, 56px);
+  background: var(--ink);
+  color: var(--ground);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.concierge-sidebar-top h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.concierge-sidebar-top p {
+  color: #eed8cc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.concierge-direct-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.direct-action-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.direct-action-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateX(4px);
+}
+
+.direct-action-btn.whatsapp-btn {
+  background: #128c7e;
+  border-color: #25d366;
+  color: #ffffff;
+}
+
+.direct-action-btn.whatsapp-btn:hover {
+  background: #075e54;
+}
+
+.direct-action-btn svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.concierge-address-info {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+  color: #c9bfbb;
+  line-height: 1.5;
+}
+
+/* Concierge Form Area */
+.concierge-form-area {
+  padding: clamp(32px, 5vw, 56px);
+  background: #ffffff;
+}
+
+.concierge-form-header {
+  margin-bottom: 28px;
+}
+
+.concierge-form-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.concierge-form-header p {
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+.concierge-form .form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.form-field-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.form-field-modern label {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.form-field-modern input,
+.form-field-modern select,
+.form-field-modern textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid rgba(42, 23, 16, 0.15);
+  background: var(--ground);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-field-modern input:focus,
+.form-field-modern select:focus,
+.form-field-modern textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(154, 63, 31, 0.12);
+}
+
+.btn-submit-luxury {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(154, 63, 31, 0.25);
+}
+
+.btn-submit-luxury:hover {
+  background: var(--accent-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(154, 63, 31, 0.35);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .brand-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .concierge-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .spec-matrix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tab-content-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-banner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxury-grid-2,
+  .luxury-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .concierge-form .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-floating-badge {
+    position: static;
+    margin-top: 16px;
+  }
+
+  .spec-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Enhanced Homepage Company Directory Rows
+   -------------------------------------------------------------------------- */
+.row {
+  position: relative;
+  border: 1px solid rgba(42, 23, 16, 0.08);
+  box-shadow: 0 4px 16px rgba(42, 23, 16, 0.04);
+  overflow: hidden;
+}
+
+.row:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 28px -8px rgba(154, 63, 31, 0.25);
+  border-color: rgba(154, 63, 31, 0.4);
+}
+
+.row-tag {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+.row:hover .row-tag {
+  color: #f7e6d8;
+}
+
+.row-img {
+  transition: transform 0.4s var(--ease-out);
+}
+
+.row:hover .row-img {
+  transform: scale(1.08);
+}
+

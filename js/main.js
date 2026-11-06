@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollFx();
   initHeroTilt();
   initTitleLetters();
+  initBrandQuickNav();
+  initBookingPrefills();
 });
 
 /* --------------------------------------------------------------------------
@@ -291,4 +293,95 @@ function initTitleLetters() {
   });
   // Let the entrance finish before letting letters rise out of their clipped line.
   setTimeout(() => title.classList.add('is-set'), 1600);
+}
+
+/* --------------------------------------------------------------------------
+   Brand Page Quick-Nav tracking and Sticky Shadows
+   -------------------------------------------------------------------------- */
+function initBrandQuickNav() {
+  const quicknav = document.querySelector('.brand-quicknav');
+  if (!quicknav) return;
+
+  const links = [...quicknav.querySelectorAll('.brand-quicknav-item a')];
+  if (!links.length) return;
+
+  const sections = links.map(link => {
+    const id = link.getAttribute('href');
+    if (!id || !id.startsWith('#')) return null;
+    return document.querySelector(id);
+  }).filter(Boolean);
+
+  // Update active state on scroll
+  const onScroll = () => {
+    const scrollPos = window.scrollY + 120;
+    let currentId = '';
+
+    sections.forEach(sec => {
+      const top = sec.offsetTop;
+      const height = sec.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        currentId = '#' + sec.id;
+      }
+    });
+
+    if (currentId) {
+      links.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === currentId);
+      });
+    }
+
+    quicknav.classList.toggle('is-sticky', window.scrollY > 150);
+  };
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+/* --------------------------------------------------------------------------
+   Interactive Booking / Order Prefill from Showcase Cards
+   -------------------------------------------------------------------------- */
+function initBookingPrefills() {
+  // Prefill Barefoot suites
+  document.querySelectorAll('[data-select-suite]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const suite = btn.dataset.selectSuite;
+      const select = document.querySelector('#b-interest');
+      if (!select) return;
+      const opt = [...select.options].find(o => o.value.includes(suite) || o.text.includes(suite));
+      if (opt) select.value = opt.value;
+    });
+  });
+
+  // Prefill B&B properties
+  document.querySelectorAll('[data-select-property]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const prop = btn.dataset.selectProperty;
+      const select = document.querySelector('#bnb-location');
+      if (!select) return;
+      const opt = [...select.options].find(o => o.value.includes(prop) || o.text.includes(prop));
+      if (opt) select.value = opt.value;
+    });
+  });
+
+  // Prefill Loom Crafts interests
+  document.querySelectorAll('[data-select-interest]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const interest = btn.dataset.selectInterest;
+      const select = document.querySelector('#c-interest');
+      if (!select) return;
+      const opt = [...select.options].find(o => o.value.includes(interest) || o.text.includes(interest));
+      if (opt) select.value = opt.value;
+    });
+  });
+
+  // Prefill Nuts and Berries items
+  document.querySelectorAll('[data-select-item]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.dataset.selectItem;
+      const select = document.querySelector('#nb-item');
+      if (!select) return;
+      const opt = [...select.options].find(o => o.value.includes(item) || o.text.includes(item));
+      if (opt) select.value = opt.value;
+    });
+  });
 }
