@@ -1,23 +1,28 @@
 /* --------------------------------------------------------------------------
    Brand page hero
    -------------------------------------------------------------------------- */
+/* Each company page arrives on its own photograph under the forest-green veil,
+   with the key facts card resting on the photo's foot. */
 .page-hero {
+  --hero-foot: clamp(44px, 5vw, 64px);
+  position: relative;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: clamp(32px, 4vw, 56px) clamp(32px, 5vw, 80px);
-  align-items: center;
-  padding-block: clamp(24px, 4vw, 64px) var(--section);
+  grid-template-columns: minmax(0, 1fr);
+  align-content: end;
+  gap: 18px;
+  min-height: min(80svh, 780px);
+  padding-top: clamp(120px, 16vw, 200px);
+  color: var(--on-accent);
 }
 
 .page-hero h1 {
-  grid-column: 1 / -1;
+  max-width: 16ch;
 }
 
 .crumbs {
-  grid-column: 1 / -1;
-  margin-bottom: calc(-1 * clamp(16px, 2.5vw, 36px));
   font-size: var(--t-small);
-  color: var(--muted);
+  color: var(--on-accent-soft);
 }
 
 .crumbs ol {
@@ -48,32 +53,68 @@
 
 .crumbs a:hover,
 .crumbs a:focus-visible {
-  color: var(--accent);
+  color: var(--brass-light);
   text-decoration-color: currentColor;
 }
 
 .crumbs [aria-current] {
-  color: var(--ink);
+  color: var(--on-accent);
   font-weight: 650;
+}
+
+.page-hero-copy {
+  max-width: 52ch;
+}
+
+.page-hero .lead {
+  max-width: 44ch;
+  color: var(--on-accent);
 }
 
 .page-hero .meta {
-  margin-top: 18px;
+  margin-top: 16px;
   font-weight: 650;
+  color: var(--brass-light);
 }
 
 .page-hero .btn {
-  margin-top: 32px;
+  margin-top: 28px;
+  background: var(--on-accent);
+  color: var(--accent);
+}
+
+.page-hero .btn:hover {
+  background: var(--brass-light);
 }
 
 .page-hero-media {
-  position: relative;
+  position: absolute;
+  inset: 0 0 var(--hero-foot);
+  z-index: -1;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.page-hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(16, 40, 30, 0.8) 0%, rgba(16, 40, 30, 0.45) 55%, rgba(16, 40, 30, 0.2) 100%),
+    linear-gradient(180deg, rgba(16, 40, 30, 0) 40%, rgba(16, 40, 30, 0.6) 100%);
+  pointer-events: none;
 }
 
 .page-hero-media .frame {
-  aspect-ratio: 4 / 3;
+  height: 100%;
   overflow: hidden;
-  border-radius: var(--radius);
+}
+
+.page-hero .keyfacts {
+  position: relative;
+  margin-top: clamp(24px, 3vw, 40px);
+  color: var(--ink);
+  box-shadow: var(--shadow-lift);
 }
 
 .page-hero-media img {

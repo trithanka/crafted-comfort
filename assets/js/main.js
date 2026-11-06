@@ -252,8 +252,20 @@ function initHero() {
   let current = 0;
   let timer;
 
+  // Frames after the first carry data-src; load each just before it is needed.
+  const load = el => {
+    if (el && el.dataset.src) {
+      el.src = el.dataset.src;
+      delete el.dataset.src;
+    }
+  };
+  const frame = n => [...bgs].find(el => +el.dataset.heroBg === n);
+  setTimeout(() => bgs.forEach(load), 1200);
+
   const show = n => {
     current = n;
+    load(frame(n));
+    load(frame(n >= items.length ? 1 : n + 1));
     bgs.forEach(el => {
       const on = +el.dataset.heroBg === n;
       el.classList.toggle('is-on', on);

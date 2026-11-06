@@ -10,13 +10,6 @@ main:has(> .page-hero) .section-head {
   margin-bottom: clamp(24px, 3vw, 40px);
 }
 
-.page-hero {
-  padding-bottom: clamp(32px, 4vw, 56px);
-}
-
-.page-hero-media .frame {
-  aspect-ratio: 16 / 9;
-}
 
 /* Key facts: four checkable answers under the hero. */
 .keyfacts {

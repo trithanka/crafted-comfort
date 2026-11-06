@@ -159,19 +159,14 @@ button {
   cursor: pointer;
 }
 
-::selection {
-  background: var(--accent);
-  color: var(--on-accent);
-}
-
 :focus-visible {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--brass-text);
   outline-offset: 3px;
 }
 
 .on-accent :focus-visible,
 .on-ink :focus-visible {
-  outline-color: var(--on-accent);
+  outline-color: var(--brass-light);
 }
 
 .sr-only {

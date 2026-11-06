@@ -210,29 +210,36 @@
     padding-top: 96px;
   }
 
-  /* One swipeable row of companies so all four start on the first screen. */
+  /* All four companies at once: a compact two-by-two of names. */
   .hero-x-list {
-    display: flex;
-    gap: 2px;
-    margin-inline: calc(var(--margin) * -1);
-    padding-inline: var(--margin);
-    overflow-x: auto;
-    scroll-snap-type: x proximity;
-    scroll-padding-inline: var(--margin);
-    scrollbar-width: none;
+    gap: 8px;
   }
 
-  .hero-x-list::-webkit-scrollbar {
-    display: none;
-  }
-
-  .hero-x-list li {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
+  .hero-x-list .hero-co {
+    padding: 10px 14px 12px;
+    border-radius: 12px;
   }
 
   .hero-x-list .hero-co-name {
-    white-space: nowrap;
+    font-size: 1rem;
+  }
+
+  /* The two buttons share one row at equal width. */
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .hero-actions .btn {
+    min-height: 48px;
+    padding-inline: 12px;
+    font-size: 0.9375rem;
+  }
+
+  .hero-x-copy .lead {
+    margin-top: 16px;
   }
 
   .hero-co {
@@ -423,5 +430,93 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-pause {
     display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Companies as a photograph mosaic: the lead company tall on the left,
+   the others around it, each name set over its own picture.
+   -------------------------------------------------------------------------- */
+.companies {
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-auto-rows: clamp(250px, 24vw, 360px);
+}
+
+.company:nth-child(1) {
+  grid-row: span 2;
+}
+
+.company:nth-child(4) {
+  grid-column: span 2;
+}
+
+.company-link {
+  position: relative;
+  isolation: isolate;
+  justify-content: flex-end;
+  color: var(--on-accent);
+}
+
+.company-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  aspect-ratio: auto;
+}
+
+.company-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(16, 40, 30, 0) 35%, rgba(16, 40, 30, 0.82) 100%);
+}
+
+.company-text {
+  flex: none;
+  padding: clamp(20px, 2.4vw, 32px);
+}
+
+.company-text .name {
+  font-size: clamp(1.625rem, 2.4vw, 2.25rem);
+}
+
+.company:nth-child(1) .company-text .name {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+.company-what {
+  color: var(--on-accent-soft);
+  font-size: var(--t-body);
+}
+
+.company-cta {
+  padding-top: 14px;
+  color: var(--brass-light);
+}
+
+@media (max-width: 960px) {
+  .companies {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: clamp(240px, 48vw, 340px);
+  }
+
+  .company:nth-child(1) {
+    grid-row: auto;
+    grid-column: span 2;
+  }
+
+  .company:nth-child(4) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .companies {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 280px;
+  }
+
+  .company:nth-child(1) {
+    grid-column: auto;
   }
 }
