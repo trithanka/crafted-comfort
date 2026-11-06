@@ -61,7 +61,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(16, 40, 30, 0.35) 0%, rgba(16, 40, 30, 0.62) 100%);
+  background:
+    linear-gradient(90deg, rgba(16, 40, 30, 0.78) 0%, rgba(16, 40, 30, 0.5) 50%, rgba(16, 40, 30, 0.25) 100%),
+    linear-gradient(180deg, rgba(16, 40, 30, 0) 55%, rgba(16, 40, 30, 0.55) 100%);
 }
 
 .hero-x-body {
@@ -69,9 +71,9 @@
   display: grid;
   grid-template-columns: 1fr;
   align-content: end;
-  gap: clamp(40px, 5vw, 72px);
+  gap: clamp(28px, 3.5vw, 48px);
   width: 100%;
-  padding-top: 140px;
+  padding-top: 120px;
   padding-bottom: clamp(24px, 3vw, 40px);
 }
 
@@ -97,7 +99,7 @@
 
 .hero-x-title {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
   font-weight: 400;
   line-height: 0.98;
   letter-spacing: -0.02em;
@@ -384,7 +386,7 @@
 /* Pause control for the rotating hero: touch visitors cannot hover to stop it. */
 .hero-pause {
   justify-self: end;
-  margin-bottom: calc(clamp(40px, 5vw, 72px) * -1 + 4px);
+  margin-bottom: calc(clamp(28px, 3.5vw, 48px) * -1 + 4px);
   display: inline-flex;
   align-items: center;
   gap: 8px;
