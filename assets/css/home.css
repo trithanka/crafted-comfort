@@ -4,9 +4,10 @@
 .dot {
   display: inline-block;
   flex: none;
-  width: 8px;
-  height: 8px;
-  background: var(--accent);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brass);
 }
 
 .menu-item.plain {
@@ -60,7 +61,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(20, 17, 15, 0.5);
+  background: linear-gradient(180deg, rgba(16, 40, 30, 0.35) 0%, rgba(16, 40, 30, 0.62) 100%);
 }
 
 .hero-x-body {
@@ -80,21 +81,32 @@
   color: var(--on-accent);
 }
 
+/* The motto reads as a line set in brass under the name, not a label above it. */
+.hero-x-copy {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-x-tagline {
-  margin-bottom: 20px;
-  font-size: var(--t-small);
-  font-weight: 650;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--on-accent-soft);
+  order: 1;
+  margin-top: 18px;
+  font-family: var(--font-display);
+  font-size: var(--t-lead);
+  color: var(--brass-light);
 }
 
 .hero-x-title {
-  font-size: var(--t-display);
-  font-weight: 820;
-  line-height: 0.92;
-  letter-spacing: -0.035em;
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 8vw, 7.5rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
   color: var(--on-accent);
+}
+
+.hero-x-copy .lead,
+.hero-x-copy .hero-actions {
+  order: 2;
 }
 
 .hero-actions {
@@ -120,7 +132,7 @@
 .hero-x-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+  gap: 10px;
   list-style: none;
 }
 
@@ -130,8 +142,11 @@
   align-content: start;
   gap: 4px;
   height: 100%;
-  padding: 18px 18px 22px;
-  background: rgba(20, 17, 15, 0.55);
+  overflow: hidden;
+  padding: 18px 20px 22px;
+  border: 1px solid rgba(217, 194, 154, 0.28);
+  border-radius: 16px;
+  background: rgba(16, 40, 30, 0.6);
   color: var(--on-accent);
   text-decoration: none;
   transition: background-color 0.25s ease;
@@ -144,8 +159,9 @@
 }
 
 .hero-co-name {
-  font-size: var(--t-body);
-  font-weight: 760;
+  font-family: var(--font-display);
+  font-size: 1.1875rem;
+  font-weight: 400;
   line-height: 1.2;
 }
 
@@ -161,7 +177,7 @@
   right: 0;
   bottom: 0;
   height: 3px;
-  background: var(--on-accent);
+  background: var(--brass-light);
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -250,21 +266,24 @@
 .companies {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: clamp(14px, 1.6vw, 24px);
 }
 
 .company-link {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: var(--ground);
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
   color: inherit;
   text-decoration: none;
-  transition: background-color 0.18s var(--ease-out);
 }
 
-.company-link:hover {
-  background: #fff;
+.company-link:hover,
+.company-link:focus-visible {
+  box-shadow: var(--shadow-lift);
 }
 
 .company-media {
@@ -287,13 +306,14 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 14px 16px 16px;
+  padding: 18px 20px 20px;
 }
 
 .company-text .name {
-  font-size: var(--t-body);
-  font-weight: 760;
-  line-height: 1.2;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.15;
 }
 
 .company-what {

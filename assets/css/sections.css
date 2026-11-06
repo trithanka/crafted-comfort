@@ -18,6 +18,8 @@
   width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .plate-media img {
@@ -58,8 +60,8 @@
 .tab[aria-selected="true"] {
   color: var(--ink);
   text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 3px;
+  text-decoration-color: var(--brass);
+  text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
 
@@ -159,6 +161,8 @@
 
 .grow-tile {
   overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .stage-1 .grow-tile { height: 30vh; }
@@ -235,19 +239,20 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 48px;
-  padding: 10px 20px;
+  padding: 10px 22px;
+  border-radius: 999px;
   background: var(--tone);
   font-weight: 650;
   transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 .chip:hover span.chip-face {
-  background: #e3e1dc;
+  background: var(--accent-tint);
 }
 
 .chip input:checked + span.chip-face {
-  background: var(--ink);
-  color: var(--ground);
+  background: var(--accent);
+  color: var(--on-accent);
 }
 
 .chip input:focus-visible + span.chip-face {
@@ -274,8 +279,10 @@
   display: none;
   min-height: 100%;
   padding: clamp(28px, 4vw, 56px);
+  border-radius: var(--radius);
   background: var(--accent);
   color: var(--on-accent);
+  box-shadow: var(--shadow);
 }
 
 .js .planner-result {
@@ -290,10 +297,11 @@
 }
 
 .planner-result .where {
+  font-family: var(--font-display);
   font-size: var(--t-heading);
-  font-weight: 760;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
@@ -415,6 +423,7 @@
   display: grid;
   grid-template-columns: 63fr 37fr;
   overflow: hidden;
+  border-radius: 28px;
   background: var(--accent);
   color: var(--on-accent);
 }
@@ -431,6 +440,7 @@
   aspect-ratio: 1;
   margin-bottom: calc(min(38vw, 560px) * -0.2);
   overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 
 .panel-photo img {
@@ -453,6 +463,10 @@
 .panel-right p {
   color: var(--on-accent-soft);
   max-width: 36ch;
+}
+
+.panel-right p + p {
+  margin-top: 10px;
 }
 
 .panel-right .btn {
@@ -512,7 +526,7 @@
 }
 
 .field-accent .dot {
-  background: var(--on-accent);
+  background: var(--brass-light);
 }
 
 @media (max-width: 760px) {
@@ -531,13 +545,17 @@
   grid-template-columns: 46fr 54fr;
   margin-inline: auto;
   max-width: 1280px;
-  background: var(--ink);
-  color: var(--ground);
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: var(--shadow-lift);
 }
 
-/* Ticket notches, punched in the ground colour where the perforation meets each edge. */
+/* The old ticket notches are retired; the card is one rounded green field. */
 .coupon::before,
 .coupon::after {
+  display: none;
   content: "";
   position: absolute;
   left: 46%;
@@ -562,7 +580,7 @@
   justify-content: space-between;
   gap: 40px;
   padding: clamp(32px, 4vw, 56px);
-  border-right: 5px dotted var(--ground);
+  border-right: 1px solid rgba(217, 194, 154, 0.35);
 }
 
 .coupon-left .heading {
@@ -611,7 +629,7 @@
   margin-bottom: 6px;
   font-size: var(--t-small);
   font-weight: 650;
-  color: #e6dfdb;
+  color: var(--on-accent-soft);
 }
 
 .field input,
@@ -620,8 +638,8 @@
   width: 100%;
   min-height: 52px;
   padding: 12px 16px;
-  border: 2px solid transparent;
-  border-radius: 0;
+  border: 1px solid rgba(245, 239, 228, 0.16);
+  border-radius: var(--radius-sm);
   background: var(--ink-raised);
   color: var(--ground);
   font-size: 1rem;
@@ -643,14 +661,14 @@
 
 .field input::placeholder,
 .field textarea::placeholder {
-  color: #a59a95;
+  color: #b7cabd;
 }
 
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--ground);
+  border-color: var(--brass-light);
 }
 
 .field input[aria-invalid="true"],
@@ -678,6 +696,7 @@
   gap: 12px;
   min-height: 52px;
   padding: 10px 16px;
+  border-radius: var(--radius-sm);
   background: var(--ink-raised);
   cursor: pointer;
 }
@@ -703,6 +722,12 @@
   width: 100%;
   min-height: 56px;
   margin-top: 6px;
+  background: var(--on-accent);
+  color: var(--accent);
+}
+
+.coupon-form .btn:hover {
+  background: var(--brass-light);
 }
 
 .form-status {
@@ -734,7 +759,7 @@
 
   .coupon-left {
     border-right: 0;
-    border-bottom: 5px dotted var(--ground);
+    border-bottom: 1px solid rgba(217, 194, 154, 0.35);
   }
 
   .field-row {

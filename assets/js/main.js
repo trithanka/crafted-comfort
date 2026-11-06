@@ -335,3 +335,38 @@ function initHero() {
   header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
   update();
 })();
+
+/* --------------------------------------------------------------------------
+   Parallax: the home hero and company-page photographs drift a little
+   slower than the page. Off for reduced motion; transform only.
+   -------------------------------------------------------------------------- */
+(function initParallax() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const layers = [
+    ...document.querySelectorAll('.hero-x-bg'),
+    ...document.querySelectorAll('.page-hero-media .frame img')
+  ].map(el => ({ el, speed: el.classList.contains('hero-x-bg') ? 0.28 : 0.08 }));
+  if (!layers.length) return;
+  layers.forEach(l => l.el.setAttribute('data-parallax', ''));
+  let ticking = false;
+
+  const update = () => {
+    const vh = window.innerHeight;
+    layers.forEach(({ el, speed }) => {
+      const box = (el.closest('.hero-x') || el.closest('.frame')).getBoundingClientRect();
+      if (box.bottom < 0 || box.top > vh) return;
+      const shift = (vh / 2 - (box.top + box.height / 2)) * speed;
+      el.style.transform = `translate3d(0, ${(-shift).toFixed(1)}px, 0) scale(${speed > 0.1 ? 1 : 1.08})`;
+    });
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  update();
+})();

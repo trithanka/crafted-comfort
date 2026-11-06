@@ -7,19 +7,21 @@
   justify-content: center;
   gap: 10px;
   min-height: 52px;
-  padding: 14px 28px;
+  padding: 14px 30px;
   border: 0;
+  border-radius: 999px;
   background: var(--accent);
   color: var(--on-accent);
   font-size: var(--t-body);
-  font-weight: 700;
+  font-weight: 650;
   line-height: 1.2;
   text-decoration: none;
-  transition: background-color 0.18s ease, transform 0.18s var(--ease-out);
+  transition: background-color 0.18s ease, transform 0.18s var(--ease-out), box-shadow 0.25s var(--ease-out);
 }
 
 .btn:hover {
   background: var(--accent-deep);
+  box-shadow: 0 14px 28px -16px rgba(22, 58, 43, 0.6);
 }
 
 .btn:active {
@@ -27,7 +29,7 @@
 }
 
 .btn:focus-visible {
-  outline: 3px solid var(--ink);
+  outline: 3px solid var(--brass);
   outline-offset: 3px;
 }
 
@@ -45,7 +47,7 @@
 }
 
 .btn-tone:hover {
-  background: #e3e1dc;
+  background: var(--accent-tint);
 }
 
 
@@ -60,7 +62,7 @@
 }
 
 .on-accent .btn:focus-visible {
-  outline-color: var(--on-accent);
+  outline-color: var(--brass-light);
 }
 
 .btn svg {
@@ -119,7 +121,9 @@
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
   text-decoration: underline;
-  text-decoration-color: var(--accent);
+  text-decoration-color: var(--brass);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
 }
 
 .on-accent .site-nav a:hover,
@@ -140,6 +144,17 @@
 
 .section-head .lead {
   margin-top: 20px;
+}
+
+/* A short brass rule under each section heading, like an engraved plate line. */
+.section-head .heading::after,
+.co-head .heading::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin-top: 20px;
+  background: var(--brass);
 }
 
 .field-accent {

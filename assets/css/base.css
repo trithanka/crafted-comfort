@@ -1,4 +1,23 @@
-/* Crafted Comfort: sage ground, near-black ink, deep green accent. */
+/* Crafted Comfort: a resort you can buy from. Ivory ground, forest green fields,
+   brass hairlines, Marcellus for display, Archivo for text. */
+
+@font-face {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/marcellus-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/marcellus-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 @font-face {
   font-family: "Archivo";
@@ -24,20 +43,30 @@
    Tokens
    -------------------------------------------------------------------------- */
 :root {
-  --ground: #f1f3ee;
-  --tone: #e3e7e0;
-  --accent-tint: #d5e2d8;
-  --ink: #1c1715;
-  --muted: #5a524e;
+  --ground: #f5efe4;
+  --card: #fbf8f2;
+  --tone: #ebe2d2;
+  --accent-tint: #e7dfcf;
+  --ink: #1d2a22;
+  --muted: #5b5d52;
   --accent: #1f4d3a;
   --accent-deep: #163a2b;
-  --on-accent: #ffffff;
-  --on-accent-soft: #d3e4da;
-  --ink-raised: #2e2725;
-  --on-ink-soft: #d9d1cd;
-  --on-ink-muted: #c9bfbb;
+  --on-accent: #f5efe4;
+  --on-accent-soft: #cfdccf;
+  --ink-raised: #295a45;
+  --on-ink-soft: #cfdccf;
+  --on-ink-muted: #c3d0c1;
+  --brass: #b08a4f;
+  --brass-text: #7d5f2e;
+  --brass-light: #d9c29a;
 
   --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Marcellus", "Iowan Old Style", Georgia, serif;
+
+  --radius: 20px;
+  --radius-sm: 12px;
+  --shadow: 0 2px 6px -2px rgba(22, 58, 43, 0.12), 0 24px 48px -28px rgba(22, 58, 43, 0.45);
+  --shadow-lift: 0 4px 10px -4px rgba(22, 58, 43, 0.16), 0 36px 64px -30px rgba(22, 58, 43, 0.55);
 
   /* Five sizes, no more. */
   --t-display: clamp(3.25rem, 6.6vw, 6.5rem);
@@ -180,20 +209,20 @@ button {
    Type roles
    -------------------------------------------------------------------------- */
 .display {
+  font-family: var(--font-display);
   font-size: var(--t-display);
-  font-weight: 820;
-  font-stretch: 104%;
-  line-height: 0.95;
-  letter-spacing: -0.035em;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.015em;
   text-wrap: balance;
 }
 
 .heading {
+  font-family: var(--font-display);
   font-size: var(--t-heading);
-  font-weight: 760;
-  font-stretch: 102%;
-  line-height: 1.02;
-  letter-spacing: -0.025em;
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
   text-wrap: balance;
 }
 
@@ -225,4 +254,31 @@ button {
 
 .prose p + p {
   margin-top: 1em;
+}
+
+/* Browser surfaces in the house palette. */
+::selection {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+html {
+  scrollbar-color: var(--accent) var(--tone);
+  accent-color: var(--accent);
+}
+
+input,
+textarea {
+  caret-color: var(--brass);
+}
+
+/* Smooth cross-page transitions where the browser supports them. */
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
 }

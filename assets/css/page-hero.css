@@ -73,6 +73,7 @@
 .page-hero-media .frame {
   aspect-ratio: 4 / 3;
   overflow: hidden;
+  border-radius: var(--radius);
 }
 
 .page-hero-media img {

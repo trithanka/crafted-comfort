@@ -2,8 +2,8 @@
    Footer: the woven end of the cloth
    -------------------------------------------------------------------------- */
 .site-footer {
-  background: var(--ink);
-  color: var(--ground);
+  background: var(--accent-deep);
+  color: var(--on-accent);
 }
 
 .footer-body {

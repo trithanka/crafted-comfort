@@ -23,18 +23,22 @@ main:has(> .page-hero) .section-head {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2px;
+  gap: 1px;
   margin-top: clamp(8px, 2vw, 24px);
+  overflow: hidden;
+  border: 1px solid rgba(176, 138, 79, 0.35);
+  border-radius: var(--radius);
+  background: rgba(176, 138, 79, 0.35);
 }
 
 .keyfacts > div {
-  background: var(--tone);
+  background: var(--card);
   padding: 20px 24px 22px;
 }
 
 .keyfacts dt {
   font-size: var(--t-small);
-  color: var(--muted);
+  color: var(--brass-text);
 }
 
 .keyfacts dd {
@@ -51,13 +55,16 @@ main:has(> .page-hero) .section-head {
 /* Offer rows: photo, what it is, where and what to do next. */
 .offers {
   display: grid;
-  gap: 12px;
+  gap: clamp(16px, 2vw, 24px);
 }
 
 .offer {
   display: grid;
   grid-template-columns: minmax(220px, 30%) minmax(0, 1fr) minmax(200px, 22%);
-  background: var(--tone);
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
   scroll-margin-top: 24px;
 }
 
@@ -169,9 +176,15 @@ main:has(> .page-hero) .menu-group-head {
 }
 
 main:has(> .page-hero) .menu-group-head .heading {
-  font-size: var(--t-lead);
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  font-size: 1.625rem;
+  letter-spacing: 0;
+}
+
+.offer-body .name {
+  font-family: var(--font-display);
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 1.15;
 }
 
 .menu.menu-4 {
