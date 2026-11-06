@@ -1979,3 +1979,26 @@ button {
 .social svg {
   flex: none;
 }
+
+/* Company pages: tighter rhythm so each page reads in fewer screens.
+   Landscape photos instead of tall portrait crops, less air between sections. */
+main:has(> .page-hero) {
+  --section: clamp(40px, 4.5vw, 64px);
+}
+
+main:has(> .page-hero) .section-head {
+  margin-bottom: clamp(24px, 3vw, 40px);
+}
+
+.page-hero-media .frame,
+.split-media {
+  aspect-ratio: 16 / 10;
+}
+
+main:has(> .page-hero) .wide-figure {
+  margin-bottom: clamp(32px, 4vw, 56px);
+}
+
+main:has(> .page-hero) .panel {
+  min-height: 0;
+}
