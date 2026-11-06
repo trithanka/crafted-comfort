@@ -279,3 +279,34 @@ function initHero() {
   root.style.setProperty('--hero-step', STEP / 1000 + 's');
   if (!still) setTimeout(() => { show(1); play(); }, 2500);
 }
+
+/* --------------------------------------------------------------------------
+   Sticky header: tightens after the first scroll, hides while reading down,
+   returns on any scroll up. The home header sits over the hero and is left alone.
+   -------------------------------------------------------------------------- */
+(function initHeader() {
+  const header = document.querySelector('.site-header:not(.site-header--over)');
+  if (!header) return;
+  let last = window.scrollY;
+  let ticking = false;
+
+  const update = () => {
+    const y = window.scrollY;
+    header.classList.toggle('is-scrolled', y > 24);
+    const goingDown = y > last + 4;
+    const goingUp = y < last - 4;
+    if (goingDown && y > 320 && !header.contains(document.activeElement)) header.classList.add('is-hidden');
+    if (goingUp || y < 320) header.classList.remove('is-hidden');
+    if (goingDown || goingUp) last = y;
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }, { passive: true });
+  header.addEventListener('focusin', () => header.classList.remove('is-hidden'));
+  update();
+})();
