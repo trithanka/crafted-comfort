@@ -6,7 +6,6 @@
 .page-hero {
   --hero-foot: clamp(44px, 5vw, 64px);
   position: relative;
-  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   align-content: end;
@@ -90,7 +89,6 @@
 .page-hero-media {
   position: absolute;
   inset: 0 0 var(--hero-foot);
-  z-index: -1;
   overflow: hidden;
   background: var(--ink);
 }
@@ -182,4 +180,10 @@
   margin-top: 24px;
   font-size: var(--t-small);
   color: var(--muted);
+}
+
+/* Everything in the hero except the photo sits above it. */
+.page-hero > :not(.page-hero-media) {
+  position: relative;
+  z-index: 1;
 }

@@ -204,8 +204,3 @@
 [data-parallax] {
   will-change: transform;
 }
-
-/* The page-hero photograph keeps its wipe; parallax owns its transform. */
-.js .page-hero-media .shutter img[data-parallax] {
-  transition: none;
-}

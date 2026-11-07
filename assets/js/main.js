@@ -354,10 +354,8 @@ function initHero() {
    -------------------------------------------------------------------------- */
 (function initParallax() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const layers = [
-    ...document.querySelectorAll('.hero-x-bg'),
-    ...document.querySelectorAll('.page-hero-media .frame img')
-  ].map(el => ({ el, speed: el.classList.contains('hero-x-bg') ? 0.28 : 0.08 }));
+  // ponytail: home hero only; the company-page photo sits under a clip-path wipe and flickered when moved.
+  const layers = [...document.querySelectorAll('.hero-x-bg')].map(el => ({ el, speed: 0.28 }));
   if (!layers.length) return;
   layers.forEach(l => l.el.setAttribute('data-parallax', ''));
   let ticking = false;
@@ -365,10 +363,10 @@ function initHero() {
   const update = () => {
     const vh = window.innerHeight;
     layers.forEach(({ el, speed }) => {
-      const box = (el.closest('.hero-x') || el.closest('.frame')).getBoundingClientRect();
+      const box = el.closest('.hero-x').getBoundingClientRect();
       if (box.bottom < 0 || box.top > vh) return;
       const shift = (vh / 2 - (box.top + box.height / 2)) * speed;
-      el.style.transform = `translate3d(0, ${(-shift).toFixed(1)}px, 0) scale(${speed > 0.1 ? 1 : 1.08})`;
+      el.style.transform = `translate3d(0, ${(-shift).toFixed(1)}px, 0)`;
     });
     ticking = false;
   };
