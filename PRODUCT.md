@@ -40,7 +40,7 @@ Clients can see, stay in and use the products before they buy: the furniture and
 ## Evidence on Hand
 
 - Photos in `assets/img/photos/` (owner chose to keep them; they appear to be generated, 1376x768).
-- Sample content kept at the owner's request and must be replaced before launch: Nuts and Berries menu items and prices, Barefoot cottage names. No reviews, ratings, customer counts or testimonials exist; never show any.
+- Sample content kept at the owner's request and must be replaced before launch: Nuts and Berries menu item names and descriptions. No prices are shown anywhere until the client supplies real ones. No reviews, ratings, customer counts or testimonials exist; never show any.
 
 ## Product Principles
 
