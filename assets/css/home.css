@@ -204,7 +204,6 @@
   .hero-x-list {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 640px) {
@@ -262,114 +261,6 @@
 
   .hero-co-bar {
     display: none;
-  }
-}
-
-/* --------------------------------------------------------------------------
-   Companies
-   -------------------------------------------------------------------------- */
-.companies-section {
-  padding-top: clamp(64px, 7vw, 112px);
-  padding-bottom: clamp(64px, 7vw, 112px);
-  background: var(--accent-tint);
-}
-
-.companies {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(14px, 1.6vw, 24px);
-}
-
-.company-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  border-radius: var(--radius);
-  background: var(--card);
-  box-shadow: var(--shadow);
-  color: inherit;
-  text-decoration: none;
-}
-
-.company-link:hover,
-.company-link:focus-visible {
-  box-shadow: var(--shadow-lift);
-}
-
-.company-media {
-  overflow: hidden;
-  aspect-ratio: 4 / 3;
-}
-
-.company-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s var(--ease-out);
-}
-
-.company-link:hover .company-media img {
-  transform: scale(1.04);
-}
-
-.company-text {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 18px 20px 20px;
-}
-
-.company-text .name {
-  font-family: var(--font-display);
-  font-size: 1.375rem;
-  font-weight: 400;
-  line-height: 1.15;
-}
-
-.company-what {
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: var(--t-small);
-}
-
-.company-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  padding-top: 12px;
-  font-size: var(--t-small);
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.company-cta svg {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.18s var(--ease-out);
-}
-
-.company-link:hover .company-cta svg {
-  transform: translateX(4px);
-}
-
-@media (max-width: 960px) {
-  .companies {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .companies {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .company-media img,
-  .company-cta svg {
-    transition: none;
   }
 }
 
@@ -435,112 +326,6 @@
   }
 }
 
-/* --------------------------------------------------------------------------
-   Companies as a photograph mosaic: the lead company tall on the left,
-   the others around it, each name set over its own picture.
-   -------------------------------------------------------------------------- */
-.companies {
-  grid-template-columns: 1.3fr 1fr 1fr;
-  grid-auto-rows: clamp(250px, 24vw, 360px);
-}
-
-.company:nth-child(1) {
-  grid-row: span 2;
-}
-
-.company:nth-child(4) {
-  grid-column: span 2;
-}
-
-.company-link {
-  position: relative;
-  justify-content: flex-end;
-  color: var(--on-accent);
-}
-
-.company-media {
-  position: absolute;
-  inset: 0;
-  aspect-ratio: auto;
-}
-
-.company-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(12, 32, 23, 0) 30%, rgba(12, 32, 23, 0.55) 55%, rgba(12, 32, 23, 0.88) 78%, rgba(12, 32, 23, 0.96) 100%);
-}
-
-/* Captions sit on the photo over a deep fade; a soft shadow keeps the
-   letters clear of any bright patch in the picture. */
-.company-text {
-  position: relative;
-  flex: none;
-  padding: clamp(20px, 2.4vw, 32px);
-  text-shadow: 0 1px 2px rgba(10, 26, 19, 0.55), 0 2px 18px rgba(10, 26, 19, 0.45);
-}
-
-.company-text .name {
-  font-size: clamp(1.625rem, 2.4vw, 2.25rem);
-}
-
-.company:nth-child(1) .company-text .name {
-  font-size: clamp(2rem, 3.4vw, 3rem);
-}
-
-.company-what {
-  color: var(--on-accent-soft);
-  font-size: var(--t-body);
-}
-
-.company-cta {
-  padding-top: 14px;
-  color: var(--brass-light);
-}
-
-@media (max-width: 960px) {
-  .companies {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: clamp(240px, 48vw, 340px);
-  }
-
-  .company:nth-child(1) {
-    grid-row: auto;
-    grid-column: span 2;
-  }
-
-  .company:nth-child(4) {
-    grid-column: auto;
-  }
-}
-
-@media (max-width: 640px) {
-  .companies {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 280px;
-  }
-
-  .company:nth-child(1) {
-    grid-column: auto;
-  }
-}
-
-/* Category chip on each company tile: what the business is, at a glance. */
-.company-cat {
-  position: absolute;
-  top: clamp(14px, 1.6vw, 20px);
-  left: clamp(14px, 1.6vw, 20px);
-  z-index: 1;
-  padding: 7px 14px;
-  border-radius: 999px;
-  background: rgba(245, 239, 228, 0.94);
-  color: var(--accent-deep);
-  font-size: var(--t-small);
-  font-weight: 650;
-  line-height: 1.2;
-  box-shadow: 0 6px 16px -8px rgba(8, 10, 9, 0.5);
-}
-
 /* Header links over the hero photograph stay readable. */
 .site-header--over .site-nav a {
   text-shadow: 0 1px 10px rgba(8, 10, 9, 0.6);
@@ -553,4 +338,145 @@
   z-index: -1;
   background: linear-gradient(180deg, rgba(8, 10, 9, 0.5), rgba(8, 10, 9, 0));
   pointer-events: none;
+}
+/* --------------------------------------------------------------------------
+   Our companies: an intro panel beside four leaf-shaped photograph tiles.
+   -------------------------------------------------------------------------- */
+.companies-section {
+  padding-block: clamp(64px, 7vw, 112px);
+  background: var(--accent-tint);
+}
+
+.co-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 8fr);
+  gap: clamp(28px, 4vw, 64px);
+  align-items: center;
+}
+
+.co-intro .heading {
+  font-size: clamp(2.25rem, 4.2vw, 3.75rem);
+}
+
+.co-accent {
+  color: var(--brass-text);
+}
+
+.co-intro .lead {
+  margin-top: 22px;
+  max-width: 34ch;
+  color: var(--muted);
+}
+
+.co-intro .btn {
+  margin-top: 30px;
+}
+
+.co-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: clamp(230px, 21vw, 320px);
+  gap: clamp(12px, 1.4vw, 20px);
+}
+
+.co-link {
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  color: var(--on-accent);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  background: var(--ink);
+}
+
+/* Leaf shapes: two opposite corners swell, so the four tiles read as one family. */
+.co-tile-1 .co-link { border-radius: 8% 34% 8% 34% / 12% 36% 12% 36%; }
+.co-tile-2 .co-link { border-radius: 34% 8% 34% 8% / 36% 12% 36% 12%; }
+.co-tile-3 .co-link { border-radius: 34% 8% 34% 8% / 36% 12% 36% 12%; }
+.co-tile-4 .co-link { border-radius: 8% 34% 8% 34% / 12% 36% 12% 36%; }
+
+.co-link img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-out);
+}
+
+.co-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 14, 12, 0) 22%, rgba(10, 14, 12, 0.55) 55%, rgba(10, 14, 12, 0.92) 100%);
+}
+
+.co-link:hover img,
+.co-link:focus-visible img {
+  transform: scale(1.06);
+}
+
+.co-text {
+  position: absolute;
+  inset: auto clamp(48px, 5vw, 64px) clamp(18px, 2vw, 28px) clamp(20px, 2.4vw, 32px);
+  z-index: 1;
+  display: grid;
+  gap: 4px;
+  text-shadow: 0 1px 3px rgba(8, 10, 9, 0.6);
+}
+
+.co-icon {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 8px;
+  color: var(--brass-light);
+}
+
+.co-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 2vw, 1.875rem);
+  line-height: 1.1;
+}
+
+.co-sub {
+  font-size: var(--t-small);
+  color: var(--on-accent-soft);
+}
+
+.co-arrow {
+  position: absolute;
+  right: clamp(18px, 2vw, 28px);
+  bottom: clamp(20px, 2.2vw, 30px);
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  color: var(--on-accent);
+  transition: transform 0.3s var(--ease-out);
+}
+
+.co-link:hover .co-arrow,
+.co-link:focus-visible .co-arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 960px) {
+  .co-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .co-intro .lead {
+    max-width: 52ch;
+  }
+
+  .co-grid {
+    grid-auto-rows: clamp(220px, 34vw, 300px);
+  }
+}
+
+@media (max-width: 560px) {
+  .co-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+  }
 }

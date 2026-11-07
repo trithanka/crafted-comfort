@@ -148,8 +148,7 @@
 }
 
 /* A short brass rule under each section heading, like an engraved plate line. */
-.section-head .heading::after,
-.co-head .heading::after {
+.section-head .heading::after {
   content: "";
   display: block;
   width: 56px;
