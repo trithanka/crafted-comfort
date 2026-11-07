@@ -1,194 +1,60 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-17T03:48:10.239240+00:00",
+  "generatedAt": "2026-11-07T00:00:00Z",
   "title": "Design System: Crafted Comfort",
   "extensions": {
     "colorMeta": {
-      "ground": {
-        "role": "neutral",
-        "displayName": "Handloom white",
-        "tonalRamp": [
-          "#4b4b4b",
-          "#7d7d7c",
-          "#afafae",
-          "#dcdcdb",
-          "#fbfbfa",
-          "#fcfcfc",
-          "#fefefd",
-          "#fefefe"
-        ]
-      },
-      "tone": {
-        "role": "neutral",
-        "displayName": "Tone",
-        "tonalRamp": [
-          "#474746",
-          "#777675",
-          "#a7a6a4",
-          "#d1d1ce",
-          "#f1f1ee",
-          "#f6f5f3",
-          "#fafaf9",
-          "#fdfdfd"
-        ]
-      },
-      "ink": {
-        "role": "neutral",
-        "displayName": "Ink",
-        "tonalRamp": [
-          "#080706",
-          "#0e0c0a",
-          "#14100f",
-          "#191412",
-          "#494544",
-          "#827f7e",
-          "#bbb9b9",
-          "#e8e8e8"
-        ]
-      },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Muted",
-        "tonalRamp": [
-          "#1b1917",
-          "#2d2927",
-          "#3f3937",
-          "#4f4845",
-          "#7b7571",
-          "#a4a09e",
-          "#cecbca",
-          "#eeeeed"
-        ]
-      },
-      "ink-raised": {
-        "role": "neutral",
-        "displayName": "Raised ink",
-        "tonalRamp": [
-          "#0e0c0b",
-          "#171412",
-          "#201b1a",
-          "#282221",
-          "#585251",
-          "#8c8887",
-          "#c0bebe",
-          "#eae9e9"
-        ]
-      },
-      "accent": {
-        "role": "primary",
-        "displayName": "Deep green",
-        "tonalRamp": [
-          "#091711",
-          "#10261d",
-          "#163629",
-          "#1b4433",
-          "#4c7161",
-          "#849d93",
-          "#bccac4",
-          "#e9edeb"
-        ]
-      },
-      "accent-deep": {
-        "role": "primary",
-        "displayName": "Deeper green",
-        "tonalRamp": [
-          "#07110d",
-          "#0b1d16",
-          "#0f291e",
-          "#133326",
-          "#456155",
-          "#7f938a",
-          "#b9c4bf",
-          "#e8ebea"
-        ]
-      },
-      "on-accent": {
-        "role": "neutral",
-        "displayName": "White on green",
-        "tonalRamp": [
-          "#4d4d4d",
-          "#808080",
-          "#b2b2b2",
-          "#e0e0e0",
-          "#ffffff",
-          "#ffffff",
-          "#ffffff",
-          "#ffffff"
-        ]
-      },
-      "on-accent-soft": {
-        "role": "neutral",
-        "displayName": "Soft green text",
-        "tonalRamp": [
-          "#3f4441",
-          "#6a726d",
-          "#94a099",
-          "#bac9c0",
-          "#dce9e1",
-          "#e7f0eb",
-          "#f2f7f4",
-          "#fbfcfb"
-        ]
-      }
+      "ground": { "role": "neutral", "displayName": "Ivory", "tonalRamp": ["#0e0b04", "#29241c", "#464139", "#666157", "#878278", "#aaa49a", "#cec8be", "#f4eee3"] },
+      "card": { "role": "neutral", "displayName": "Linen", "tonalRamp": ["#0d0b07", "#272520", "#44423d", "#63615c", "#85827d", "#a7a59f", "#ccc9c3", "#f1eee8"] },
+      "tone": { "role": "neutral", "displayName": "Sand", "tonalRamp": ["#100a02", "#2b2418", "#484134", "#686052", "#898173", "#aca495", "#d1c8b8", "#f6eddd"] },
+      "accent-tint": { "role": "neutral", "displayName": "Sand Tint", "tonalRamp": ["#100a02", "#2a2418", "#484134", "#676053", "#898273", "#aca495", "#d0c8b9", "#f6eedd"] },
+      "ink": { "role": "neutral", "displayName": "Forest Ink", "tonalRamp": ["#040e07", "#1c2921", "#38463d", "#57655c", "#77877d", "#9aaa9f", "#bdcec3", "#e2f4e8"] },
+      "muted": { "role": "neutral", "displayName": "Moss Grey", "tonalRamp": ["#0b0c05", "#25261d", "#414339", "#616357", "#828478", "#a4a79a", "#c8cbbe", "#eef0e3"] },
+      "accent": { "role": "primary", "displayName": "Forest Green", "tonalRamp": ["#001106", "#002e1d", "#1e4c39", "#3f6c58", "#608e78", "#82b19b", "#a5d6bf", "#d4f9e6"] },
+      "accent-deep": { "role": "primary", "displayName": "Deep Forest", "tonalRamp": ["#001106", "#072d1e", "#274a3b", "#466a59", "#678c7a", "#89af9d", "#acd4c0", "#d4f9e6"] },
+      "ink-raised": { "role": "primary", "displayName": "Raised Forest", "tonalRamp": ["#001106", "#002e1c", "#1b4d38", "#3c6d57", "#5d8f78", "#80b29a", "#a3d7be", "#d4f9e6"] },
+      "on-accent": { "role": "neutral", "displayName": "Ivory on Green", "tonalRamp": ["#0e0b04", "#29241c", "#464139", "#666157", "#878278", "#aaa49a", "#cec8be", "#f4eee3"] },
+      "on-accent-soft": { "role": "neutral", "displayName": "Sage Mist", "tonalRamp": ["#060e06", "#1e281e", "#3b453b", "#5a655a", "#7a867a", "#9da99d", "#c0cdc0", "#e6f3e6"] },
+      "on-ink-soft": { "role": "neutral", "displayName": "Sage Mist (on ink)", "tonalRamp": ["#060e06", "#1e281e", "#3b453b", "#5a655a", "#7a867a", "#9da99d", "#c0cdc0", "#e6f3e6"] },
+      "on-ink-muted": { "role": "neutral", "displayName": "Pale Sage", "tonalRamp": ["#060e05", "#1e281d", "#3b4539", "#5a6558", "#7a8679", "#9da99b", "#c1cebf", "#e6f3e4"] },
+      "brass": { "role": "secondary", "displayName": "Brass", "tonalRamp": ["#150800", "#371f00", "#5c3a00", "#7d5a1c", "#a07b40", "#c59e63", "#e2c498", "#ffebce"] },
+      "brass-text": { "role": "secondary", "displayName": "Brass Text", "tonalRamp": ["#150800", "#371f00", "#583c04", "#795b2a", "#9c7d4c", "#c09f6e", "#e2c498", "#ffebcd"] },
+      "brass-light": { "role": "secondary", "displayName": "Pale Brass", "tonalRamp": ["#140800", "#332100", "#523f1a", "#725e39", "#957f59", "#b8a27b", "#ddc69e", "#feeccd"] }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Display",
-        "purpose": "One page title per page."
-      },
-      "heading": {
-        "displayName": "Heading",
-        "purpose": "Section and group titles."
-      },
-      "lead": {
-        "displayName": "Lead",
-        "purpose": "Sentence under a heading; item names in bold."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Running text, max 62ch."
-      },
-      "small": {
-        "displayName": "Small",
-        "purpose": "Captions, labels, notes, credits."
-      }
+      "hero-title": { "displayName": "Hero Title", "purpose": "\"Crafted Comfort\" on the home hero only." },
+      "display": { "displayName": "Display", "purpose": "Company names on company-page heroes, max 16ch." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings and the planner's answer." },
+      "title": { "displayName": "Title", "purpose": "Item names in lists and stages; card names over photographs switch to Marcellus 400." },
+      "lead": { "displayName": "Lead", "purpose": "The one about sentence under a title; the home motto uses this size in Marcellus, in pale brass." },
+      "body": { "displayName": "Body", "purpose": "Running text, tabular numerals, prose max 62ch." },
+      "label": { "displayName": "Small", "purpose": "Breadcrumbs, key-fact labels, form labels (at 650), notes." }
     },
-    "shadows": [],
+    "shadows": [
+      { "name": "shadow", "value": "0 2px 6px -2px rgba(22, 58, 43, 0.12), 0 24px 48px -28px rgba(22, 58, 43, 0.45)", "purpose": "Rest: company tiles, service rows, plate frame, grow tiles, planner result." },
+      { "name": "shadow-lift", "value": "0 4px 10px -4px rgba(22, 58, 43, 0.16), 0 36px 64px -30px rgba(22, 58, 43, 0.55)", "purpose": "Lift: company tiles on hover/focus, key-facts card on the hero foot, contact card." },
+      { "name": "button-hover", "value": "0 14px 28px -16px rgba(22, 58, 43, 0.6)", "purpose": "Pill buttons on hover, with a 2px rise." }
+    ],
     "motion": [
-      {
-        "name": "ease-out",
-        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Reveals, shutter and lozenge entrance."
-      },
-      {
-        "name": "reveal",
-        "value": "700ms ease-out, 80ms stagger, rise 24px",
-        "purpose": "Each part of a section enters once."
-      },
-      {
-        "name": "shutter",
-        "value": "clip-path 1.1s, image scale 1.12 to 1 over 1.4s",
-        "purpose": "Signature move on the main product photograph."
-      },
-      {
-        "name": "drift",
-        "value": "24s alternate scale 1 to 1.08",
-        "purpose": "The one moving picture in red panels."
-      }
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The house curve for reveals, wipes, lifts and header movement." },
+      { "name": "reveal", "value": "opacity + translateY(24px), 0.7s ease-out, 80ms stagger", "purpose": "Scroll reveals via IntersectionObserver; 0.3s opacity only under reduced motion." },
+      { "name": "rise", "value": "translateY(28px) fade, 0.8s ease-out, 90ms stagger + 80ms", "purpose": "Hero copy plays in on load." },
+      { "name": "wipe", "value": "clip-path inset 1.1s ease-out, image settle from scale 1.12", "purpose": "Hero photographs open from the edge; service-row photos wipe from the left over 0.9s." },
+      { "name": "hero-rotation", "value": "5s step, 0.9s cross-fade, 3px timer bar", "purpose": "Home hero cycles the companies; hover/focus pauses; pause button for touch; off under reduced motion." },
+      { "name": "parallax", "value": "home hero 0.28, company hero 0.08 of scroll offset", "purpose": "Set from main.js; disabled under reduced motion." },
+      { "name": "drift", "value": "24s ease-in-out alternate, scale 1 to 1.08", "purpose": "The partner-panel photograph only." },
+      { "name": "header", "value": "sticky; tighten after 24px; hide reading down past 320px; 0.4s ease-out", "purpose": "Company-page header." },
+      { "name": "read-progress", "value": "3px forest bar, animation-timeline: scroll(root)", "purpose": "Company pages, where supported and motion allowed." },
+      { "name": "view-transition", "value": "@view-transition navigation: auto", "purpose": "Cross-page fades; none under reduced motion." }
     ],
     "breakpoints": [
-      {
-        "name": "phone",
-        "value": "480px"
-      },
-      {
-        "name": "stack",
-        "value": "860px"
-      },
-      {
-        "name": "footer",
-        "value": "960px"
-      }
+      { "name": "phone-sm", "value": "420px" },
+      { "name": "phone", "value": "480px" },
+      { "name": "phone-lg", "value": "640px" },
+      { "name": "tablet-sm", "value": "760px" },
+      { "name": "tablet", "value": "860px" },
+      { "name": "tablet-lg", "value": "960px" },
+      { "name": "desktop-sm", "value": "1080px" }
     ]
   },
   "components": [
@@ -196,85 +62,111 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The main action; red, stepped corners.",
-      "html": "<button class=\"ds-btn\">Plan a trial visit</button>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#1f4d3a;color:#fff}.ds-btn:hover{background:#163a2b}.ds-btn:active{transform:translateY(1px) scale(.98)}.ds-btn:focus-visible{outline:3px solid #fff;outline-offset:-8px}"
-    },
-    {
-      "name": "Ink Button",
-      "kind": "button",
-      "refersTo": "button-ink",
-      "description": "Secondary action on white.",
-      "html": "<button class=\"ds-btn-ink\">Ask for the catalogue</button>",
-      "css": ".ds-btn-ink{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#1c1715;color:#fafaf9}.ds-btn-ink:hover{background:#2e2725}.ds-btn-ink:focus-visible{outline:3px solid #fff;outline-offset:-8px}"
+      "description": "Forest-green pill; the default action on ivory.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Ask about a stay <svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 14px 30px; border: 0; border-radius: 999px; background: var(--accent, #1f4d3a); color: var(--on-accent, #f5efe4); font-family: var(--font, Archivo, sans-serif); font-size: 1.0625rem; font-weight: 650; line-height: 1.2; text-decoration: none; transition: background-color 0.18s ease, transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn svg { width: 18px; height: 18px; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn:hover { background: var(--accent-deep, #163a2b); box-shadow: 0 14px 28px -16px rgba(22, 58, 43, 0.6); transform: translateY(-2px); } .ds-btn:hover svg { transform: translateX(4px); } .ds-btn:active { transform: translateY(1px) scale(0.98); } .ds-btn:focus-visible { outline: 3px solid var(--brass-text, #7d5f2e); outline-offset: 3px; }"
     },
     {
       "name": "White Button",
       "kind": "button",
       "refersTo": "button-white",
-      "description": "The action on a red field.",
-      "html": "<div style=\"background:#1f4d3a;padding:24px\"><button class=\"ds-btn-white\">Request a consultation</button></div>",
-      "css": ".ds-btn-white{display:inline-flex;align-items:center;min-height:52px;padding:14px 28px;border:0;font:700 17px/1.2 Archivo, Arial, sans-serif;cursor:pointer;transition:background-color .18s ease, transform .18s ease;background:#fff;color:#1f4d3a}.ds-btn-white:hover{background:#d3e4da}.ds-btn-white:focus-visible{outline:3px solid #1f4d3a;outline-offset:-8px}"
+      "description": "Ivory pill with green text for green fields and photographs.",
+      "html": "<div class=\"ds-on-green\"><a class=\"ds-btn-white\" href=\"#\">See our companies</a></div>",
+      "css": ".ds-on-green { padding: 24px; background: #1f4d3a; border-radius: 20px; } .ds-btn-white { display: inline-flex; align-items: center; min-height: 52px; padding: 14px 30px; border-radius: 999px; background: #f5efe4; color: #1f4d3a; font-family: Archivo, sans-serif; font-size: 1.0625rem; font-weight: 650; text-decoration: none; transition: background-color 0.18s ease, transform 0.18s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-white:hover { background: #cfdccf; transform: translateY(-2px); } .ds-btn-white:focus-visible { outline: 3px solid #d9c29a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Tone Button",
+      "kind": "button",
+      "refersTo": "button-tone",
+      "description": "Sand pill for secondary actions on ivory.",
+      "html": "<a class=\"ds-btn-tone\" href=\"#\">Call us</a>",
+      "css": ".ds-btn-tone { display: inline-flex; align-items: center; min-height: 52px; padding: 14px 30px; border-radius: 999px; background: var(--tone, #ebe2d2); color: var(--ink, #1d2a22); font-family: Archivo, sans-serif; font-size: 1.0625rem; font-weight: 650; text-decoration: none; transition: background-color 0.18s ease, transform 0.18s cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-tone:hover { background: var(--accent-tint, #e7dfcf); transform: translateY(-2px); } .ds-btn-tone:focus-visible { outline: 3px solid #7d5f2e; outline-offset: 3px; }"
     },
     {
       "name": "Planner Chip",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Radio option in the trial-visit planner.",
-      "html": "<label class=\"ds-chip\"><input type=\"radio\" name=\"p\" checked><span>Sofa set</span></label> <label class=\"ds-chip\"><input type=\"radio\" name=\"p\"><span>Swing</span></label>",
-      "css": ".ds-chip{position:relative;display:inline-block}.ds-chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}.ds-chip span{display:inline-flex;align-items:center;min-height:48px;padding:10px 20px;background:#eeedea;color:#1c1715;font:650 17px Archivo, Arial, sans-serif;}.ds-chip input:checked+span{background:#1c1715;color:#fafaf9}.ds-chip input:focus-visible+span{outline:3px solid #1f4d3a;outline-offset:-7px}"
+      "description": "Sand pill radio for the trial-visit planner; fills green when chosen.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-p\" checked><span>Swings</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"ds-p\"><span>Prefab cottage</span></label></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 10px; } .ds-chip { position: relative; } .ds-chip input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; } .ds-chip span { display: inline-flex; align-items: center; min-height: 48px; padding: 10px 22px; border-radius: 999px; background: #ebe2d2; color: #1d2a22; font-family: Archivo, sans-serif; font-weight: 650; transition: background-color 0.18s ease, color 0.18s ease, transform 0.15s cubic-bezier(0.16, 1, 0.3, 1); } .ds-chip:hover span { background: #e7dfcf; } .ds-chip input:checked + span { background: #1f4d3a; color: #f5efe4; } .ds-chip:active span { transform: scale(0.96); } .ds-chip input:focus-visible + span { outline: 3px solid #1f4d3a; outline-offset: 3px; }"
     },
     {
-      "name": "Coupon Field",
+      "name": "Contact Field",
       "kind": "input",
-      "refersTo": "input",
-      "description": "Form field on the ink coupon, label above.",
-      "html": "<div class=\"ds-field\"><label for=\"x\">Your name</label><input id=\"x\"></div>",
-      "css": ".ds-field{background:#1c1715;padding:24px;font-family:Archivo, Arial, sans-serif}.ds-field label{display:block;margin-bottom:6px;font-size:14px;font-weight:650;color:#e6dfdb}.ds-field input{width:100%;min-height:52px;padding:12px 16px;border:2px solid transparent;background:#2e2725;color:#fafaf9;font-size:16px}.ds-field input:focus{outline:none;border-color:#fafaf9}"
+      "refersTo": "field-input",
+      "description": "Raised-forest field inside the green contact card; pale-brass border on focus.",
+      "html": "<div class=\"ds-card-green\"><label class=\"ds-label\" for=\"ds-name\">Your name</label><input class=\"ds-input\" id=\"ds-name\" placeholder=\"Full name\"></div>",
+      "css": ".ds-card-green { padding: 32px; border-radius: 28px; background: #1f4d3a; } .ds-label { display: block; margin-bottom: 6px; font-family: Archivo, sans-serif; font-size: 0.875rem; font-weight: 650; color: #cfdccf; } .ds-input { width: 100%; box-sizing: border-box; min-height: 52px; padding: 12px 16px; border: 1px solid rgba(245, 239, 228, 0.16); border-radius: 12px; background: #295a45; color: #f5efe4; font: 1rem Archivo, sans-serif; caret-color: #b08a4f; } .ds-input::placeholder { color: #b7cabd; } .ds-input:focus { outline: none; border-color: #d9c29a; }"
     },
     {
-      "name": "Navigation",
+      "name": "Header Navigation",
       "kind": "nav",
-      "description": "Logo then three plain links.",
-      "html": "<nav class=\"ds-nav\"><strong>Crafted Comfort</strong><a href=\"#\">Furniture</a><a href=\"#\">Our places</a><a href=\"#\">Contact</a></nav>",
-      "css": ".ds-nav{display:flex;gap:32px;align-items:center;font:650 17px Archivo, Arial, sans-serif;color:#1c1715}.ds-nav a{color:inherit;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}.ds-nav a:hover{text-decoration:underline;text-decoration-color:#1f4d3a;text-underline-offset:4px;text-decoration-thickness:2px}"
+      "refersTo": "site-header",
+      "description": "Archivo 650 links whose underline grows from the left.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Companies</a><a href=\"#\">Visit</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 28px; background: #f5efe4; padding: 18px 0; } .ds-nav a { position: relative; display: inline-flex; align-items: center; min-height: 44px; color: #1d2a22; font-family: Archivo, sans-serif; font-weight: 650; text-decoration: none; } .ds-nav a::after { content: \"\"; position: absolute; left: 0; right: 0; bottom: 8px; height: 2px; background: #1f4d3a; transform: scaleX(0); transform-origin: left; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-nav a:hover::after, .ds-nav a[aria-current=\"page\"]::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 3px solid #7d5f2e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Company Mosaic Tile",
+      "kind": "card",
+      "refersTo": "company-tile",
+      "description": "A photograph in a 20px card under the foot veil, Marcellus name and pale-brass call to action.",
+      "html": "<a class=\"ds-tile\" href=\"#\"><span class=\"ds-tile-media\"></span><span class=\"ds-tile-text\"><span class=\"ds-tile-name\">Barefoot in the Garden</span><span class=\"ds-tile-what\">Resort, café, cloud kitchen and vending</span><span class=\"ds-tile-cta\">Visit the page →</span></span></a>",
+      "css": ".ds-tile { position: relative; display: flex; flex-direction: column; justify-content: flex-end; width: 320px; height: 300px; overflow: hidden; border-radius: 20px; background: #fbf8f2; color: #f5efe4; text-decoration: none; box-shadow: 0 2px 6px -2px rgba(22, 58, 43, 0.12), 0 24px 48px -28px rgba(22, 58, 43, 0.45); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s; } .ds-tile-media { position: absolute; inset: 0; background: linear-gradient(135deg, #6f8f6a, #c9b38a); } .ds-tile-media::after { content: \"\"; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16, 40, 30, 0) 20%, rgba(16, 40, 30, 0.6) 58%, rgba(16, 40, 30, 0.92) 100%); } .ds-tile-text { position: relative; display: flex; flex-direction: column; padding: 24px; } .ds-tile-name { font-family: Marcellus, Georgia, serif; font-size: 1.75rem; line-height: 1.15; } .ds-tile-what { margin-top: 4px; color: #cfdccf; font-family: Archivo, sans-serif; } .ds-tile-cta { padding-top: 14px; color: #d9c29a; font: 700 0.875rem Archivo, sans-serif; } .ds-tile:hover, .ds-tile:focus-visible { transform: translateY(-6px); box-shadow: 0 4px 10px -4px rgba(22, 58, 43, 0.16), 0 36px 64px -30px rgba(22, 58, 43, 0.55); } .ds-tile:focus-visible { outline: 3px solid #7d5f2e; outline-offset: 3px; }"
+    },
+    {
+      "name": "Key Facts",
+      "kind": "card",
+      "refersTo": "keyfacts-cell",
+      "description": "Four linen cells split by brass hairlines; rests on the company hero's foot.",
+      "html": "<dl class=\"ds-facts\"><div><dt>Resort</dt><dd>Rajakhat, Tetelia, Sonapur</dd></div><div><dt>Café</dt><dd>Ghoramara Chariali, Guwahati</dd></div><div><dt>Call</dt><dd>+91 70992 79374</dd></div></dl>",
+      "css": ".ds-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 0; overflow: hidden; border: 1px solid rgba(176, 138, 79, 0.35); border-radius: 20px; background: rgba(176, 138, 79, 0.35); box-shadow: 0 4px 10px -4px rgba(22, 58, 43, 0.16), 0 36px 64px -30px rgba(22, 58, 43, 0.55); font-family: Archivo, sans-serif; } .ds-facts > div { background: #fbf8f2; padding: 20px 24px 22px; } .ds-facts dt { font-size: 0.875rem; color: #7d5f2e; } .ds-facts dd { margin: 6px 0 0; font-weight: 650; line-height: 1.35; color: #1d2a22; }"
+    },
+    {
+      "name": "Hero Strip Tile",
+      "kind": "custom",
+      "refersTo": "hero-strip-tile",
+      "description": "One of the four companies along the home hero's foot; fills green with a pale-brass timer bar while on show.",
+      "html": "<div class=\"ds-strip\"><a class=\"ds-co is-on\" href=\"#\"><span class=\"ds-co-name\">Loom Crafts</span><span class=\"ds-co-what\">Outdoor furniture and prefab cottages</span><span class=\"ds-co-bar\"></span></a><a class=\"ds-co\" href=\"#\"><span class=\"ds-co-name\">Nuts and Berries</span><span class=\"ds-co-what\">Bakery and café</span><span class=\"ds-co-bar\"></span></a></div>",
+      "css": ".ds-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 16px; background: #1d2a22; } .ds-co { position: relative; display: grid; gap: 4px; overflow: hidden; padding: 18px 20px 22px; border: 1px solid rgba(217, 194, 154, 0.28); border-radius: 16px; background: rgba(16, 40, 30, 0.6); color: #f5efe4; text-decoration: none; transition: background-color 0.25s ease; } .ds-co:hover, .ds-co:focus-visible, .ds-co.is-on { background: #1f4d3a; } .ds-co:focus-visible { outline: 3px solid #d9c29a; outline-offset: 3px; } .ds-co-name { font-family: Marcellus, Georgia, serif; font-size: 1.1875rem; line-height: 1.2; } .ds-co-what { font: 0.875rem Archivo, sans-serif; color: #cfdccf; } .ds-co-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: #d9c29a; transform: scaleX(0); transform-origin: left; } .ds-co.is-on .ds-co-bar { animation: ds-bar 5s linear infinite; } @keyframes ds-bar { to { transform: scaleX(1); } } @media (prefers-reduced-motion: reduce) { .ds-co-bar { display: none; } }"
     }
   ],
   "narrative": {
-    "northStar": "The Company Directory",
-    "overview": "The home page does two jobs for the client: say in a few lines who Crafted Comfort is, then show every company it runs. Everything else supports those two. The look is plain and confident: white ground, near-black type set large, one deep green for actions and fields, real photographs of each business.",
+    "northStar": "The Resort You Can Buy From",
+    "overview": "Every page arrives the way a guest arrives at Sonapur: a photograph first, full-bleed, under a forest-green veil, with the name set in Marcellus like lettering cut into a brass plate. The furniture and cottages are shown in use, never on a white sweep. The world is warm and unhurried: an ivory ground with sand panels, forest green that takes over whole fields (hero veil, planner result, contact card, partner panel, footer), and brass kept to hairlines, bullets, rules, the motto and focus.\n\nSurfaces are soft and held: pill buttons, photographs and cards rounded at 20px, the larger green cards at 28px, all lifted by low green-tinted shadows rather than grey ones. Motion is slow and courteous: photographs wipe open and settle, the hero rotates through the companies with a timer bar and a pause control, hero photos drift slower than the page, and every travelling effect has a reduced-motion path.\n\nThe system refuses two things: the flat company-directory grid the site used to be (square corners, one sans face, a sage ground), and the black-and-gold showroom. Proof is specific and checkable (places, materials, services, a phone number); there are no reviews, ratings or customer counts anywhere.",
     "keyCharacteristics": [
-      "One typeface, Archivo, in five sizes.",
-      "Three colours: white ground, near-black ink, deep green.",
-      "Square corners, no shadows, no gradients, no decorative motifs.",
-      "Every company gets the same anatomy: photo, name, what it is, one sentence, a link."
+      "Photograph first on every page: full-bleed hero under a green veil, then rounded photographs throughout.",
+      "Ivory ground, sand panels, forest green owning whole fields, brass only for hairlines and small marks.",
+      "Marcellus for the name, display and headings; Archivo for everything people read or press.",
+      "Pill buttons, 20px photographs and cards, 28px green cards, soft green-tinted shadows.",
+      "Slow reveals and wipes, a rotating hero you can pause, parallax on hero photos, cross-page view transitions."
     ],
     "rules": [
-      {
-        "name": "The Three Colour Rule",
-        "body": "Ground, ink, green. Nothing else.",
-        "section": "colors"
-      },
-      {
-        "name": "The Two Line Rule",
-        "body": "Every heading fits on two lines at every width.",
-        "section": "typography"
-      },
-      {
-        "name": "The Five Size Rule",
-        "body": "No sixth size.",
-        "section": "typography"
-      }
+      { "name": "The Brass Is Engraving Rule", "body": "Brass marks, it never fills. Rules, dots, hairlines, timer bars, the motto and focus rings; never a button, a band or a card. On ivory, words in brass use brass-text; on green, brass-light.", "section": "colors" },
+      { "name": "The Green Owns The Field Rule", "body": "Forest green appears as a whole field (veil, card, panel, footer) or as a small accent (link, chip, progress bar), never as a thin decorative tint in between.", "section": "colors" },
+      { "name": "The Veil Rule", "body": "Text over a photograph always sits on the forest veil: a left-to-right gradient from rgba(16, 40, 30, 0.78–0.8) to 0.2–0.25, plus a bottom gradient to 0.55–0.6; mosaic tiles use a foot veil from 0 at 20% to 0.92 at the bottom.", "section": "colors" },
+      { "name": "The Signage Rule", "body": "Marcellus is for names and headings, always at weight 400; it is never bolded, never used for body copy, labels or buttons.", "section": "typography" },
+      { "name": "The Five Sizes Rule", "body": "The ramp is display, heading, lead, body, small, plus the one hero title. Card and panel headings scale the heading clamp down inside their container; they do not introduce a new role.", "section": "typography" },
+      { "name": "The Green Shadow Rule", "body": "Every shadow is cast in deep forest (rgba(22, 58, 43, …)) with a long negative spread: a pool under the object, never a hard edge or a grey halo.", "section": "elevation" }
     ],
     "dos": [
-      "**Do** keep the home hero short and put all companies directly under it.",
-      "**Do** use real photographs of each business, credited when they come from open collections.",
-      "**Do** keep forms honest: they say when a request could not be sent and give the phone number."
+      "Do open every page on a full-bleed photograph under the forest veil, with the name in Marcellus.",
+      "Do round photographs and cards at 20px, large green cards at 28px, and make every button and chip a full pill.",
+      "Do cast shadows in deep forest with the rest and lift values, and lift on hover.",
+      "Do keep brass to rules, dots, hairlines, timer bars, the motto and focus rings; use brass-text for brass words on ivory and pale brass on green.",
+      "Do let forest green own a whole field (veil, planner result, contact card, partner panel, footer).",
+      "Do say specific, checkable things: places, materials, prices, services and the phone number, set in tabular numerals.",
+      "Do give every moving thing a reduced-motion path and every rotating thing a pause."
     ],
     "donts": [
-      "**Don't** add gradients, glow, glass, shadows or decorative patterns.",
-      "**Don't** put a small label above a heading.",
-      "**Don't** show reviews, ratings or customer numbers; none exist."
+      "Don't show reviews, ratings, star marks, customer counts or testimonials; none exist.",
+      "Don't return to the flat directory look: square corners, one sans face, a flat sage ground, borders instead of depth.",
+      "Don't build a black-and-gold showroom: no black fields, no gold fills, no brass buttons or brass bands.",
+      "Don't set Marcellus bold or use it for body text, labels or buttons.",
+      "Don't set text directly on a photograph without the forest veil.",
+      "Don't use grey or hard offset shadows.",
+      "Don't use brass (#b08a4f) for text on ivory; it is below text contrast there.",
+      "Don't add marketing superlatives; the photographs and the facts do the persuading."
     ]
   }
 }

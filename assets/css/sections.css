@@ -256,7 +256,7 @@
 }
 
 .chip input:focus-visible + span.chip-face {
-  outline: 3px solid var(--accent);
+  outline: 3px solid var(--brass-text);
   outline-offset: 3px;
 }
 
