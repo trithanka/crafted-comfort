@@ -326,3 +326,9 @@ Deep forest field: logo and one line, link columns headed in Marcellus pale bras
 - **Don't** use grey or hard offset shadows.
 - **Don't** use brass (#b08a4f) for text on ivory; it is below text contrast there.
 - **Don't** add marketing superlatives; the photographs and the facts do the persuading.
+
+## Additions (7 Nov 2026)
+
+- **Category chip:** a small ivory pill at the top-left of each company tile (Furniture & Design, Hospitality, Accommodation, Food & Dining). It sits on the photograph, never above a heading.
+- **Collection page** (`pages/collection.html`, `assets/css/collection.css`): pill filter chips over eight category cards, a four-photo gallery that opens in a dialog lightbox, featured pieces as service rows, the materials block, and a green closing band. Filtering and the lightbox are in `assets/js/main.js`.
+- **Small text** is 0.9375rem; header links are 1.0625rem; footer phone and email are 1.1875rem in ivory.

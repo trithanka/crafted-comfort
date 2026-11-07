@@ -86,3 +86,20 @@
     grid-column: span 6;
   }
 }
+
+/* Contact details lead the footer: large, bright, easy to tap. */
+.footer-col.contact li:nth-child(-n+2) a {
+  font-size: 1.1875rem;
+  font-weight: 650;
+  color: var(--on-accent);
+}
+
+.footer-col.contact li {
+  line-height: 1.5;
+}
+
+.footer-tagline {
+  margin-top: 14px;
+  font-family: var(--font-display);
+  color: var(--brass-light);
+}

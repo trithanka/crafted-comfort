@@ -1,0 +1,184 @@
+/* --------------------------------------------------------------------------
+   Collection page: category filter, gallery, lightbox, closing band
+   -------------------------------------------------------------------------- */
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: clamp(24px, 3vw, 36px);
+}
+
+.filter-chip {
+  min-height: 44px;
+  padding: 10px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--tone);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.filter-chip:hover {
+  background: var(--accent-tint);
+}
+
+.filter-chip[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 1.6vw, 24px);
+}
+
+.cat-card {
+  padding: clamp(20px, 2.2vw, 28px);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.cat-card .name {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
+.cat-card p {
+  margin-top: 8px;
+}
+
+.cat-card[hidden],
+.gallery-item[hidden] {
+  display: none;
+}
+
+.gallery-title {
+  margin-top: clamp(48px, 6vw, 88px);
+  margin-bottom: clamp(20px, 2.4vw, 32px);
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(14px, 1.6vw, 24px);
+}
+
+.gallery-open {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--tone);
+  box-shadow: var(--shadow);
+  cursor: zoom-in;
+}
+
+.gallery-open img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-out);
+}
+
+.gallery-open:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-cap {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 28px 16px 14px;
+  background: linear-gradient(180deg, rgba(8, 10, 9, 0), rgba(8, 10, 9, 0.75));
+  color: var(--on-accent);
+  font-size: var(--t-small);
+  font-weight: 650;
+  text-align: left;
+}
+
+.lightbox {
+  width: min(1100px, 94vw);
+  max-height: 92vh;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--on-accent);
+  overflow: hidden;
+}
+
+.lightbox::backdrop {
+  background: rgba(8, 10, 9, 0.8);
+}
+
+.lightbox img {
+  display: block;
+  width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+}
+
+.lightbox-cap {
+  padding: 14px 20px 18px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(245, 239, 228, 0.92);
+  color: var(--ink);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cta-band {
+  padding: clamp(36px, 6vw, 80px);
+  border-radius: 28px;
+  background: var(--accent);
+  color: var(--on-accent);
+  text-align: center;
+  box-shadow: var(--shadow-lift);
+}
+
+.cta-band .lead {
+  margin: 20px auto 0;
+  color: var(--on-accent-soft);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+@media (max-width: 1080px) {
+  .cat-grid,
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .cat-grid,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

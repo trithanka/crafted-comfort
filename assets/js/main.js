@@ -380,3 +380,39 @@ function initHero() {
   window.addEventListener('resize', update, { passive: true });
   update();
 })();
+
+/* --------------------------------------------------------------------------
+   Collection page: category filter and photograph lightbox
+   -------------------------------------------------------------------------- */
+(function initCollection() {
+  const group = document.querySelector('[data-filter-group]');
+  if (!group) return;
+  const chips = [...group.querySelectorAll('[data-filter]')];
+  const items = [...group.querySelectorAll('[data-cat]')];
+  const empty = group.querySelector('.filter-empty');
+
+  chips.forEach(chip => chip.addEventListener('click', () => {
+    const key = chip.dataset.filter;
+    chips.forEach(c => c.setAttribute('aria-pressed', String(c === chip)));
+    let shown = 0;
+    items.forEach(el => {
+      const on = key === 'all' || el.dataset.cat.split(' ').includes(key);
+      el.hidden = !on;
+      if (on && el.classList.contains('gallery-item')) shown++;
+    });
+    if (empty) empty.hidden = key === 'all' || shown > 0;
+  }));
+
+  const box = document.querySelector('.lightbox');
+  if (!box || typeof box.showModal !== 'function') return;
+  const img = box.querySelector('img');
+  const cap = box.querySelector('.lightbox-cap');
+  group.querySelectorAll('.gallery-open').forEach(btn => btn.addEventListener('click', () => {
+    img.src = btn.dataset.full;
+    img.alt = btn.dataset.alt;
+    cap.textContent = btn.dataset.caption;
+    box.showModal();
+  }));
+  box.querySelector('.lightbox-close').addEventListener('click', () => box.close());
+  box.addEventListener('click', e => { if (e.target === box) box.close(); });
+})();

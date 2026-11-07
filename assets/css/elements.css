@@ -114,6 +114,7 @@
   white-space: nowrap;
   align-items: center;
   min-height: 44px;
+  font-size: 1.0625rem;
   font-weight: 650;
   text-decoration: none;
 }

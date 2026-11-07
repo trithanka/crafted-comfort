@@ -187,3 +187,8 @@
   position: relative;
   z-index: 1;
 }
+
+/* Hero without a key-facts card: keep the text inside the photograph. */
+.page-hero:not(:has(.keyfacts)) {
+  padding-bottom: calc(var(--hero-foot) + clamp(28px, 4vw, 48px));
+}
