@@ -466,17 +466,16 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(16, 40, 30, 0) 60%, rgba(16, 40, 30, 0.35) 100%);
+  background: linear-gradient(180deg, rgba(12, 32, 23, 0) 30%, rgba(12, 32, 23, 0.55) 55%, rgba(12, 32, 23, 0.88) 78%, rgba(12, 32, 23, 0.96) 100%);
 }
 
-/* Captions sit on their own solid green plate at the foot of the photo,
-   so the text never competes with a busy picture. */
+/* Captions sit on the photo over a deep fade; a soft shadow keeps the
+   letters clear of any bright patch in the picture. */
 .company-text {
   position: relative;
   flex: none;
-  padding: clamp(18px, 2vw, 26px) clamp(20px, 2.4vw, 32px);
-  border-top: 1px solid rgba(217, 194, 154, 0.45);
-  background: var(--accent-deep);
+  padding: clamp(20px, 2.4vw, 32px);
+  text-shadow: 0 1px 2px rgba(10, 26, 19, 0.55), 0 2px 18px rgba(10, 26, 19, 0.45);
 }
 
 .company-text .name {
