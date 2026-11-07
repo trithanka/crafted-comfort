@@ -56,14 +56,14 @@
   transform: scale(1);
 }
 
-/* Green veil, darker on the text side and at the foot, so ivory type holds on any photograph. */
+/* Neutral shade only behind the text (left) and the company strip (foot); the rest of the photograph keeps its own colour. */
 .hero-x-bg::after {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(16, 40, 30, 0.78) 0%, rgba(16, 40, 30, 0.5) 50%, rgba(16, 40, 30, 0.25) 100%),
-    linear-gradient(180deg, rgba(16, 40, 30, 0) 55%, rgba(16, 40, 30, 0.55) 100%);
+    linear-gradient(90deg, rgba(8, 10, 9, 0.62) 0%, rgba(8, 10, 9, 0.32) 38%, rgba(8, 10, 9, 0) 62%),
+    linear-gradient(180deg, rgba(8, 10, 9, 0) 62%, rgba(8, 10, 9, 0.5) 100%);
 }
 
 .hero-x-body {
