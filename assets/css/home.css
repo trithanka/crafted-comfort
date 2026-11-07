@@ -390,11 +390,12 @@
   background: var(--ink);
 }
 
-/* Leaf shapes: two opposite corners swell, so the four tiles read as one family. */
-.co-tile-1 .co-link { border-radius: 8% 34% 8% 34% / 12% 36% 12% 36%; }
-.co-tile-2 .co-link { border-radius: 34% 8% 34% 8% / 36% 12% 36% 12%; }
-.co-tile-3 .co-link { border-radius: 34% 8% 34% 8% / 36% 12% 36% 12%; }
-.co-tile-4 .co-link { border-radius: 8% 34% 8% 34% / 12% 36% 12% 36%; }
+/* Leaf shapes: one top corner swells, alternating left and right. The bottom
+   corners stay tight so the name and arrow are never clipped. */
+.co-tile-1 .co-link,
+.co-tile-4 .co-link { border-radius: 8% 34% 6% 6% / 12% 36% 8% 8%; }
+.co-tile-2 .co-link,
+.co-tile-3 .co-link { border-radius: 34% 8% 6% 6% / 36% 12% 8% 8%; }
 
 .co-link img {
   position: absolute;
